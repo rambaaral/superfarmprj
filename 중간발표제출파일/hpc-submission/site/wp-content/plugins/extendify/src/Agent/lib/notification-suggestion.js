@@ -1,0 +1,32 @@
+import { resolveNotificationLink } from '@notifications/notification-link';
+import { notificationFor } from '@notifications/selection';
+import { siteHost } from '@shared/lib/site-host';
+
+export const AGENT_CHAT_SLOT = 'agent-chat';
+
+export const notificationSuggestion = () => {
+	const notification = notificationFor(AGENT_CHAT_SLOT);
+	if (!notification) return null;
+
+	const message = notification['content-agent-chat'];
+	const { href } = resolveNotificationLink(notification, siteHost());
+	if (!message || !href) return null;
+
+	const slug = notification.slug;
+	const source = notification.source;
+
+	return {
+		message,
+		content: notification.content,
+		ctaLabel: notification['cta-label'],
+		url: href,
+		viewTelemetry: {
+			key: 'notification_view',
+			payload: { slug, slot: AGENT_CHAT_SLOT, source },
+		},
+		telemetry: {
+			key: 'notification_click',
+			payload: { slug, slot: AGENT_CHAT_SLOT, source },
+		},
+	};
+};

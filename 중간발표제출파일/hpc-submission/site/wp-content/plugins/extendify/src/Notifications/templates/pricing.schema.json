@@ -1,0 +1,16 @@
+{
+	"$id": "extendify/notification-template/pricing",
+	"title": "Pricing",
+	"type": "object",
+	"properties": {
+		"offer": {
+			"type": "object",
+			"properties": {
+				"price": { "type": "string" },
+				"price-detail": { "type": "string" },
+				"description": { "type": "string" },
+				"items": { "type": "array", "items": { "type": "string" } }
+			}
+		}
+	}
+}

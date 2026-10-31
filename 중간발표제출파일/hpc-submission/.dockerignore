@@ -1,0 +1,6 @@
+.env
+.git
+docs
+third-party-source
+*.zip
+*.log

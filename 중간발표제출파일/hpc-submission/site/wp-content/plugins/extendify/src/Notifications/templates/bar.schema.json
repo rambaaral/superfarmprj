@@ -1,0 +1,8 @@
+{
+	"$id": "extendify/notification-template/bar",
+	"title": "Bar",
+	"type": "object",
+	"properties": {
+		"icon": { "type": "string" }
+	}
+}

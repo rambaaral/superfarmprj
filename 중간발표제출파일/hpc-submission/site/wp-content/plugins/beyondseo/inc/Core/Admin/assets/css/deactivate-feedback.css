@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+#rankingcoach-deactivate-modal {
+  display: none;
+  table-layout: fixed;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: "OpenSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+}
+
+.rankingcoach-deactivate-modal__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.rankingcoach-deactivate-modal__form {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 550px;
+  text-align: left;
+  position: relative;
+  border-radius: 26px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rankingcoach-deactivate-modal__title {
+  font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.rankingcoach-deactivate-modal__subtitle {
+  display: block;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.rankingcoach-deactivate-modal__option {
+  margin-bottom: 16px;
+}
+
+.rankingcoach-deactivate-modal__option input[type="radio"] {
+  margin-right: 12px !important;
+}
+
+.rankingcoach-deactivate-modal__option label {
+  font-size: 15px;
+  color: #333;
+}
+
+.rankingcoach-deactivate-modal__option-details {
+  display: none;
+  width: 90%;
+  margin: 12px 0 0 30px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.rankingcoach-deactivate-modal__error {
+  color: #dc3232;
+  font-size: 14px;
+  text-align: left;
+  margin: 16px 0 0 0;
+}
+
+.rankingcoach-deactivate-modal__delete-data {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+}
+
+.rankingcoach-deactivate-modal__delete-data label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #dc3232;
+  font-size: 14px;
+}
+
+.rankingcoach-deactivate-modal__delete-data input[type="checkbox"] {
+  margin: 0;
+}
+
+.rankingcoach-deactivate-modal__footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rankingcoach-deactivate-modal__footer .error {
+  color: #dc3232;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: none;
+}
+
+.rankingcoach-deactivate-modal__footer .buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rankingcoach-deactivate-modal__footer .button-primary {
+  background-color: #0066ff !important;
+  border-color: #0066ff !important;
+  padding: 8px 20px !important;
+  font-size: 15px !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+}
+
+.rankingcoach-deactivate-modal__skip {
+  margin-left: auto;
+  font-size: 14px;
+  color: #757575;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.rankingcoach-deactivate-modal__skip:hover,
+.rankingcoach-deactivate-modal__skip:focus {
+  color: #333;
+}
+
+#rankingcoach-deactivate-modal.is-visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

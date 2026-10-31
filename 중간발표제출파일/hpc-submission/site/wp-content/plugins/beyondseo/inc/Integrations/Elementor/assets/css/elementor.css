@@ -1,0 +1,6 @@
+.elementor-editor-active .elementor-panel .elementor-component-tab[data-tab="rankingcoach-seo-tab"]>span::before {
+    font-family: eicons, serif;
+    content: "\e931";
+    margin-right: 6px;
+    vertical-align: middle;
+}

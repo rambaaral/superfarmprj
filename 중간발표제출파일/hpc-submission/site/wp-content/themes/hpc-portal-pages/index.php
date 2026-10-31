@@ -1,0 +1,8 @@
+<?php get_header(); ?>
+<?php if(is_front_page()): ?>
+<main id="main-content" tabindex="-1"><div id="mContainer"><?php while(have_posts()):the_post();the_content();endwhile; ?></div></main>
+<?php else: $key=hp_current();$group=hp_group($key); ?>
+<div id="container"><div class="wrap page-layout"><aside id="lnb" class="side-navigation"><h2 class="tit"><?php echo esc_html($group); ?></h2><nav aria-label="좌측 메뉴"><ul class="depth01"><?php foreach(hp_groups()[$group]??array_keys(hp_pages()) as $slug): ?><li class="<?php echo $key===$slug?'on':''; ?>"><a <?php if($key===$slug)echo 'aria-current="page"'; ?> href="<?php echo esc_url(hp_url($slug)); ?>"><?php echo esc_html(hp_pages()[$slug]); ?><span aria-hidden="true">›</span></a></li><?php endforeach; ?></ul></nav></aside>
+<main id="main-content" class="page-content" tabindex="-1"><div id="contents"><div class="pageInfo"><nav class="breadcrumb" aria-label="현재 위치"><a href="<?php echo esc_url(hp_url('home')); ?>" aria-label="메인페이지"><?php echo hp_icon('home'); ?></a><span aria-hidden="true">›</span><span><?php echo esc_html($group); ?></span><span aria-hidden="true">›</span><strong><?php echo esc_html(get_the_title()); ?></strong></nav><button class="print-page" type="button" aria-label="페이지 인쇄"><?php echo hp_icon('file'); ?></button></div>
+<?php if(have_posts()):while(have_posts()):the_post(); ?><div class="page-heading"><h1 id="title"><?php the_title(); ?></h1></div><div class="conBody page-body"><?php the_content(); ?></div><?php endwhile;else: ?><h1>페이지를 찾을 수 없습니다</h1><p><a href="<?php echo esc_url(hp_url('home')); ?>">메인페이지로 이동</a></p><?php endif; ?></div></main></div></div>
+<?php endif; get_footer(); ?>

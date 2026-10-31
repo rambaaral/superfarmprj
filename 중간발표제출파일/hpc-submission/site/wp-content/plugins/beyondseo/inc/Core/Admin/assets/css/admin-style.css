@@ -1,0 +1,259 @@
+.rankingcoach-connect-widget-content {
+  text-align: center;
+  padding: 15px;
+}
+.rankingcoach-connect-widget-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+.rankingcoach-connect-widget-content p {
+  margin-bottom: 15px;
+}
+.rankingcoach-connect-widget-content .button {
+  padding: 8px 15px;
+  font-size: 1.1em;
+}
+
+/* Upgrade button disabled state */
+.beyondseo .upgrade-button.disabled {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #666666 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  pointer-events: none !important;
+}
+
+.beyondseo .upgrade-button.disabled:hover {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #666666 !important;
+}
+
+#rc-seo-iframe {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Pricing plans container - ensure equal card widths */
+.beyondseo .rankingcoach-pricing-plans {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;           /* make all cards same height */
+  flex-wrap: wrap;                /* allow wrapping on smaller screens */
+}
+
+/* Make cards visually match screenshot */
+.beyondseo .rankingcoach-plan {
+  flex: 1;                        /* equal width for all cards */
+  max-width: 350px;
+  min-width: 280px;
+  border-radius: 26px;
+  background: #fff;
+  position: relative;
+}
+
+/* Recommended pill - positioned to the right of the title */
+.beyondseo .recommended-badge {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  background-color: #FFAA00;
+  color: #001B41;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+/* Plan titles - left aligned with underline */
+.beyondseo .rankingcoach-plan .plan-name {
+  text-align: left !important;
+  border-bottom: 1px solid #E5E7EB;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+/* STANDARD and PRO: white background with border */
+.beyondseo .rankingcoach-plan:not(.recommended-plan) {
+  background: #fff;
+  border: 1px solid #B8C1D1;
+}
+
+.beyondseo .rankingcoach-plan:not(.recommended-plan) .plan-name {
+  color: #1F2937;
+  border-bottom-color: #E5E7EB;
+}
+
+/* ADVANCED: dark card look */
+.beyondseo .recommended-plan {
+  background: #0C2662 !important;
+  color: #fff;
+}
+
+.beyondseo .recommended-plan .plan-header {
+  background: transparent;
+  padding-top: 20px;
+}
+
+.beyondseo .recommended-plan .plan-name {
+  color: #fff !important;
+  border-bottom-color: #E7EFFE;
+}
+
+/* SOCIAL when not Advanced: white background like Standard */
+.beyondseo .recommended-plan.social-not-advanced {
+  background: #fff !important;
+  border: 1px solid #B8C1D1;
+  color: #1F2937;
+}
+
+.beyondseo .recommended-plan.social-not-advanced .plan-name {
+  color: #1F2937 !important;
+  border-bottom-color: #E5E7EB;
+}
+
+.beyondseo .recommended-plan.social-not-advanced .plan-features li,
+.beyondseo .recommended-plan.social-not-advanced .plan-features li strong {
+  color: #1F2937 !important;
+}
+
+.beyondseo .recommended-plan.social-not-advanced .plan-features .checkmark {
+  color: #10B981;
+}
+
+.beyondseo .recommended-plan .plan-features li,
+.beyondseo .recommended-plan .plan-features li strong {
+  color: #EAF1FF;
+}
+
+.beyondseo .recommended-plan .plan-features .checkmark {
+  color: #8BE28B;
+}
+
+/* Buttons */
+.beyondseo .plan-cta .upgrade-button {
+  width: 100%;
+  padding: 4px 24px !important;
+  font-size: 16px !important;
+  border-radius: 9999px !important;
+  background-color: #5CC4E2 !important;
+  border-color: #5CC4E2 !important;
+  color: #0B2A63 !important;
+}
+
+.beyondseo .recommended-plan .upgrade-button {
+  background-color: #2860F6 !important;
+  border-color: #0B5CFF !important;
+  color: #fff !important;
+}
+
+/* Checkbox ticks and text color when greyed (current plan) */
+.beyondseo .greyed-out-text {
+  color: #B6C1D3 !important;
+}
+
+.beyondseo .greyed-out-checkmark {
+  color: #B6C1D3 !important;
+}
+
+/* Show more functionality */
+.beyondseo .feature-hidden {
+  display: none !important;
+}
+
+.beyondseo .show-more-container {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.beyondseo .show-more-btn {
+  background: none;
+  border: none;
+  color: #1F2937;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.beyondseo .show-more-btn:hover {
+  background-color: rgba(31, 41, 55, 0.1);
+}
+
+.beyondseo .show-more-icon {
+  font-size: 12px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.beyondseo .show-more-btn.expanded .show-more-icon {
+  transform: rotate(180deg);
+}
+
+/* Recommended plan show more button styling */
+.beyondseo .recommended-plan .show-more-btn {
+  color: #EAF1FF;
+}
+
+.beyondseo .recommended-plan .show-more-btn:hover {
+  background-color: rgba(234, 241, 255, 0.1);
+}
+
+/* Social with light background show more button - use standard colors */
+.beyondseo .recommended-plan.social-not-advanced .show-more-btn {
+  color: #1F2937;
+}
+
+.beyondseo .recommended-plan.social-not-advanced .show-more-btn:hover {
+  background-color: rgba(31, 41, 55, 0.1);
+}
+
+/* Animation for expanding features */
+.beyondseo .plan-features ul {
+  transition: all 0.3s ease;
+}
+
+.beyondseo .feature-hidden.show {
+  display: list-item !important;
+  animation: beyondseoFadeInSlide 0.3s ease forwards;
+}
+
+@keyframes beyondseoFadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Posts / pages list: the assistant column holds the score plus the SEO title and
+   description snippet, so give it a stable share of the fixed-layout table. */
+.wp-list-table.fixed .column-rc_assistant {
+  width: 22%;
+}
+
+.wp-list-table .column-rc_assistant .rc-react-postcell {
+  max-width: 100%;
+}

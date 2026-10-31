@@ -1,0 +1,25 @@
+{
+	"$id": "extendify/notification-template/base",
+	"title": "Notification",
+	"type": "object",
+	"properties": {
+		"title": { "type": "string" },
+		"content": { "type": "string" },
+		"cta-label": { "type": "string" },
+		"link": { "type": "string" },
+		"trigger": { "type": "string" },
+		"colors": {
+			"type": "object",
+			"properties": {
+				"main": { "type": "string" },
+				"text": { "type": "string" },
+				"icon-main": { "type": "string" },
+				"icon-text": { "type": "string" },
+				"button-main": { "type": "string" },
+				"button-text": { "type": "string" },
+				"button-hover-main": { "type": "string" },
+				"button-hover-text": { "type": "string" }
+			}
+		}
+	}
+}

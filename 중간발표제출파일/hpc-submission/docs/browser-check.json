@@ -1,0 +1,45 @@
+{
+  "homeStatus": 200,
+  "title": "슈퍼컴퓨팅센터 | 시험 운영",
+  "slides": 3,
+  "loginFields": [
+    {
+      "name": "",
+      "type": "search"
+    },
+    {
+      "name": "log",
+      "type": "text"
+    },
+    {
+      "name": "pwd",
+      "type": "password"
+    },
+    {
+      "name": "rememberme",
+      "type": "checkbox"
+    },
+    {
+      "name": "wp-submit",
+      "type": "submit"
+    },
+    {
+      "name": "redirect_to",
+      "type": "hidden"
+    },
+    {
+      "name": "hpc_member_login_nonce",
+      "type": "hidden"
+    },
+    {
+      "name": "_wp_http_referer",
+      "type": "hidden"
+    }
+  ],
+  "adminLogin": true,
+  "editorReady": true,
+  "registrationText": "슈퍼컴퓨팅센터\n\n이메일 확인 → 비밀번호 설정 → 가입 완료\n\n인증 완료\n\n이메일 인증이 완료되었습니다. 이메일 주소와 비밀번호로 로그인해 주세요.\n\n로그인\n비밀번호 찾기\n메인페이지\n\n메일함 인증은 실명 또는 기관 소속 확인을 대신하지 않습니다.",
+  "memberApplicationAccess": true,
+  "previewPages": 2,
+  "pageErrors": []
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss" source(none) important;
+@import "../tailwind.css" source(none);
+@source ".";
+
+:root {
+	color-scheme: only light;
+}
+
+/* no-prefix */
+.extendify-auto-launch {
+	-webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+	p,
+	a {
+		@apply text-base;
+	}
+}
+
+.status-animation {
+	/* Follows the ink token so the shimmer stays legible on a dark palette. */
+	background-image: linear-gradient(
+		to right,
+		var(--ext-ui-status-color, var(--color-ui-ink)) 0%,
+		var(--ext-ui-status-color, var(--color-ui-ink)) 25%,
+		var(--color-ui-ink-muted) 50%,
+		var(--ext-ui-status-color, var(--color-ui-ink)) 75%,
+		var(--ext-ui-status-color, var(--color-ui-ink)) 100%
+	);
+	background-size: 300% 100%;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: extendify-status-animation 1.8s linear infinite;
+}
+@keyframes extendify-status-animation {
+	0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* no-prefix */
+body.site-assistant_page_extendify-auto-launch,
+body.site-launcher_page_extendify-auto-launch {
+	background: white;
+}
+/* no-prefix */
+.site-assistant_page_extendify-auto-launch #adminmenumain,
+.site-launcher_page_extendify-auto-launch #adminmenumain,
+.site-assistant_page_extendify-auto-launch #wpadminbar,
+.site-launcher_page_extendify-auto-launch #wpadminbar {
+	display: none;
+}

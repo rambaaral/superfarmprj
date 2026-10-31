@@ -1,0 +1,51 @@
+name: hpc-submission
+services:
+  db:
+    image: mariadb:10.11@sha256:7db29378d4fdab73f8123bbc2b48905c90d1a4b00cf848b028f1e81e623257f2
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${DB_PASSWORD:?Run setup first}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Run setup first}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      timeout: 5s
+      retries: 40
+  mailpit:
+    image: axllent/mailpit@sha256:0790692be935ea4420d085694f7985b1f692ca6a8771ab0e0bd8ba75ac180498
+    ports:
+      - '127.0.0.1:${MAIL_PORT:-8025}:8025'
+  web:
+    build: .
+    platform: linux/amd64
+    depends_on:
+      db:
+        condition: service_healthy
+      mailpit:
+        condition: service_started
+    environment:
+      DB_PASSWORD: ${DB_PASSWORD}
+      SITE_URL: http://localhost:${WEB_PORT:-8080}
+      ADMIN_USER: ${ADMIN_USER:?Run setup first}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Run setup first}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@example.test}
+    ports:
+      - '127.0.0.1:${WEB_PORT:-8080}:80'
+    volumes:
+      - website:/var/www/html
+      - private:/var/hpc-private
+      - signatures:/var/lib/clamav
+    healthcheck:
+      test: [CMD, curl, --fail, --silent, http://localhost/wp-login.php]
+      interval: 15s
+      timeout: 10s
+      start_period: 120s
+      retries: 20
+volumes:
+  database:
+  website:
+  private:
+  signatures:

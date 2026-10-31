@@ -1,0 +1,197 @@
+/* RankingCoach Activation Page Styles */
+
+body.rankingcoach-activation-page {
+    background: #fff !important;
+}
+
+.notice,
+.notice-warning,
+.update-nag,
+.updated,
+.error,
+.is-dismissible,
+.inline {
+    display: none !important;
+}
+
+#wpcontent,
+#wpbody,
+#wpbody-content,
+.wrap,
+html.wp-toolbar,
+body.wp-admin,
+#wpwrap {
+    background: #fff !important;
+}
+
+/* Layout container */
+.rc-activation-wrap {
+  max-width: 464px;
+  padding-top: 72px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Title & description */
+.rc-activation-wrap h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rc-activation-wrap p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.rc-activation-wrap button {
+  margin-top: 20px;
+  background-color: #0074ff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Feature list */
+.rc-feature-list {
+  list-style: none;
+  text-align: left;
+  margin: 0 auto 30px;
+  max-width: 420px;
+  padding: 0 0 0 30px;
+}
+
+.rc-feature-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+}
+
+.rc-feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #0074ff;
+  border-radius: 50%;
+}
+
+/* Input field */
+#activation_code {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Buttons */
+#activationButton,
+.rc-activation-button {
+  background-color: #0074ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  min-width: 140px;
+  transition: background-color 0.2s ease;
+}
+
+#activationButton:hover,
+.rc-activation-button:hover {
+  background-color: #005bd1;
+}
+
+.rc-try-again-button {
+  background-color: #0074ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px auto;
+  min-width: 140px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.rc-try-again-button:hover {
+  background-color: #005bd1;
+  color: #ffffff;
+}
+
+.rc-contact-support-button {
+  background-color: #ffffff;
+  color: #0074ff;
+  border: 1px solid #0074ff;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px auto;
+  min-width: 140px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.rc-contact-support-button:hover {
+  background-color: #f0f8ff;
+  color: #005bd1;
+}
+
+/* Footer text */
+.rc-activation-footer {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Success message */
+.rc-activation-success {
+  color: #0074ff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Error message */
+#activation_error.rc-error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.rc-error-icon-container {
+  margin-bottom: 16px;
+}
+
+.rc-error-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ffebee;
+  border-radius: 50%;
+  color: #f44336;
+  font-size: 24px;
+}

@@ -1,0 +1,4939 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Loginizer\n"
+"POT-Creation-Date: 2026-07-30 13:51+0530\n"
+"PO-Revision-Date: 2026-08-04 15:18+0530\n"
+"Last-Translator: \n"
+"Language-Team: Loginizer\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_html_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: loginizer-security\n"
+"X-Poedit-SearchPath-1: loginizer\n"
+
+#: loginizer-security/init.php:692
+msgid "Loginizer License"
+msgstr ""
+
+#: loginizer-security/init.php:735
+msgid "The license key was not submitted"
+msgstr "La chiave di licenza non è stata inviata"
+
+#: loginizer-security/init.php:746
+msgid "The response was malformed"
+msgstr "La risposta non era valida"
+
+#: loginizer-security/init.php:754
+msgid "The license key is invalid"
+msgstr "La chiave di licenza non è valida"
+
+#: loginizer-security/init.php:861
+msgid "The token is invalid or has expired. Please request a new email"
+msgstr "Il token non è valido o è scaduto. Richiedi una nuova email"
+
+#: loginizer-security/init.php:871 loginizer-security/init.php:4319
+msgid "User ID not found so can not proceed"
+msgstr "ID utente non trovato, impossibile procedere"
+
+#: loginizer-security/init.php:1026
+msgid "The username or email you provided does not exist !"
+msgstr "Il nome utente o l'email che hai fornito non esiste!"
+
+#: loginizer-security/init.php:1072
+msgid "There was a problem sending your email. Please try again or contact an admin."
+msgstr "Si è verificato un problema nell'invio dell'email. Riprova o contatta un amministratore."
+
+#: loginizer-security/init.php:1076
+msgid "An email has been sent with the Login URL"
+msgstr "È stata inviata un'email con l'URL di accesso"
+
+#: loginizer-security/init.php:1365 loginizer-security/init.php:1387
+#: loginizer-security/init.php:1399 loginizer-security/init.php:1409
+#: loginizer-security/init.php:1424 loginizer-security/init.php:1459
+#: loginizer-security/main/captcha.php:53
+#: loginizer-security/main/captcha.php:81
+msgid "The CAPTCHA verification failed. Please try again."
+msgstr "La verifica CAPTCHA non è riuscita. Riprova."
+
+#: loginizer-security/init.php:1477
+msgid "one"
+msgstr "uno"
+
+#: loginizer-security/init.php:1478
+msgid "two"
+msgstr "due"
+
+#: loginizer-security/init.php:1479
+msgid "three"
+msgstr "tre"
+
+#: loginizer-security/init.php:1480
+msgid "four"
+msgstr "quattro"
+
+#: loginizer-security/init.php:1481
+msgid "five"
+msgstr "cinque"
+
+#: loginizer-security/init.php:1482
+msgid "six"
+msgstr "sei"
+
+#: loginizer-security/init.php:1483
+msgid "seven"
+msgstr "sette"
+
+#: loginizer-security/init.php:1484
+msgid "eight"
+msgstr "otto"
+
+#: loginizer-security/init.php:1485
+msgid "nine"
+msgstr "nove"
+
+#: loginizer-security/init.php:1486
+msgid "ten"
+msgstr "dieci"
+
+#: loginizer-security/init.php:1487
+msgid "eleven"
+msgstr "undici"
+
+#: loginizer-security/init.php:1488
+msgid "twelve"
+msgstr "dodici"
+
+#: loginizer-security/init.php:1489
+msgid "thirteen"
+msgstr "tredici"
+
+#: loginizer-security/init.php:1490
+msgid "fourteen"
+msgstr "quattordici"
+
+#: loginizer-security/init.php:1491
+msgid "fifteen"
+msgstr "quindici"
+
+#: loginizer-security/init.php:1492
+msgid "sixteen"
+msgstr "sedici"
+
+#: loginizer-security/init.php:1493
+msgid "seventeen"
+msgstr "diciassette"
+
+#: loginizer-security/init.php:1494
+msgid "eighteen"
+msgstr "diciotto"
+
+#: loginizer-security/init.php:1495
+msgid "nineteen"
+msgstr "diciannove"
+
+#: loginizer-security/init.php:1496
+msgid "twenty"
+msgstr "venti"
+
+#: loginizer-security/init.php:1497
+msgid "thirty"
+msgstr "trenta"
+
+#: loginizer-security/init.php:1498
+msgid "forty"
+msgstr "quaranta"
+
+#: loginizer-security/init.php:1499
+msgid "fifty"
+msgstr "cinquanta"
+
+#: loginizer-security/init.php:1500
+msgid "sixty"
+msgstr "sessanta"
+
+#: loginizer-security/init.php:1501
+msgid "seventy"
+msgstr "settanta"
+
+#: loginizer-security/init.php:1502
+msgid "eighty"
+msgstr "ottanta"
+
+#: loginizer-security/init.php:1503
+msgid "ninety"
+msgstr "novanta"
+
+#: loginizer-security/init.php:2320
+msgid "There was a problem sending your email with the OTP. Please try again or contact an admin."
+msgstr "C'è stato un problema nell'invio dell'email con l'OTP. Riprova o contatta un amministratore."
+
+#: loginizer-security/init.php:2451
+#, php-format
+msgid "The token is invalid or has expired. Please provide your user details by clicking <a href=\"%s\">here</a>"
+msgstr "Il token non è valido o è scaduto. Fornisci i tuoi dati utente cliccando <a href=\"%s\">qui</a>"
+
+#: loginizer-security/init.php:2474
+msgid "The form security was compromised !"
+msgstr "La sicurezza del modulo è stata compromessa !"
+
+#: loginizer-security/init.php:2498
+msgid "The answer is wrong !"
+msgstr "La risposta è sbagliata !"
+
+#: loginizer-security/init.php:2520 loginizer-security/init.php:2548
+msgid "The OTP is wrong !"
+msgstr "L'OTP è sbagliato !"
+
+#: loginizer-security/init.php:2594
+msgid "You have logged in successfully."
+msgstr "Hai effettuato l'accesso con successo."
+
+#: loginizer-security/init.php:2720
+msgid "Log In"
+msgstr "Accedi"
+
+#: loginizer-security/init.php:2863
+msgid "The site admin has enabled Two Factor Authentication features to secure your account. <br>For your safety, you must setup your login security preferences."
+msgstr "L'amministratore del sito ha attivato le funzionalità di autenticazione a due fattori per proteggere il tuo account. <br>Per la tua sicurezza, devi configurare le tue preferenze di sicurezza per l'accesso."
+
+#: loginizer-security/init.php:2865
+msgid "Setup My Security Settings"
+msgstr "Configura le mie impostazioni di sicurezza"
+
+#: loginizer-security/init.php:2866
+msgid "Remind me later"
+msgstr "Ricordamelo più tardi"
+
+#: loginizer-security/init.php:2874
+msgid "My Loginizer Security Settings"
+msgstr "My Loginizer Security Settings"
+
+#: loginizer-security/init.php:2874
+msgid "My Security"
+msgstr "La mia sicurezza"
+
+#: loginizer-security/init.php:2958
+msgid "You have submitted an invalid preference"
+msgstr "Hai inviato una preferenza non valida"
+
+#: loginizer-security/init.php:2970
+msgid "No question was submitted"
+msgstr "Nessuna domanda è stata inviata"
+
+#: loginizer-security/init.php:2975
+msgid "The question is too long"
+msgstr "La domanda è troppo lunga"
+
+#: loginizer-security/init.php:2980
+msgid "No answer was submitted"
+msgstr "Nessuna risposta è stata inviata"
+
+#: loginizer-security/init.php:2985
+msgid "The answer is too long"
+msgstr "La risposta è troppo lunga"
+
+#: loginizer-security/init.php:3032
+msgid "The emergency code(s) are incorrect"
+msgstr "I codici di emergenza non sono corretti"
+
+#: loginizer-security/init.php:3164
+msgid "Loginizer Security Settings"
+msgstr "Loginizer Security Settings"
+
+#: loginizer-security/init.php:3167
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+#: loginizer-security/init.php:3183
+msgid "These are your personal security and login settings and will not affect other users."
+msgstr "Queste sono le tue impostazioni personali di sicurezza e accesso e non influenzeranno altri utenti."
+
+#: loginizer-security/init.php:3197
+msgid "You should also bookmark the FAQs, which explain how to de-activate the plugin even if you cannot log in."
+msgstr "Dovresti anche aggiungere ai segnalibri le FAQ, che spiegano come disattivare il plugin anche se non riesci ad accedere."
+
+#: loginizer-security/init.php:3270
+msgid "Warning: If you reset the secret key you will have to update your apps with the new one. Are you sure you want to continue ?"
+msgstr "Attenzione: se resetti la chiave segreta dovrai aggiornare le tue app con quella nuova. Sei sicuro di voler continuare ?"
+
+#: loginizer-security/init.php:3319
+msgid "App based Two Factor Auth Code Settings"
+msgstr "Impostazioni del codice di autenticazione a due fattori basata su app"
+
+#: loginizer-security/init.php:3322
+msgid "<b>NOTE :</b> Generating two-factor codes depends upon your web-server and your device agreeing upon the time."
+msgstr "<b>NOTA :</b> La generazione dei codici a due fattori dipende dall'accordo sull'ora tra il server web e il tuo dispositivo."
+
+#: loginizer-security/init.php:3323
+msgid "The current UTC time according to this server when this page loaded"
+msgstr "L'ora UTC attuale secondo questo server al caricamento di questa pagina"
+
+#: loginizer-security/init.php:3346
+msgid "One Time Emergency Codes"
+msgstr "Codici di emergenza monouso"
+
+#: loginizer-security/init.php:3347
+msgid "(Optional) You can specify 6 digit emergency codes seperated by a comma. Each can be used only once. You can specify upto 10."
+msgstr "(Opzionale) Puoi specificare codici di emergenza di 6 cifre separati da una virgola. Ciascuno può essere usato una sola volta. Puoi specificarne fino a 10."
+
+#: loginizer-security/init.php:3356
+msgid "If you enable app based Two Factor Auth, then verify that your application is showing the same One Time Password (OTP) as shown on this page before you log out."
+msgstr "Se abiliti l'autenticazione a due fattori basata su app, verifica che la tua applicazione stia mostrando la stessa password monouso (OTP) mostrata in questa pagina prima di disconnetterti."
+
+#: loginizer-security/init.php:3360
+msgid "Current OTP"
+msgstr "OTP corrente"
+
+#: loginizer-security/init.php:3361
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#: loginizer-security/init.php:3374
+msgid "Security Question Settings"
+msgstr "Impostazioni della domanda di sicurezza"
+
+#: loginizer-security/init.php:3376
+msgid "A secondary question set by you will be asked on a successful login"
+msgstr "Dopo un accesso riuscito ti verrà chiesta una domanda secondaria da te impostata"
+
+#: loginizer-security/init.php:3393
+msgid "Email Two Factor Auth Code Settings"
+msgstr "Impostazioni del codice di autenticazione a due fattori via email"
+
+#: loginizer-security/init.php:3396
+msgid "A One Time Password (OTP) will be asked on a successful login. The OTP will be emailed to your email address"
+msgstr "Dopo un accesso riuscito ti verrà chiesta una password monouso (OTP). L'OTP verrà inviata via email al tuo indirizzo email"
+
+#: loginizer-security/init.php:3404
+msgid "SMS Two Factor Auth Code Settings"
+msgstr "Impostazioni del codice di autenticazione a due fattori via SMS"
+
+#: loginizer-security/init.php:3407
+msgid "A One Time Password (OTP) will be asked on a successful login. The OTP will be sent via SMS to your mobile."
+msgstr "Dopo un accesso riuscito ti verrà chiesta una password monouso (OTP). L'OTP verrà inviata via SMS al tuo cellulare."
+
+#: loginizer-security/init.php:3412
+msgid "Mobile Number"
+msgstr "Numero di cellulare"
+
+#: loginizer-security/init.php:3530
+#, php-format
+msgid "File Checksum Mismatch - %s"
+msgstr "Mancata corrispondenza del checksum del file - %s"
+
+#: loginizer-security/init.php:3610
+msgid "This username has been blacklisted, and so have you been blacklisted !"
+msgstr "Questo nome utente è stato inserito nella lista nera, e quindi anche tu sei stato inserito nella lista nera !"
+
+#: loginizer-security/init.php:3628
+msgid "Renew License"
+msgstr "Rinnova licenza"
+
+#: loginizer-security/init.php:3650
+msgid "Loginizer 2FA"
+msgstr "Loginizer 2FA"
+
+#: loginizer-security/init.php:3668
+msgid "<i>None</i>"
+msgstr "<i>Nessuno</i>"
+
+#: loginizer-security/init.php:3674
+msgid "Security Questions"
+msgstr "Domande di sicurezza"
+
+#: loginizer-security/init.php:3678
+msgid "Google Authenticator / Authy"
+msgstr "Google Authenticator / Authy"
+
+#: loginizer-security/init.php:3682
+msgid "Email Auth Code"
+msgstr "Codice di autenticazione email"
+
+#: loginizer-security/init.php:3686
+msgid "SMS Auth Code"
+msgstr "Codice di autenticazione SMS"
+
+#: loginizer-security/init.php:3988
+msgid "Open New Tab"
+msgstr "Apri nuova scheda"
+
+#: loginizer-security/init.php:3991
+msgid "Opens Dashboard in new tab"
+msgstr "Apre la bacheca in una nuova scheda"
+
+#: loginizer-security/init.php:4035
+msgid "You have reached maximum number of concurrent logins please logout from other devices to access"
+msgstr "Hai raggiunto il numero massimo di accessi simultanei. Disconnettiti da altri dispositivi per accedere"
+
+#: loginizer-security/init.php:4180
+msgid "Redirecting you to verify 2FA"
+msgstr "Reindirizzamento alla verifica del 2FA"
+
+#: loginizer-security/init.php:4188
+msgid "Something went wrong unable to redirect you to verify your login via 2fa"
+msgstr "Si è verificato un errore: impossibile reindirizzarti per verificare il tuo accesso tramite 2FA"
+
+#: loginizer-security/init.php:4229
+msgid "5 minutes"
+msgstr "5 minuti"
+
+#: loginizer-security/init.php:4230
+msgid "10 minutes"
+msgstr "10 minuti"
+
+#: loginizer-security/init.php:4231
+msgid "30 minutes"
+msgstr "30 minuti"
+
+#: loginizer-security/init.php:4232
+msgid "1 hour"
+msgstr "1 ora"
+
+#: loginizer-security/init.php:4233
+msgid "6 hours"
+msgstr "6 ore"
+
+#: loginizer-security/init.php:4234
+msgid "12 hours"
+msgstr "12 ore"
+
+#: loginizer-security/init.php:4235
+msgid "24 hours"
+msgstr "24 ore"
+
+#: loginizer-security/init.php:4236
+msgid "2 days"
+msgstr "2 giorni"
+
+#: loginizer-security/init.php:4246
+#, php-format
+msgid "Login at %s"
+msgstr "Accesso a %s"
+
+#: loginizer-security/init.php:4247
+#, php-format
+msgid ""
+"Hi,\n"
+"\n"
+"Please find below the Single Sign-On (SSO) link for our platform:\n"
+"%1$s\n"
+"This link will allow you to access the platform securely without needing to enter your login credentials, this link is valid for %2$s.\n"
+"\n"
+"Thank you for using our platform.\n"
+"\n"
+"Best regards,\n"
+"%3$s"
+msgstr ""
+"Ciao,\n"
+"\n"
+"Troverai qui di seguito il link per il Single Sign-On (SSO) per la nostra piattaforma:\n"
+"%1$s\n"
+"Questo link ti permetterà di accedere alla piattaforma in modo sicuro senza bisogno di inserire le tue credenziali di accesso, questo link è valido per %2$s.\n"
+"\n"
+"Grazie per aver utilizzato la nostra piattaforma.\n"
+"\n"
+"Cordiali saluti,\n"
+"%3$s"
+
+#: loginizer-security/init.php:4307
+msgid "The token is invalid or has expired."
+msgstr "Il token non è valido oppure è scaduto."
+
+#: loginizer-security/init.php:4489
+msgid "Login at $site_name"
+msgstr "Accesso a $site_name"
+
+#: loginizer-security/init.php:4490
+msgid ""
+"Hi,\n"
+"\n"
+"A login request was submitted for your account $email at :\n"
+"$site_name - $site_url\n"
+"\n"
+"Login at $site_name by visiting this url :\n"
+"$login_url\n"
+"\n"
+"If you have not requested for the Login URL, please ignore this email.\n"
+"\n"
+"Regards,\n"
+"$site_name"
+msgstr ""
+"Ciao,\n"
+"\n"
+"È stata inviata una richiesta di accesso per il tuo account $email su :\n"
+"$site_name - $site_url\n"
+"\n"
+"Accedi a $site_name visitando questo url :\n"
+"$login_url\n"
+"\n"
+"Se non hai richiesto l'URL di accesso, ignora questa email.\n"
+"\n"
+"Cordiali saluti,\n"
+"$site_name"
+
+#: loginizer-security/init.php:4511
+msgid "LZ : Not allowed via WP-ADMIN. Please access over the new Admin URL"
+msgstr "LZ : Non consentito tramite WP-ADMIN. Accedi tramite il nuovo URL di amministrazione"
+
+#: loginizer-security/init.php:4514 loginizer/main/settings/recaptcha.php:329
+msgid "Math Captcha"
+msgstr "Captcha matematico"
+
+#: loginizer-security/main/admin.php:50
+msgid "You are using an older version of Loginizer Security. We recommend updating to the latest version to ensure seamless and uninterrupted use of the application."
+msgstr "Stai utilizzando una versione precedente di Loginizer Security. Ti consigliamo di aggiornare all'ultima versione per garantire un utilizzo continuo e senza interruzioni dell'applicazione."
+
+#: loginizer-security/main/admin.php:56
+msgid "You are using an older version of Loginizer. We recommend updating to the latest free version to ensure smooth and uninterrupted use of the application."
+msgstr "Stai utilizzando una versione precedente di Loginizer. Ti consigliamo di aggiornare all'ultima versione gratuita per garantire un utilizzo fluido e senza interruzioni dell'applicazione."
+
+#: loginizer-security/main/admin.php:129
+#, php-format
+msgid "Your SoftWP license has %1$sexpired%2$s. Please contact %3$s to continue receiving uninterrupted updates and support for %4$s."
+msgstr "La tua licenza SoftWP è %1$sscaduta%2$s. Contatta %3$s per continuare a ricevere aggiornamenti e supporto senza interruzioni per %4$s."
+
+#: loginizer-security/main/admin.php:137
+#, php-format
+msgid "Your SoftWP license has %1$sexpired%2$s. Please contact your hosting provider to continue receiving uninterrupted updates and support for %3$s."
+msgstr "La tua licenza SoftWP è %1$sscaduta%2$s. Contatta il tuo fornitore di hosting per continuare a ricevere aggiornamenti e supporto senza interruzioni per %3$s."
+
+#: loginizer-security/main/admin.php:144
+#, php-format
+msgid "Your SoftWP license has %1$sexpired%2$s. Please %3$srenew%4$s it to continue receiving uninterrupted updates and support for %5$s."
+msgstr "La tua licenza SoftWP è %1$sscaduta%2$s. Per favore %3$srinnova%4$s la per continuare a ricevere aggiornamenti e supporto senza interruzioni per %5$s."
+
+#: loginizer-security/main/admin.php:205
+#: loginizer/main/settings/social_login.php:598
+msgid "Show buttons"
+msgstr "Mostra pulsanti"
+
+#: loginizer-security/main/admin.php:208
+msgid "Do you want to show social buttons on Ultimate Member forms."
+msgstr "Vuoi mostrare i pulsanti social nei moduli di Ultimate Member."
+
+#: loginizer-security/main/admin.php:212
+#: loginizer/main/settings/social_login.php:486
+#: loginizer/main/settings/social_login.php:549
+#: loginizer/main/settings/social_login.php:605
+msgid "Button Style"
+msgstr "Stile pulsante"
+
+#: loginizer-security/main/admin.php:214
+#: loginizer/main/settings/social_login.php:551
+#: loginizer/main/settings/social_login.php:607
+msgid "Full Length"
+msgstr "Lunghezza intera"
+
+#: loginizer-security/main/admin.php:215
+#: loginizer/main/settings/social_login.php:552
+#: loginizer/main/settings/social_login.php:608
+msgid "Icon"
+msgstr "Icona"
+
+#: loginizer-security/main/admin.php:219
+#: loginizer/main/settings/social_login.php:493
+#: loginizer/main/settings/social_login.php:556
+#: loginizer/main/settings/social_login.php:612
+msgid "Button Shape"
+msgstr "Forma pulsante"
+
+#: loginizer-security/main/admin.php:221
+#: loginizer/main/settings/social_login.php:495
+#: loginizer/main/settings/social_login.php:558
+#: loginizer/main/settings/social_login.php:614
+msgid "Square"
+msgstr "Quadrato"
+
+#: loginizer-security/main/admin.php:222
+#: loginizer/main/settings/social_login.php:496
+#: loginizer/main/settings/social_login.php:559
+#: loginizer/main/settings/social_login.php:615
+msgid "Pill/Circle"
+msgstr "Pillola/Cerchio"
+
+#: loginizer-security/main/admin.php:226
+#: loginizer/main/settings/social_login.php:563
+msgid "Button Position"
+msgstr "Posizione pulsante"
+
+#: loginizer-security/main/admin.php:228
+#: loginizer/main/settings/social_login.php:565
+msgid "Below"
+msgstr "Sotto"
+
+#: loginizer-security/main/admin.php:229
+#: loginizer/main/settings/social_login.php:503
+#: loginizer/main/settings/social_login.php:566
+msgid "Below with Seperator"
+msgstr "Sotto con separatore"
+
+#: loginizer-security/main/admin.php:230
+#: loginizer/main/settings/social_login.php:504
+#: loginizer/main/settings/social_login.php:567
+msgid "Above"
+msgstr "Sopra"
+
+#: loginizer-security/main/admin.php:231
+#: loginizer/main/settings/social_login.php:505
+#: loginizer/main/settings/social_login.php:568
+msgid "Above with Seperator"
+msgstr "Sopra con separatore"
+
+#: loginizer-security/main/admin.php:235
+#: loginizer/main/settings/social_login.php:509
+#: loginizer/main/settings/social_login.php:572
+#: loginizer/main/settings/social_login.php:619
+msgid "Container Alignment"
+msgstr "Allineamento contenitore"
+
+#: loginizer-security/main/admin.php:237
+msgid "Left"
+msgstr "Sinistra"
+
+#: loginizer-security/main/admin.php:238 loginizer-security/main/admin.php:246
+#: loginizer/main/settings/social_login.php:512
+#: loginizer/main/settings/social_login.php:520
+#: loginizer/main/settings/social_login.php:575
+#: loginizer/main/settings/social_login.php:583
+#: loginizer/main/settings/social_login.php:622
+#: loginizer/main/settings/social_login.php:630
+msgid "Center"
+msgstr "Centro"
+
+#: loginizer-security/main/admin.php:239 loginizer-security/main/admin.php:247
+#: loginizer/main/settings/social_login.php:513
+#: loginizer/main/settings/social_login.php:521
+#: loginizer/main/settings/social_login.php:576
+#: loginizer/main/settings/social_login.php:584
+#: loginizer/main/settings/social_login.php:623
+#: loginizer/main/settings/social_login.php:631
+msgid "Right"
+msgstr "Destra"
+
+#: loginizer-security/main/admin.php:243
+#: loginizer/main/settings/social_login.php:517
+#: loginizer/main/settings/social_login.php:580
+#: loginizer/main/settings/social_login.php:627
+msgid "Button Alignment"
+msgstr "Allineamento pulsante"
+
+#: loginizer-security/main/admin.php:252
+#: loginizer-security/main/settings/waf.php:319
+#: loginizer/main/settings/2fa.php:436 loginizer/main/settings/2fa.php:518
+#: loginizer/main/settings/brute-force.php:730
+#: loginizer/main/settings/brute-force.php:1208
+#: loginizer/main/settings/checksum.php:253
+#: loginizer/main/settings/passwordless.php:215
+#: loginizer/main/settings/recaptcha.php:664
+#: loginizer/main/settings/security.php:384
+#: loginizer/main/settings/security.php:438
+#: loginizer/main/settings/security.php:589
+#: loginizer/main/settings/security.php:677
+#: loginizer/main/settings/security.php:954
+#: loginizer/main/settings/social_login.php:526
+#: loginizer/main/settings/social_login.php:589
+#: loginizer/main/settings/social_login.php:636
+msgid "Save Settings"
+msgstr "Salva impostazioni"
+
+#: loginizer-security/main/admin.php:271
+msgid "Use Loginizer's Social Auth"
+msgstr "Usa l'autenticazione social di Loginizer"
+
+#: loginizer-security/main/admin.php:273
+msgid "Uses Loginizer's keys — no need to add your own."
+msgstr "Usa le chiavi di Loginizer — non è necessario aggiungere le proprie."
+
+#: loginizer-security/main/admin.php:275 loginizer-security/main/admin.php:277
+msgid "An active license is required."
+msgstr "È richiesta una licenza attiva."
+
+#: loginizer-security/main/admin.php:313
+msgid "Loginizer Social Login is Enabled, to disable it"
+msgstr "L'accesso social di Loginizer è abilitato, per disabilitarlo"
+
+#: loginizer-security/main/admin.php:318
+msgid "Enable Loginizer Social Auth in a single click. This button will enable Social Auth for Google, GitHub, LinkedIn and X (Twitter)."
+msgstr "Abilita l'autenticazione social di Loginizer con un solo clic. Questo pulsante abiliterà l'autenticazione social per Google, GitHub, LinkedIn e X (Twitter)."
+
+#: loginizer-security/main/admin.php:387
+#, php-format
+msgid "Loginizer now supports Social Login for Google, GitHub, LinkedIn and X (Twitter) via its own %sAuthentication layer%s requiring %sZero Configuration.%s"
+msgstr "Loginizer ora supporta l'accesso social per Google, GitHub, LinkedIn e X (Twitter) tramite il proprio %sAuthentication layer%s che richiede %sZero Configuration.%s"
+
+#: loginizer-security/main/admin.php:426
+msgid "Loginizer Social Authentication is now enabled !"
+msgstr "L'autenticazione social di Loginizer è ora abilitata !"
+
+#: loginizer-security/main/admin.php:544
+msgid "Empty Filename."
+msgstr "Nome file vuoto."
+
+#: loginizer-security/main/admin.php:551
+msgid "You are not allowed to access this file."
+msgstr "Non hai il permesso di accedere a questo file."
+
+#: loginizer-security/main/ajax.php:29 loginizer-security/main/ajax.php:150
+#: loginizer-security/main/ajax.php:161 loginizer-security/main/ajax.php:187
+#: loginizer-security/main/ajax.php:198
+msgid "You do not have required access to do this action"
+msgstr "Non hai l'accesso richiesto per eseguire questa azione"
+
+#: loginizer-security/main/ajax.php:38
+msgid "Unknow version difference type"
+msgstr "Tipo di differenza versione sconosciuto"
+
+#: loginizer-security/main/ajax.php:73 loginizer-security/main/ajax.php:95
+#: loginizer/main/ajax.php:185 loginizer/main/ajax.php:201
+#: loginizer/main/ajax.php:213
+msgid "Sorry, but you do not have permissions to change settings."
+msgstr "Spiacente, ma non hai i permessi per modificare le impostazioni."
+
+#: loginizer-security/main/ajax.php:242 loginizer-security/main/ajax.php:286
+msgid "Unauthorized user"
+msgstr "Utente non autorizzato"
+
+#: loginizer-security/main/ajax.php:248
+msgid "Required /settings/waf.php file not found"
+msgstr "File richiesto /settings/waf.php non trovato"
+
+#: loginizer-security/main/ajax.php:255
+msgid "Unknow action, please refresh and try again."
+msgstr "Azione sconosciuta, aggiorna la pagina e riprova."
+
+#: loginizer-security/main/ajax.php:278
+msgid "Error updating .htaccess file"
+msgstr "Errore durante l'aggiornamento del file .htaccess"
+
+#: loginizer-security/main/enforce2fa.php:112
+#: loginizer-security/main/enforce2fa.php:129
+msgid "Security check failed"
+msgstr "Controllo di sicurezza fallito"
+
+#: loginizer-security/main/enforce2fa.php:148
+msgid "Two Factor Authentication"
+msgstr "Autenticazione a due fattori"
+
+#: loginizer-security/main/enforce2fa.php:153
+#, php-format
+msgid "Enforced 2FA is enabled on this site which should be configured before %s, failing which will apply mandatory setup for your account and you will not be able to access dashboard without 2FA setup."
+msgstr "L'autenticazione a due fattori obbligatoria è attiva su questo sito, deve essere configurata prima di %s, in caso contrario verrà applicata una configurazione obbligatoria per il tuo account e non potrai accedere alla bacheca senza la configurazione 2FA."
+
+#: loginizer-security/main/enforce2fa.php:155
+msgid "For more information about 2FA Setup, please contact to the site admin."
+msgstr "Per maggiori informazioni sulla configurazione 2FA, contatta l'amministratore del sito."
+
+#: loginizer-security/main/enforce2fa.php:158
+msgid "I will do it later"
+msgstr "Lo farò più tardi"
+
+#: loginizer-security/main/enforce2fa.php:159
+msgid "Start 2FA Setup"
+msgstr "Avvia configurazione 2FA"
+
+#: loginizer-security/main/enforce2fa.php:361
+msgid "Enforced Two Factor Authentication is enabled on this site. Please setup Two Factor Authentication first."
+msgstr "L'autenticazione a due fattori obbligatoria è attiva su questo sito. Configura prima l'autenticazione a due fattori."
+
+#: loginizer-security/main/integrations/woocommerce.php:25
+msgid "Captcha security token"
+msgstr "Token di sicurezza captcha"
+
+#: loginizer-security/main/integrations/woocommerce.php:49
+msgid "Captcha verification failed. Please refresh the page and try again."
+msgstr "Verifica captcha fallita. Aggiorna la pagina e riprova."
+
+#: loginizer-security/main/integrations/woocommerce.php:56
+msgid "Captcha verification failed."
+msgstr "Verifica captcha fallita."
+
+#: loginizer-security/main/settings/social_login.php:67
+msgid "Create Google APP"
+msgstr "Crea app Google"
+
+#: loginizer-security/main/settings/social_login.php:68
+#: loginizer-security/main/settings/social_login.php:95
+#: loginizer-security/main/settings/social_login.php:122
+#: loginizer-security/main/settings/social_login.php:142
+#: loginizer-security/main/settings/social_login.php:163
+#: loginizer-security/main/settings/social_login.php:184
+#: loginizer-security/main/settings/social_login.php:205
+#: loginizer-security/main/settings/social_login.php:229
+#: loginizer/main/settings/social_login.php:664
+msgid "Last Updated"
+msgstr "Ultimo aggiornamento"
+
+#: loginizer-security/main/settings/social_login.php:69
+msgid "To allow your users to be able to login through their Google Account, you first need to create a Google App. For that follow the App creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account Google, devi prima creare un'app Google. Segui i passaggi per la creazione dell'app di seguito."
+
+#: loginizer-security/main/settings/social_login.php:71
+msgid "Go to Google Developer Console"
+msgstr "Vai alla console per sviluppatori Google"
+
+#: loginizer-security/main/settings/social_login.php:72
+msgid "If you are not logged in then login, and create a project if you don't have that already"
+msgstr "Se non hai effettuato l'accesso, accedi e crea un progetto se non ne hai già uno"
+
+#: loginizer-security/main/settings/social_login.php:73
+msgid "Once you have a project in the Console make sure you are on API and services page and then go to OAuth consent screen in the left navigation"
+msgstr "Una volta che hai un progetto nella Console, assicurati di essere nella pagina API e servizi, quindi vai nella schermata di consenso OAuth nella navigazione a sinistra"
+
+#: loginizer-security/main/settings/social_login.php:74
+msgid "In Oauth Consent screen page, go to Branding from the left navigation"
+msgstr "Nella pagina della schermata di consenso Oauth, vai su Branding dalla navigazione a sinistra"
+
+#: loginizer-security/main/settings/social_login.php:75
+msgid "Under the \"Authorized domains\" section press the \"Add Domain\" button and enter your domain name, without subdomains!"
+msgstr "Nella sezione \"Domini autorizzati\" premi il pulsante \"Aggiungi dominio\" e inserisci il nome del tuo dominio, senza sottodomini!"
+
+#: loginizer-security/main/settings/social_login.php:76
+msgid "At the \"Developer contact information\" section, enter an email address that Google can use to notify you about any changes to your project."
+msgstr "Nella sezione \"Informazioni di contatto per lo sviluppatore\", inserisci un indirizzo email che Google possa utilizzare per notificarti eventuali modifiche al tuo progetto."
+
+#: loginizer-security/main/settings/social_login.php:77
+msgid "Press \"Save\""
+msgstr "Premi \"Salva\""
+
+#: loginizer-security/main/settings/social_login.php:78
+msgid "After that you will need to create a client. For that in the same left navigation click on Clients."
+msgstr "Dopodiché dovrai creare un client. Per farlo, nella stessa navigazione a sinistra, clicca su Client."
+
+#: loginizer-security/main/settings/social_login.php:79
+msgid "On the Clients page, click on Create Client"
+msgstr "Nella pagina Client, clicca su Crea client"
+
+#: loginizer-security/main/settings/social_login.php:80
+msgid "A select field which is Application Type will appear, in that select web application and then other fields will show up"
+msgstr "Apparirà un campo a selezione di Tipo di applicazione: in quello seleziona applicazione web, poi appariranno altri campi"
+
+#: loginizer-security/main/settings/social_login.php:81
+msgid "Now set it's name to anything you like."
+msgstr "Ora imposta il suo nome come preferisci."
+
+#: loginizer-security/main/settings/social_login.php:82
+msgid "After that in Authorize redirect URIs Add URI"
+msgstr "Dopodiché, in Autorizza URI di reindirizzamento, aggiungi URI"
+
+#: loginizer-security/main/settings/social_login.php:83
+msgid "The URI you need to add is"
+msgstr "L'URI che devi aggiungere è"
+
+#: loginizer-security/main/settings/social_login.php:84
+msgid "Now click on create and you will get your Client ID and secret key"
+msgstr "Ora clicca su crea e otterrai il tuo Client ID e la chiave segreta"
+
+#: loginizer-security/main/settings/social_login.php:85
+msgid "Copy those keys in the required field and save settings."
+msgstr "Copia quelle chiavi nel campo richiesto e salva le impostazioni."
+
+#: loginizer-security/main/settings/social_login.php:94
+msgid "Create Facebook App"
+msgstr "Crea app Facebook"
+
+#: loginizer-security/main/settings/social_login.php:96
+msgid "To allow your users to be able to login through their facebook account, you first need to create a Facebook App. For that follow the App creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account Facebook, devi prima creare un'app Facebook. Per farlo, segui i passaggi per la creazione dell'app qui sotto."
+
+#: loginizer-security/main/settings/social_login.php:98
+msgid "Go to Facebook Developer Platform, make sure you are already logged-in to Facebook"
+msgstr "Vai su Facebook Developer Platform, assicurati di aver già effettuato l'accesso a Facebook"
+
+#: loginizer-security/main/settings/social_login.php:99
+msgid "If you are not logged in then login, and click on Create App button and choose \"Others\" as use case and click Next"
+msgstr "Se non hai effettuato l'accesso, accedi, poi clicca sul pulsante Crea app e scegli \"Altro\" come caso d'uso, quindi clicca su Avanti"
+
+#: loginizer-security/main/settings/social_login.php:100
+msgid "After selecting Others you will be asked to select App type there select Consumer and click next button"
+msgstr "Dopo aver selezionato Altro, ti verrà chiesto di selezionare il tipo di app: lì seleziona Consumer e clicca sul pulsante Avanti"
+
+#: loginizer-security/main/settings/social_login.php:101
+msgid "A form will appear which will ask for your Apps name fill it and other details on the form and then Create App"
+msgstr "Apparirà un modulo che ti chiederà il nome della tua app: compilalo e inserisci gli altri dettagli, quindi clicca su Crea app"
+
+#: loginizer-security/main/settings/social_login.php:102
+msgid "Your app will be created now on next page, you will get multiple options of Products you can add to your App, there setup Facebook Login"
+msgstr "La tua app verrà creata ora; nella pagina successiva riceverai diverse opzioni di prodotti che puoi aggiungere alla tua app: lì imposta l'accesso tramite Facebook"
+
+#: loginizer-security/main/settings/social_login.php:103
+msgid "After clicking on Setup Facebook login, you will be asked which platform you want to use it on there select Web"
+msgstr "Dopo aver cliccato su Imposta accesso Facebook, ti verrà chiesto su quale piattaforma vuoi utilizzarlo: lì seleziona Web"
+
+#: loginizer-security/main/settings/social_login.php:104
+msgid "Now you will need to fill up some details, first you will be asked about URL of the website after adding that in the field save and click on Continue"
+msgstr "Ora dovrai compilare alcuni dettagli: prima ti verrà chiesto l'URL del sito web. Dopo averlo aggiunto nel campo, salva e fai clic su Continua"
+
+#: loginizer-security/main/settings/social_login.php:105
+msgid "Thats all you need to do in this form, for other steps you can just click on next."
+msgstr "Questo è tutto ciò che devi fare in questo modulo; per i passaggi successivi puoi semplicemente fare clic su Avanti."
+
+#: loginizer-security/main/settings/social_login.php:106
+msgid "Once you are done with the steps in the Left Navigation go to Facebook Login then Settings."
+msgstr "Una volta completati i passaggi nella navigazione a sinistra, vai su Accesso Facebook e poi su Impostazioni."
+
+#: loginizer-security/main/settings/social_login.php:107
+msgid "The settings releated to OAuth will open there you will need to fill the Valid OAuth Redirect URIs field with this URL."
+msgstr "Si apriranno le impostazioni relative a OAuth. Dovrai compilare il campo URI di reindirizzamento OAuth validi con questo URL."
+
+#: loginizer-security/main/settings/social_login.php:108
+msgid "After adding the URL save changes and now from the Left Navigation go to App Settings the Basic."
+msgstr "Dopo aver aggiunto l'URL, salva le modifiche e ora, dalla navigazione a sinistra, vai su Impostazioni app -> Base."
+
+#: loginizer-security/main/settings/social_login.php:109
+msgid "On the Baisc page of App Settings you will find App ID and App Secret copy that as we need that to setup Facebook Login through Loginizer."
+msgstr "Nella pagina Base delle Impostazioni app troverai ID app e Segreto app. Copiali perché ci servono per configurare l'accesso Facebook tramite Loginizer."
+
+#: loginizer-security/main/settings/social_login.php:110
+msgid "Now go to your WordPress admin then Loginizer then Social Login and then Facebook Settings"
+msgstr "Ora vai nell'amministrazione WordPress, poi Loginizer, poi Accesso Sociale e quindi Impostazioni Facebook"
+
+#: loginizer-security/main/settings/social_login.php:111
+msgid "In the Facebook settings page add the App ID to client ID and App Secret to App Secret"
+msgstr "Nella pagina delle impostazioni Facebook inserisci l'ID app come ID cliente e il Segreto app come Segreto app"
+
+#: loginizer-security/main/settings/social_login.php:112
+msgid "Enable Facebook and save the settings, now a test info will show in there click on the Test button to verify that the setup went as expected."
+msgstr "Abilita Facebook e salva le impostazioni. Ora verrà visualizzata un'informazione di test; fai clic sul pulsante Test per verificare che la configurazione sia andata a buon fine."
+
+#: loginizer-security/main/settings/social_login.php:121
+msgid "Create Github App"
+msgstr "Crea app GitHub"
+
+#: loginizer-security/main/settings/social_login.php:123
+msgid "To allow your users to be able to login through their Github Account, you first need to create a Github App. For that follow the App creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account GitHub, devi prima creare un'app GitHub. A tal fine, segui i passaggi di creazione dell'app qui sotto."
+
+#: loginizer-security/main/settings/social_login.php:125
+msgid "Go to Github developer settings page"
+msgstr "Vai alla pagina delle impostazioni sviluppatore di GitHub"
+
+#: loginizer-security/main/settings/social_login.php:126
+#: loginizer-security/main/settings/social_login.php:146
+#: loginizer-security/main/settings/social_login.php:167
+msgid "Make sure you are already logged in, if you are not then please login"
+msgstr "Assicurati di aver già effettuato l'accesso; in caso contrario, accedi"
+
+#: loginizer-security/main/settings/social_login.php:127
+msgid "Now you will be in Developer Settings page and make sure you are on the OAuth App tab."
+msgstr "Ora ti troverai nella pagina delle Impostazioni sviluppatore; assicurati di essere nella scheda App OAuth."
+
+#: loginizer-security/main/settings/social_login.php:128
+msgid "There you will find a button to Register a New Application, Click on that button."
+msgstr "Lì troverai un pulsante per registrare una nuova applicazione. Fai clic su quel pulsante."
+
+#: loginizer-security/main/settings/social_login.php:129
+msgid "A form will appear, fill that form with the required details, and in Authorization Callback URL field enter this URL"
+msgstr "Apparirà un modulo. Compila il modulo con i dettagli richiesti e nel campo URL di callback di autorizzazione inserisci questo URL"
+
+#: loginizer-security/main/settings/social_login.php:130
+msgid "Now save the details, and your client ID will be generated"
+msgstr "Ora salva i dettagli e verrà generato il tuo ID cliente"
+
+#: loginizer-security/main/settings/social_login.php:131
+msgid "Now in the Client Secret section, look for Generate a new client secret button and click it and it will generate the secret key"
+msgstr "Ora, nella sezione Segreto cliente, cerca il pulsante Genera un nuovo segreto cliente, fai clic su di esso e verrà generata la chiave segreta"
+
+#: loginizer-security/main/settings/social_login.php:132
+msgid "You have both keys with you now, so go to WordPress admin --> Loginizer --> Social Login --> in Provider tab go to Github and enter these keys in the respective fields and save it."
+msgstr "Ora hai entrambe le chiavi, quindi vai nell'amministrazione WordPress -> Loginizer -> Accesso Sociale -> nella scheda Provider vai su GitHub e inserisci queste chiavi nei rispettivi campi e salva."
+
+#: loginizer-security/main/settings/social_login.php:141
+msgid "Create WordPress App"
+msgstr "Crea app WordPress"
+
+#: loginizer-security/main/settings/social_login.php:143
+msgid "To allow your users to be able to login through their WordPress.com Account, you first need to create a WordPress.com Application. For that follow the Application creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account WordPress.com, devi prima creare un'applicazione WordPress.com. Per farlo, segui i passaggi di creazione dell'applicazione qui sotto."
+
+#: loginizer-security/main/settings/social_login.php:145
+msgid "Go to WordPress.com developer App page."
+msgstr "Vai alla pagina dell'app sviluppatori di WordPress.com."
+
+#: loginizer-security/main/settings/social_login.php:147
+msgid "Now you will be in WordPress.com Developer My Application page."
+msgstr "Ora ti troverai nella pagina WordPress.com Developer My Application."
+
+#: loginizer-security/main/settings/social_login.php:148
+msgid "There you will find a link to Create new Application a New Application, Click on that link."
+msgstr "Lì troverai un link per creare una nuova applicazione, fai clic su quel link."
+
+#: loginizer-security/main/settings/social_login.php:149
+msgid "A form will appear, fill that form with the required details, and in Redirect URLS field enter this URL"
+msgstr "Apparirà un modulo, compilalo con i dettagli richiesti e nel campo Redirect URLS inserisci questo URL"
+
+#: loginizer-security/main/settings/social_login.php:150
+msgid "Now click on Create button and the App will be created."
+msgstr "Ora fai clic sul pulsante Crea e l'app verrà creata."
+
+#: loginizer-security/main/settings/social_login.php:151
+msgid "You will need to go back to the My Application page, and find the app you just created and click on it"
+msgstr "Dovrai tornare alla pagina My Application, trovare l'app che hai appena creato e fare clic su di essa"
+
+#: loginizer-security/main/settings/social_login.php:152
+msgid "On the app page, in the bottom you will find OAuth information, Copy the client ID and client secret."
+msgstr "Nella pagina dell'app, in fondo troverai le informazioni OAuth, copia l'ID client e il segreto client."
+
+#: loginizer-security/main/settings/social_login.php:153
+msgid "You have both keys with you now, so go to WordPress admin --> Loginizer --> Social Login --> in Provider tab go to WordPress and enter these keys in the respective fields and save it."
+msgstr "Ora hai entrambe le chiavi, quindi vai su WordPress admin --> Loginizer --> Social Login --> nella scheda Provider vai su WordPress e inserisci queste chiavi nei rispettivi campi e salva."
+
+#: loginizer-security/main/settings/social_login.php:162
+msgid "Create Discord App"
+msgstr "Crea app Discord"
+
+#: loginizer-security/main/settings/social_login.php:164
+msgid "To allow your users to be able to login through their Discord Account, you first need to create a Discord Application. For that follow the Application creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account Discord, devi prima creare un'applicazione Discord. A tal fine, segui i passaggi per la creazione dell'applicazione qui sotto."
+
+#: loginizer-security/main/settings/social_login.php:166
+msgid "Go to Discord developer App page."
+msgstr "Vai alla pagina dell'app Discord Developer."
+
+#: loginizer-security/main/settings/social_login.php:168
+msgid "Now you will be in Discord Developer Portal on Applications page."
+msgstr "Ora ti troverai nel portale sviluppatori Discord nella pagina Applicazioni."
+
+#: loginizer-security/main/settings/social_login.php:169
+msgid "There you will find a button which says New Application on the top right, click on that button."
+msgstr "Lì troverai un pulsante che dice Nuova applicazione in alto a destra, clicca su quel pulsante."
+
+#: loginizer-security/main/settings/social_login.php:170
+msgid "A poup will appear, fill the Application name and check the terms and condition checkbox, and then click create."
+msgstr "Apparirà un popup, compila il nome dell'applicazione e spunta la casella dei termini e condizioni, quindi clicca su Crea."
+
+#: loginizer-security/main/settings/social_login.php:171
+msgid "A form will appear with optional fields fill those as per your wish and save them."
+msgstr "Apparirà un modulo con campi opzionali, compilali a tuo piacere e salvali."
+
+#: loginizer-security/main/settings/social_login.php:172
+msgid "Now in the left navigation click on OAuth, and you will find client ID and an option to generate Client Secret"
+msgstr "Ora nella navigazione a sinistra clicca su OAuth, e troverai l&#8217;ID client e un&#8217;opzione per generare il Client Secret"
+
+#: loginizer-security/main/settings/social_login.php:173
+msgid "And add the Redirect URL as without that Login won't work, the URL is "
+msgstr "E aggiungi l'URL di reindirizzamento poiché senza di esso l'accesso non funzionerà, l'URL è "
+
+#: loginizer-security/main/settings/social_login.php:174
+msgid "Copy both Client ID and Client Secret and go to WordPress Admin, Loginizer, Social Login, Discord and enter the copied keys in the respective field and save it."
+msgstr "Copia sia l'ID cliente che il Segreto cliente e vai su WordPress Admin, Loginizer, Accesso sociale, Discord e inserisci le chiavi copiate nel campo corrispondente e salva."
+
+#: loginizer-security/main/settings/social_login.php:183
+msgid "Create Twitch App"
+msgstr "Crea un'app Twitch"
+
+#: loginizer-security/main/settings/social_login.php:185
+msgid "To allow your users to be able to login through their Twitch Account, you first need to create a Twitch Application. For that follow the Application creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account Twitch, devi prima creare un'applicazione Twitch. Per farlo, segui i passaggi di creazione dell'applicazione riportati di seguito."
+
+#: loginizer-security/main/settings/social_login.php:187
+msgid "There is a pre-requisite in Twitch that the account you are using to create the keys should have 2FA enabled on it. You can do it from this page"
+msgstr "C'è un prerequisito in Twitch: l'account che stai usando per creare le chiavi deve avere la 2FA abilitata. Puoi farlo da questa pagina"
+
+#: loginizer-security/main/settings/social_login.php:188
+msgid "After you have enabled 2FA go to Twitch developer page."
+msgstr "Dopo aver abilitato la 2FA, vai alla pagina sviluppatore di Twitch."
+
+#: loginizer-security/main/settings/social_login.php:189
+msgid "Now from the left navigation go to Applications."
+msgstr "Ora dalla navigazione a sinistra vai su Applicazioni."
+
+#: loginizer-security/main/settings/social_login.php:190
+msgid "On the applications page click on Register your application button."
+msgstr "Nella pagina delle applicazioni, fai clic sul pulsante Register your application."
+
+#: loginizer-security/main/settings/social_login.php:191
+msgid "A form will appear, fill the Application name, in Category select Website integration and client type as Confidential."
+msgstr "Apparirà un modulo, compila il nome dell'applicazione, in Categoria seleziona Website integration e tipo client come Confidential."
+
+#: loginizer-security/main/settings/social_login.php:192
+msgid "Now the last field we need to fill is OAuth Redirect URLs in there add this URL."
+msgstr "Ora l'ultimo campo da compilare è OAuth Redirect URLs, lì aggiungi questo URL."
+
+#: loginizer-security/main/settings/social_login.php:193
+msgid "After all the fields are filled click on save and a App will be created and you will be redirected to the Application page with your App listed there, now click on the manage button of the listed app."
+msgstr "Dopo aver compilato tutti i campi, fai clic su Salva e verrà creata un'app e verrai reindirizzato alla pagina dell'applicazione con la tua App elencata lì, ora fai clic sul pulsante Gestisci dell'app elencata."
+
+#: loginizer-security/main/settings/social_login.php:194
+msgid "You will get the Client ID and Client Secret here so copy them as we need to use them in Loginizer"
+msgstr "Qui otterrai il Client ID e il Client Secret, quindi copiali perché dovremo usarli in Loginizer"
+
+#: loginizer-security/main/settings/social_login.php:195
+msgid "Now go to WordPress Admin, Loginizer, Social Login, Twitch and enter the copied keys in the respective field and save it."
+msgstr "Ora vai su WordPress Admin, Loginizer, Social Login, Twitch e inserisci le chiavi copiate nel rispettivo campo e salva."
+
+#: loginizer-security/main/settings/social_login.php:204
+msgid "Create X App"
+msgstr "Crea App X"
+
+#: loginizer-security/main/settings/social_login.php:206
+msgid "To allow your users to be able to login through their X Account, you first need to create a X Project. For that follow the Project creation steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il loro account X, devi prima creare un progetto X. Per farlo, segui i passaggi di creazione del progetto riportati di seguito."
+
+#: loginizer-security/main/settings/social_login.php:208
+msgid "Go to X Project page for that"
+msgstr "Vai alla pagina del progetto X per farlo"
+
+#: loginizer-security/main/settings/social_login.php:209
+msgid "If you don't have a developer account then apply for it by filling required details. It is mandatory to fill this form to get access to the developer account."
+msgstr "Se non hai un account sviluppatore, richiedilo compilando i dettagli richiesti. È obbligatorio compilare questo modulo per ottenere l'accesso all'account sviluppatore."
+
+#: loginizer-security/main/settings/social_login.php:210
+msgid "Once you have the developer account and you are on the Project and App page click on Add Project."
+msgstr "Una volta che hai l'account sviluppatore e ti trovi nella pagina Progetto e App, fai clic su Aggiungi Progetto."
+
+#: loginizer-security/main/settings/social_login.php:211
+msgid "You will have to fill a form with Project name, use case, project desccription and then App name."
+msgstr "Dovrai compilare un modulo con Nome progetto, caso d'uso, descrizione del progetto e poi Nome app."
+
+#: loginizer-security/main/settings/social_login.php:212
+msgid "Once you do that it will show the API Key and API secret, copy that and come to your WordPress dashboard."
+msgstr "Una volta fatto, mostrerà la API Key e la API Secret, copiale e torna alla tua bacheca WordPress."
+
+#: loginizer-security/main/settings/social_login.php:213
+msgid "On your WordPress admin go to Loginizer, Social Login and then X there place the API key in Client ID and API Secret in Client Secret and enable it and save it."
+msgstr "Nella tua amministrazione WordPress, vai su Loginizer, Social Login e poi X, lì inserisci la API Key in Client ID e la API Secret in Client Secret, abilita e salva."
+
+#: loginizer-security/main/settings/social_login.php:214
+msgid "The setup is not done yet, Loginzer will show a notice to test your Integration, but dont do it now, as few more steps are yet to be done, go back to Twitter Developer Account and go to Project and APP from the Left Navigation then Your Project and then your APP."
+msgstr "La configurazione non è ancora completa, Loginzer mostrerà un avviso per testare la tua integrazione, ma non farlo ora, perché mancano ancora alcuni passaggi. Torna all'account sviluppatore Twitter e vai su Project and APP dalla navigazione a sinistra, poi Your Project e poi your APP."
+
+#: loginizer-security/main/settings/social_login.php:215
+msgid "On the page of your APP there will be a section named User authentication settings in that section click on Set up button."
+msgstr "Nella pagina della tua APP ci sarà una sezione chiamata User authentication settings, in quella sezione fai clic sul pulsante Set up."
+
+#: loginizer-security/main/settings/social_login.php:216
+msgid "Set up setting will appear in that set App Permission to Read and enable Request email from user."
+msgstr "L'impostazione di configurazione apparirà in quel set, imposta l'autorizzazione dell'app su Leggi e abilita Richiedi email dall'utente."
+
+#: loginizer-security/main/settings/social_login.php:217
+msgid "Next in the Type of App select Web App and then in the App Info section in the Callback URI/Redirect URL set this URL"
+msgstr "Successivamente, nel Tipo di App seleziona Web App e poi nella sezione Info App, nell'URI di callback/URL di reindirizzamento, imposta questo URL"
+
+#: loginizer-security/main/settings/social_login.php:218
+msgid "Next fill your Websites URL in Website URL field, then Twitter requires you to give it a Privacy Policy and Terms and Conditions page because we are requesting for user email. Fill those details and hit save"
+msgstr "Successivamente, inserisci il tuo URL del sito nel campo URL del sito web, poi Twitter richiede di fornire una pagina Informativa sulla Privacy e Termini e Condizioni perché stiamo richiedendo l'email dell'utente. Compila questi dettagli e premi Salva"
+
+#: loginizer-security/main/settings/social_login.php:219
+msgid "Now you can test Twitter Login on Loginizer so it can start showing on the Login page."
+msgstr "Ora puoi testare l'accesso con Twitter su Loginizer in modo che inizi a mostrarsi nella pagina di accesso."
+
+#: loginizer-security/main/settings/social_login.php:228
+msgid "Create Microsoft App"
+msgstr "Crea app Microsoft"
+
+#: loginizer-security/main/settings/social_login.php:230
+msgid "To allow your users to be able to login through their Microsoft Account, you first need to create a Microsoft Entra ID. For that follow the steps below."
+msgstr "Per consentire ai tuoi utenti di accedere tramite il proprio account Microsoft, devi prima creare un Microsoft Entra ID. Per farlo, segui i passaggi seguenti."
+
+#: loginizer-security/main/settings/social_login.php:232
+msgid "Go to Azure Portal, for that"
+msgstr "Vai al portale Azure, per farlo"
+
+#: loginizer-security/main/settings/social_login.php:233
+msgid "Once you are logged in the Portal search for Microsoft Entra ID"
+msgstr "Una volta effettuato l'accesso al portale, cerca Microsoft Entra ID"
+
+#: loginizer-security/main/settings/social_login.php:234
+msgid "Now click on the Add button and a drop-down will appear"
+msgstr "Ora clicca sul pulsante Aggiungi e apparirà un menu a discesa"
+
+#: loginizer-security/main/settings/social_login.php:235
+msgid "In that drop-down click on App registration"
+msgstr "In quel menu a discesa, clicca su Registrazione app"
+
+#: loginizer-security/main/settings/social_login.php:236
+msgid "A form will appear, in that fill the Name as per your choice"
+msgstr "Apparirà un modulo, in quello compila il Nome a tua scelta"
+
+#: loginizer-security/main/settings/social_login.php:237
+msgid "Second field is about what kind of accounts can access the social login"
+msgstr "Il secondo campo riguarda il tipo di account che possono accedere all'accesso sociale"
+
+#: loginizer-security/main/settings/social_login.php:238
+msgid "You can choose as per your need, if you are not sure which one to choose you can select Accounts in any organizational directory and Personal Accounts"
+msgstr "Puoi scegliere in base alle tue esigenze, se non sei sicuro quale scegliere puoi selezionare Account in qualsiasi directory organizzativa e Account personali"
+
+#: loginizer-security/main/settings/social_login.php:239
+msgid "Now add the redirect URI although it is optional but its better to add it."
+msgstr "Ora aggiungi l'URI di reindirizzamento, anche se è opzionale è meglio aggiungerlo."
+
+#: loginizer-security/main/settings/social_login.php:240
+msgid "Use this Redirect URI."
+msgstr "Usa questo URI di reindirizzamento."
+
+#: loginizer-security/main/settings/social_login.php:241
+msgid "And in Select platform select Web."
+msgstr "E in Seleziona piattaforma seleziona Web."
+
+#: loginizer-security/main/settings/social_login.php:242
+msgid "Now click register and a application will be created."
+msgstr "Ora clicca su Registra e verrà creata un'applicazione."
+
+#: loginizer-security/main/settings/social_login.php:243
+msgid "Copy Application (client)ID, which will be the Client ID."
+msgstr "Copia l'ID applicazione (client), che sarà il Client ID."
+
+#: loginizer-security/main/settings/social_login.php:244
+msgid "Then below on that page you will find Add a certificate or secret link, click that."
+msgstr "Poi sotto, in quella pagina, troverai il link Aggiungi un certificato o segreto, clicca su di esso."
+
+#: loginizer-security/main/settings/social_login.php:245
+msgid "A page will open there click on New client secret button, there add description and Expiry as per your choice and click Add."
+msgstr "Si aprirà una pagina, lì clicca sul pulsante Nuovo segreto client, lì aggiungi descrizione e Scadenza a tua scelta e clicca su Aggiungi."
+
+#: loginizer-security/main/settings/social_login.php:246
+msgid "Now in a table row you will see 2 values Value and Secret ID, you need to copy the Value, which will work as the Client Secret."
+msgstr "Ora in una riga della tabella vedrai 2 valori: Valore e ID Segreto. Devi copiare il Valore, che fungerà da Client Secret."
+
+#: loginizer-security/main/settings/social_login.php:247
+msgid "Copy and save both values in Loginizer and that is it."
+msgstr "Copia e salva entrambi i valori in Loginizer e il gioco è fatto."
+
+#: loginizer-security/main/settings/waf.php:16
+msgid "This feature requires the php version 7.2 or greater"
+msgstr "Questa funzionalità richiede la versione php 7.2 o superiore"
+
+#: loginizer-security/main/settings/waf.php:23
+msgid "Sorry, but you do not have permission to access this page."
+msgstr "Spiacente, ma non hai il permesso di accedere a questa pagina."
+
+#: loginizer-security/main/settings/waf.php:30
+msgid "Empty or invalid nonce field."
+msgstr "Campo nonce vuoto o non valido."
+
+#: loginizer-security/main/settings/waf.php:92
+msgid "Error in updating config file."
+msgstr "Errore nell'aggiornamento del file di configurazione."
+
+#: loginizer-security/main/settings/waf.php:110
+#: loginizer/main/settings/2fa.php:295
+#: loginizer/main/settings/brute-force.php:148
+#: loginizer/main/settings/checksum.php:142
+#: loginizer/main/settings/dashboard.php:105
+#: loginizer/main/settings/passwordless.php:68
+#: loginizer/main/settings/recaptcha.php:288
+#: loginizer/main/settings/security.php:289
+#: loginizer/main/settings/social_login.php:204
+msgid "The settings were saved successfully"
+msgstr "Le impostazioni sono state salvate correttamente"
+
+#: loginizer-security/main/settings/waf.php:115 loginizer/main/admin.php:561
+msgid "Country Block"
+msgstr "Blocco paese"
+
+#: loginizer-security/main/settings/waf.php:116
+msgid "Logs"
+msgstr "Log"
+
+#: loginizer-security/main/settings/waf.php:185
+msgid "Block/Allow country"
+msgstr "Blocca/Consenti paese"
+
+#: loginizer-security/main/settings/waf.php:196
+msgid "Country Blocking DB"
+msgstr "DB di blocco paese"
+
+#: loginizer-security/main/settings/waf.php:199
+msgid "Database available"
+msgstr "Database disponibile"
+
+#: loginizer-security/main/settings/waf.php:201
+msgid "No Database available"
+msgstr "Nessun database disponibile"
+
+#: loginizer-security/main/settings/waf.php:207
+msgid "DB last updated at "
+msgstr "DB aggiornato l'ultima volta il "
+
+#: loginizer-security/main/settings/waf.php:212
+#: loginizer-security/main/settings/waf.php:220
+msgid "Database is being downloaded"
+msgstr "Il database è in fase di download"
+
+#: loginizer-security/main/settings/waf.php:213
+msgid "We've queued the country database download in the background. Refresh the page to view the latest info."
+msgstr "Abbiamo messo in coda il download del database dei paesi in background. Aggiorna la pagina per visualizzare le informazioni aggiornate."
+
+#: loginizer-security/main/settings/waf.php:215
+msgid "Error Downloading Country DB"
+msgstr "Errore durante il download del database dei paesi"
+
+#: loginizer-security/main/settings/waf.php:217
+msgid "Try Downloading"
+msgstr "Prova a scaricare"
+
+#: loginizer-security/main/settings/waf.php:221
+msgid "Database download has started. Refresh the page to see the latest info."
+msgstr "Il download del database è iniziato. Aggiorna la pagina per vedere le informazioni aggiornate."
+
+#: loginizer-security/main/settings/waf.php:232
+msgid "Enable Country Blocking"
+msgstr "Abilita il blocco paese"
+
+#: loginizer-security/main/settings/waf.php:236
+msgid "Click to enable this feature"
+msgstr "Clicca per abilitare questa funzionalità"
+
+#: loginizer-security/main/settings/waf.php:242
+msgid "Firewall Loader"
+msgstr "Caricatore firewall"
+
+#: loginizer-security/main/settings/waf.php:245
+msgid "Currently Loading Through"
+msgstr "Caricamento attuale tramite"
+
+#: loginizer-security/main/settings/waf.php:251
+msgid "Enable Server Loader"
+msgstr "Abilita caricatore server"
+
+#: loginizer-security/main/settings/waf.php:251
+msgid "Disable Server Loader"
+msgstr "Disabilita caricatore server"
+
+#: loginizer-security/main/settings/waf.php:255
+msgid "Whitelist"
+msgstr "Lista bianca"
+
+#: loginizer-security/main/settings/waf.php:258
+#: loginizer/main/settings/brute-force.php:956
+msgid "Whitelist IP"
+msgstr "IP in lista bianca"
+
+#: loginizer-security/main/settings/waf.php:259
+msgid "Country block uses same Whitelist as Bruteforce"
+msgstr "Il blocco per nazione usa la stessa lista bianca del brute force"
+
+#: loginizer-security/main/settings/waf.php:263
+msgid "Logging"
+msgstr "Registrazione"
+
+#: loginizer-security/main/settings/waf.php:267
+msgid "Log blocked requests"
+msgstr "Registra richieste bloccate"
+
+#: loginizer-security/main/settings/waf.php:273
+msgid "Select Action"
+msgstr "Seleziona azione"
+
+#: loginizer-security/main/settings/waf.php:277
+msgid "Block selected countries"
+msgstr "Blocca paesi selezionati"
+
+#: loginizer-security/main/settings/waf.php:278
+msgid "Allow selected countries"
+msgstr "Consenti paesi selezionati"
+
+#: loginizer-security/main/settings/waf.php:280
+msgid "Choose wheather to whitelist or blacklist the selected region"
+msgstr "Scegli se mettere in lista bianca o lista nera la regione selezionata"
+
+#: loginizer-security/main/settings/waf.php:285
+msgid "Select countries"
+msgstr "Seleziona paesi"
+
+#: loginizer-security/main/settings/waf.php:288
+msgid "Search Countries..."
+msgstr "Cerca paesi..."
+
+#: loginizer-security/main/settings/waf.php:299
+msgid " No Results found !"
+msgstr " Nessun risultato trovato !"
+
+#: loginizer-security/main/settings/waf.php:305
+msgid "Selected Countries"
+msgstr "Paesi selezionati"
+
+#: loginizer-security/main/settings/waf.php:326
+msgid "Setup Firewall Configuration"
+msgstr "Imposta configurazione firewall"
+
+#: loginizer-security/main/settings/waf.php:332
+msgid "We are using PHP directive called"
+msgstr "Stiamo usando una direttiva PHP chiamata"
+
+#: loginizer-security/main/settings/waf.php:334
+msgid "which executes a file before any PHP script or code executes on the site."
+msgstr "che esegue un file prima che qualsiasi script o codice PHP venga eseguito sul sito."
+
+#: loginizer-security/main/settings/waf.php:341
+msgid "Current file which is included using this setting is shown below"
+msgstr "Il file attualmente incluso tramite questa impostazione è mostrato qui sotto"
+
+#: loginizer-security/main/settings/waf.php:344
+msgid ""
+"Choose \"Override existing file\" if you do not recognize the\n"
+"\t\t\t\t\t\tfile or if you want to override this file. Select \"Include file\" if you\n"
+"\t\t\t\t\t\twant to include the existing file in loginizer_firewall.php."
+msgstr ""
+"Scegli \"Override existing file\" se non riconosci il\n"
+"\t\t\t\t\t\tfile o se vuoi sovrascriverlo. Seleziona \"Include file\" se\n"
+"\t\t\t\t\t\tvuoi includere il file esistente in loginizer_firewall.php."
+
+#: loginizer-security/main/settings/waf.php:349
+msgid "Include file in Loginizer firewall"
+msgstr "Includi file nel firewall di Loginizer"
+
+#: loginizer-security/main/settings/waf.php:350
+msgid "Override existing file"
+msgstr "Sovrascrivi file esistente"
+
+#: loginizer-security/main/settings/waf.php:354
+msgid "Please download the backup of the file below before proceeding."
+msgstr "Scarica il backup del file qui sotto prima di procedere."
+
+#: loginizer-security/main/settings/waf.php:360
+#, php-format
+msgid "Download %s backup"
+msgstr "Scarica il backup di %s"
+
+#: loginizer-security/main/settings/waf.php:364
+msgid "No files to download for the backup! You can update the setup"
+msgstr "Nessun file da scaricare per il backup! Puoi aggiornare la configurazione"
+
+#: loginizer-security/main/settings/waf.php:373
+msgid "It could take upto 5 minutes for the settings to reflect"
+msgstr "Potrebbero volerci fino a 5 minuti affinché le impostazioni vengano applicate"
+
+#: loginizer-security/main/settings/waf.php:376
+msgid "Update Configuration"
+msgstr "Aggiorna configurazione"
+
+#: loginizer-security/main/settings/waf.php:389
+msgid "Error Logs"
+msgstr "Log degli errori"
+
+#: loginizer-security/main/settings/waf.php:396
+msgid "Time"
+msgstr "Ora"
+
+#: loginizer-security/main/settings/waf.php:397
+msgid "Location"
+msgstr "Posizione"
+
+#: loginizer-security/main/settings/waf.php:398
+#: loginizer/main/settings/brute-force.php:597
+msgid "IP"
+msgstr "IP"
+
+#: loginizer-security/main/settings/waf.php:399
+msgid "Method"
+msgstr "Metodo"
+
+#: loginizer-security/main/settings/waf.php:400
+msgid "URI"
+msgstr "URI"
+
+#: loginizer-security/main/settings/waf.php:412
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+#: loginizer-security/main/settings/waf.php:419
+msgid "No logs available. Logs will be visible here"
+msgstr "Nessun log disponibile. I log saranno visibili qui"
+
+#: loginizer-security/main/settings/waf.php:776
+msgid "Failed to write Firewall loader file. Check file permissions."
+msgstr "Impossibile scrivere il file loader del firewall. Controlla i permessi del file."
+
+#: loginizer-security/main/settings/waf.php:782
+msgid "Firewall loader file could not be verified after writing."
+msgstr "Il file loader del firewall non può essere verificato dopo la scrittura."
+
+#: loginizer-security/main/settings/waf.php:847
+msgid "Andorra"
+msgstr "Andorra"
+
+#: loginizer-security/main/settings/waf.php:848
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: loginizer-security/main/settings/waf.php:849
+msgid "Antigua and Barbuda"
+msgstr "Antigua e Barbuda"
+
+#: loginizer-security/main/settings/waf.php:850
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: loginizer-security/main/settings/waf.php:851
+msgid "Albania"
+msgstr "Albania"
+
+#: loginizer-security/main/settings/waf.php:852
+msgid "Armenia"
+msgstr "Armenia"
+
+#: loginizer-security/main/settings/waf.php:853
+msgid "Angola"
+msgstr "Angola"
+
+#: loginizer-security/main/settings/waf.php:854
+msgid "Antarctica"
+msgstr "Antartide"
+
+#: loginizer-security/main/settings/waf.php:855
+msgid "Argentina"
+msgstr "Argentina"
+
+#: loginizer-security/main/settings/waf.php:856
+msgid "American Samoa"
+msgstr "Samoa Americane"
+
+#: loginizer-security/main/settings/waf.php:857
+msgid "Austria"
+msgstr "Austria"
+
+#: loginizer-security/main/settings/waf.php:858
+msgid "Australia"
+msgstr "Australia"
+
+#: loginizer-security/main/settings/waf.php:859
+msgid "Aruba"
+msgstr "Aruba"
+
+#: loginizer-security/main/settings/waf.php:860
+msgid "Aland Islands"
+msgstr "Isole Åland"
+
+#: loginizer-security/main/settings/waf.php:861
+msgid "Azerbaijan"
+msgstr "Azerbaigian"
+
+#: loginizer-security/main/settings/waf.php:862
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia ed Erzegovina"
+
+#: loginizer-security/main/settings/waf.php:863
+msgid "Barbados"
+msgstr "Barbados"
+
+#: loginizer-security/main/settings/waf.php:864
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: loginizer-security/main/settings/waf.php:865
+msgid "Belgium"
+msgstr "Belgio"
+
+#: loginizer-security/main/settings/waf.php:866
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: loginizer-security/main/settings/waf.php:867
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: loginizer-security/main/settings/waf.php:868
+msgid "Bahrain"
+msgstr "Bahrein"
+
+#: loginizer-security/main/settings/waf.php:869
+msgid "Burundi"
+msgstr "Burundi"
+
+#: loginizer-security/main/settings/waf.php:870
+msgid "Benin"
+msgstr "Benin"
+
+#: loginizer-security/main/settings/waf.php:871
+msgid "Saint Bartelemey"
+msgstr "Saint-Barthélemy"
+
+#: loginizer-security/main/settings/waf.php:872
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: loginizer-security/main/settings/waf.php:873
+msgid "Brunei"
+msgstr "Brunei"
+
+#: loginizer-security/main/settings/waf.php:874
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: loginizer-security/main/settings/waf.php:875
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Bonaire, Saint Eustatius e Saba"
+
+#: loginizer-security/main/settings/waf.php:876
+msgid "Brazil"
+msgstr "Brasile"
+
+#: loginizer-security/main/settings/waf.php:877
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: loginizer-security/main/settings/waf.php:878
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: loginizer-security/main/settings/waf.php:879
+msgid "Bouvet Island"
+msgstr "Isola Bouvet"
+
+#: loginizer-security/main/settings/waf.php:880
+msgid "Botswana"
+msgstr "Botswana"
+
+#: loginizer-security/main/settings/waf.php:881
+msgid "Belarus"
+msgstr "Bielorussia"
+
+#: loginizer-security/main/settings/waf.php:882
+msgid "Belize"
+msgstr "Belize"
+
+#: loginizer-security/main/settings/waf.php:883
+msgid "Canada"
+msgstr "Canada"
+
+#: loginizer-security/main/settings/waf.php:884
+msgid "Cocos Islands"
+msgstr "Isole Cocos"
+
+#: loginizer-security/main/settings/waf.php:885
+msgid "Democratic Republic of the Congo"
+msgstr "Repubblica Democratica del Congo"
+
+#: loginizer-security/main/settings/waf.php:886
+msgid "Central African Republic"
+msgstr "Repubblica Centrafricana"
+
+#: loginizer-security/main/settings/waf.php:887
+msgid "Republic of the Congo"
+msgstr "Repubblica del Congo"
+
+#: loginizer-security/main/settings/waf.php:888
+msgid "Switzerland"
+msgstr "Svizzera"
+
+#: loginizer-security/main/settings/waf.php:889
+msgid "Ivory Coast"
+msgstr "Costa d'Avorio"
+
+#: loginizer-security/main/settings/waf.php:890
+msgid "Cook Islands"
+msgstr "Isole Cook"
+
+#: loginizer-security/main/settings/waf.php:891
+msgid "Chile"
+msgstr "Cile"
+
+#: loginizer-security/main/settings/waf.php:892
+msgid "Cameroon"
+msgstr "Camerun"
+
+#: loginizer-security/main/settings/waf.php:893
+msgid "China"
+msgstr "Cina"
+
+#: loginizer-security/main/settings/waf.php:894
+msgid "Colombia"
+msgstr "Colombia"
+
+#: loginizer-security/main/settings/waf.php:895
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: loginizer-security/main/settings/waf.php:896
+msgid "Cuba"
+msgstr "Cuba"
+
+#: loginizer-security/main/settings/waf.php:897
+msgid "Cabo Verde"
+msgstr "Capo Verde"
+
+#: loginizer-security/main/settings/waf.php:898
+msgid "Curacao"
+msgstr "Curaçao"
+
+#: loginizer-security/main/settings/waf.php:899
+msgid "Christmas Island"
+msgstr "Isola di Natale"
+
+#: loginizer-security/main/settings/waf.php:900
+msgid "Cyprus"
+msgstr "Cipro"
+
+#: loginizer-security/main/settings/waf.php:901
+msgid "Czechia"
+msgstr "Repubblica Ceca"
+
+#: loginizer-security/main/settings/waf.php:902
+msgid "Germany"
+msgstr "Germania"
+
+#: loginizer-security/main/settings/waf.php:903
+msgid "Djibouti"
+msgstr "Gibuti"
+
+#: loginizer-security/main/settings/waf.php:904
+msgid "Denmark"
+msgstr "Danimarca"
+
+#: loginizer-security/main/settings/waf.php:905
+msgid "Dominica"
+msgstr "Dominica"
+
+#: loginizer-security/main/settings/waf.php:906
+msgid "Dominican Republic"
+msgstr "Repubblica Dominicana"
+
+#: loginizer-security/main/settings/waf.php:907
+msgid "Algeria"
+msgstr "Algeria"
+
+#: loginizer-security/main/settings/waf.php:908
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: loginizer-security/main/settings/waf.php:909
+msgid "Estonia"
+msgstr "Estonia"
+
+#: loginizer-security/main/settings/waf.php:910
+msgid "Egypt"
+msgstr "Egitto"
+
+#: loginizer-security/main/settings/waf.php:911
+msgid "Western Sahara"
+msgstr "Sahara Occidentale"
+
+#: loginizer-security/main/settings/waf.php:912
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: loginizer-security/main/settings/waf.php:913
+msgid "Spain"
+msgstr "Spagna"
+
+#: loginizer-security/main/settings/waf.php:914
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: loginizer-security/main/settings/waf.php:915
+msgid "Finland"
+msgstr "Finlandia"
+
+#: loginizer-security/main/settings/waf.php:916
+msgid "Fiji"
+msgstr "Figi"
+
+#: loginizer-security/main/settings/waf.php:917
+msgid "Falkland Islands"
+msgstr "Isole Falkland"
+
+#: loginizer-security/main/settings/waf.php:918
+msgid "Micronesia"
+msgstr "Micronesia"
+
+#: loginizer-security/main/settings/waf.php:919
+msgid "Faroe Islands"
+msgstr "Isole Fær Øer"
+
+#: loginizer-security/main/settings/waf.php:920
+msgid "France"
+msgstr "Francia"
+
+#: loginizer-security/main/settings/waf.php:921
+msgid "Gabon"
+msgstr "Gabon"
+
+#: loginizer-security/main/settings/waf.php:922
+msgid "United Kingdom"
+msgstr "Regno Unito"
+
+#: loginizer-security/main/settings/waf.php:923
+msgid "Grenada"
+msgstr "Grenada"
+
+#: loginizer-security/main/settings/waf.php:924
+msgid "Georgia"
+msgstr "Georgia"
+
+#: loginizer-security/main/settings/waf.php:925
+msgid "French Guiana"
+msgstr "Guyana francese"
+
+#: loginizer-security/main/settings/waf.php:926
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: loginizer-security/main/settings/waf.php:927
+msgid "Ghana"
+msgstr "Ghana"
+
+#: loginizer-security/main/settings/waf.php:928
+msgid "Gibraltar"
+msgstr "Gibilterra"
+
+#: loginizer-security/main/settings/waf.php:929
+msgid "Greenland"
+msgstr "Groenlandia"
+
+#: loginizer-security/main/settings/waf.php:930
+msgid "Gambia"
+msgstr "Gambia"
+
+#: loginizer-security/main/settings/waf.php:931
+msgid "Guinea"
+msgstr "Guinea"
+
+#: loginizer-security/main/settings/waf.php:932
+msgid "Guadeloupe"
+msgstr "Guadalupa"
+
+#: loginizer-security/main/settings/waf.php:933
+msgid "Equatorial Guinea"
+msgstr "Guinea Equatoriale"
+
+#: loginizer-security/main/settings/waf.php:934
+msgid "Greece"
+msgstr "Grecia"
+
+#: loginizer-security/main/settings/waf.php:935
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Georgia del Sud e Isole Sandwich Australi"
+
+#: loginizer-security/main/settings/waf.php:936
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: loginizer-security/main/settings/waf.php:937
+msgid "Guam"
+msgstr "Guam"
+
+#: loginizer-security/main/settings/waf.php:938
+msgid "Guinea Bissau"
+msgstr "Guinea-Bissau"
+
+#: loginizer-security/main/settings/waf.php:939
+msgid "Guyana"
+msgstr "Guyana"
+
+#: loginizer-security/main/settings/waf.php:940
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: loginizer-security/main/settings/waf.php:941
+msgid "Heard Island and McDonald Islands"
+msgstr "Isole Heard e McDonald"
+
+#: loginizer-security/main/settings/waf.php:942
+msgid "Honduras"
+msgstr "Honduras"
+
+#: loginizer-security/main/settings/waf.php:943
+msgid "Croatia"
+msgstr "Croazia"
+
+#: loginizer-security/main/settings/waf.php:944
+msgid "Haiti"
+msgstr "Haiti"
+
+#: loginizer-security/main/settings/waf.php:945
+msgid "Hungary"
+msgstr "Ungheria"
+
+#: loginizer-security/main/settings/waf.php:946
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: loginizer-security/main/settings/waf.php:947
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: loginizer-security/main/settings/waf.php:948
+msgid "Israel"
+msgstr "Israele"
+
+#: loginizer-security/main/settings/waf.php:949
+msgid "Isle of Man"
+msgstr "Isola di Man"
+
+#: loginizer-security/main/settings/waf.php:950
+msgid "India"
+msgstr "India"
+
+#: loginizer-security/main/settings/waf.php:951
+msgid "British Indian Ocean Territory"
+msgstr "Territorio britannico dell'Oceano Indiano"
+
+#: loginizer-security/main/settings/waf.php:952
+msgid "Iraq"
+msgstr "Iraq"
+
+#: loginizer-security/main/settings/waf.php:953
+msgid "Iran"
+msgstr "Iran"
+
+#: loginizer-security/main/settings/waf.php:954
+msgid "Iceland"
+msgstr "Islanda"
+
+#: loginizer-security/main/settings/waf.php:955
+msgid "Italy"
+msgstr "Italia"
+
+#: loginizer-security/main/settings/waf.php:956
+msgid "Jersey"
+msgstr "Jersey"
+
+#: loginizer-security/main/settings/waf.php:957
+msgid "Jamaica"
+msgstr "Giamaica"
+
+#: loginizer-security/main/settings/waf.php:958
+msgid "Jordan"
+msgstr "Giordania"
+
+#: loginizer-security/main/settings/waf.php:959
+msgid "Japan"
+msgstr "Giappone"
+
+#: loginizer-security/main/settings/waf.php:960
+msgid "Kenya"
+msgstr "Kenya"
+
+#: loginizer-security/main/settings/waf.php:961
+msgid "Kyrgyzstan"
+msgstr "Kirghizistan"
+
+#: loginizer-security/main/settings/waf.php:962
+msgid "Cambodia"
+msgstr "Cambogia"
+
+#: loginizer-security/main/settings/waf.php:963
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: loginizer-security/main/settings/waf.php:964
+msgid "Comoros"
+msgstr "Comore"
+
+#: loginizer-security/main/settings/waf.php:965
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts e Nevis"
+
+#: loginizer-security/main/settings/waf.php:966
+msgid "North Korea"
+msgstr "Corea del Nord"
+
+#: loginizer-security/main/settings/waf.php:967
+msgid "South Korea"
+msgstr "Corea del Sud"
+
+#: loginizer-security/main/settings/waf.php:968
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: loginizer-security/main/settings/waf.php:969
+msgid "Cayman Islands"
+msgstr "Isole Cayman"
+
+#: loginizer-security/main/settings/waf.php:970
+msgid "Kazakhstan"
+msgstr "Kazakistan"
+
+#: loginizer-security/main/settings/waf.php:971
+msgid "Laos"
+msgstr "Laos"
+
+#: loginizer-security/main/settings/waf.php:972
+msgid "Lebanon"
+msgstr "Libano"
+
+#: loginizer-security/main/settings/waf.php:973
+msgid "Saint Lucia"
+msgstr "Santa Lucia"
+
+#: loginizer-security/main/settings/waf.php:974
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: loginizer-security/main/settings/waf.php:975
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: loginizer-security/main/settings/waf.php:976
+msgid "Liberia"
+msgstr "Liberia"
+
+#: loginizer-security/main/settings/waf.php:977
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: loginizer-security/main/settings/waf.php:978
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: loginizer-security/main/settings/waf.php:979
+msgid "Luxembourg"
+msgstr "Lussemburgo"
+
+#: loginizer-security/main/settings/waf.php:980
+msgid "Latvia"
+msgstr "Lettonia"
+
+#: loginizer-security/main/settings/waf.php:981
+msgid "Libya"
+msgstr "Libia"
+
+#: loginizer-security/main/settings/waf.php:982
+msgid "Morocco"
+msgstr "Marocco"
+
+#: loginizer-security/main/settings/waf.php:983
+msgid "Monaco"
+msgstr "Monaco"
+
+#: loginizer-security/main/settings/waf.php:984
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: loginizer-security/main/settings/waf.php:985
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: loginizer-security/main/settings/waf.php:986
+msgid "Saint Martin"
+msgstr "Saint Martin"
+
+#: loginizer-security/main/settings/waf.php:987
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: loginizer-security/main/settings/waf.php:988
+msgid "Marshall Islands"
+msgstr "Isole Marshall"
+
+#: loginizer-security/main/settings/waf.php:989
+msgid "North Macedonia"
+msgstr "Macedonia del Nord"
+
+#: loginizer-security/main/settings/waf.php:990
+msgid "Mali"
+msgstr "Mali"
+
+#: loginizer-security/main/settings/waf.php:991
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: loginizer-security/main/settings/waf.php:992
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: loginizer-security/main/settings/waf.php:993
+msgid "Macao"
+msgstr "Macao"
+
+#: loginizer-security/main/settings/waf.php:994
+msgid "Northern Mariana Islands"
+msgstr "Isole Marianne Settentrionali"
+
+#: loginizer-security/main/settings/waf.php:995
+msgid "Martinique"
+msgstr "Martinica"
+
+#: loginizer-security/main/settings/waf.php:996
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: loginizer-security/main/settings/waf.php:997
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: loginizer-security/main/settings/waf.php:998
+msgid "Malta"
+msgstr "Malta"
+
+#: loginizer-security/main/settings/waf.php:999
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: loginizer-security/main/settings/waf.php:1000
+msgid "Maldives"
+msgstr "Maldive"
+
+#: loginizer-security/main/settings/waf.php:1001
+msgid "Malawi"
+msgstr "Malawi"
+
+#: loginizer-security/main/settings/waf.php:1002
+msgid "Mexico"
+msgstr "Messico"
+
+#: loginizer-security/main/settings/waf.php:1003
+msgid "Malaysia"
+msgstr "Malesia"
+
+#: loginizer-security/main/settings/waf.php:1004
+msgid "Mozambique"
+msgstr "Mozambico"
+
+#: loginizer-security/main/settings/waf.php:1005
+msgid "Namibia"
+msgstr "Namibia"
+
+#: loginizer-security/main/settings/waf.php:1006
+msgid "New Caledonia"
+msgstr "Nuova Caledonia"
+
+#: loginizer-security/main/settings/waf.php:1007
+msgid "Niger"
+msgstr "Niger"
+
+#: loginizer-security/main/settings/waf.php:1008
+msgid "Norfolk Island"
+msgstr "Isola Norfolk"
+
+#: loginizer-security/main/settings/waf.php:1009
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: loginizer-security/main/settings/waf.php:1010
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: loginizer-security/main/settings/waf.php:1011
+msgid "The Netherlands"
+msgstr "Paesi Bassi"
+
+#: loginizer-security/main/settings/waf.php:1012
+msgid "Norway"
+msgstr "Norvegia"
+
+#: loginizer-security/main/settings/waf.php:1013
+msgid "Nepal"
+msgstr "Nepal"
+
+#: loginizer-security/main/settings/waf.php:1014
+msgid "Nauru"
+msgstr "Nauru"
+
+#: loginizer-security/main/settings/waf.php:1015
+msgid "Niue"
+msgstr "Niue"
+
+#: loginizer-security/main/settings/waf.php:1016
+msgid "New Zealand"
+msgstr "Nuova Zelanda"
+
+#: loginizer-security/main/settings/waf.php:1017
+msgid "Oman"
+msgstr "Oman"
+
+#: loginizer-security/main/settings/waf.php:1018
+msgid "Panama"
+msgstr "Panamá"
+
+#: loginizer-security/main/settings/waf.php:1019
+msgid "Peru"
+msgstr "Perù"
+
+#: loginizer-security/main/settings/waf.php:1020
+msgid "French Polynesia"
+msgstr "Polinesia Francese"
+
+#: loginizer-security/main/settings/waf.php:1021
+msgid "Papua New Guinea"
+msgstr "Papua Nuova Guinea"
+
+#: loginizer-security/main/settings/waf.php:1022
+msgid "Philippines"
+msgstr "Filippine"
+
+#: loginizer-security/main/settings/waf.php:1023
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: loginizer-security/main/settings/waf.php:1024
+msgid "Poland"
+msgstr "Polonia"
+
+#: loginizer-security/main/settings/waf.php:1025
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint-Pierre e Miquelon"
+
+#: loginizer-security/main/settings/waf.php:1026
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: loginizer-security/main/settings/waf.php:1027
+msgid "Puerto Rico"
+msgstr "Porto Rico"
+
+#: loginizer-security/main/settings/waf.php:1028
+msgid "Palestinian Territory"
+msgstr "Territorio Palestinese"
+
+#: loginizer-security/main/settings/waf.php:1029
+msgid "Portugal"
+msgstr "Portogallo"
+
+#: loginizer-security/main/settings/waf.php:1030
+msgid "Palau"
+msgstr "Palau"
+
+#: loginizer-security/main/settings/waf.php:1031
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: loginizer-security/main/settings/waf.php:1032
+msgid "Qatar"
+msgstr "Qatar"
+
+#: loginizer-security/main/settings/waf.php:1033
+msgid "Reunion"
+msgstr "Riunione"
+
+#: loginizer-security/main/settings/waf.php:1034
+msgid "Romania"
+msgstr "Romania"
+
+#: loginizer-security/main/settings/waf.php:1035
+msgid "Serbia"
+msgstr "Serbia"
+
+#: loginizer-security/main/settings/waf.php:1036
+msgid "Russia"
+msgstr "Russia"
+
+#: loginizer-security/main/settings/waf.php:1037
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: loginizer-security/main/settings/waf.php:1038
+msgid "Saudi Arabia"
+msgstr "Arabia Saudita"
+
+#: loginizer-security/main/settings/waf.php:1039
+msgid "Solomon Islands"
+msgstr "Isole Salomone"
+
+#: loginizer-security/main/settings/waf.php:1040
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: loginizer-security/main/settings/waf.php:1041
+msgid "Sudan"
+msgstr "Sudan"
+
+#: loginizer-security/main/settings/waf.php:1042
+msgid "Sweden"
+msgstr "Svezia"
+
+#: loginizer-security/main/settings/waf.php:1043
+msgid "Singapore"
+msgstr "Singapore"
+
+#: loginizer-security/main/settings/waf.php:1044
+msgid "Saint Helena"
+msgstr "Sant'Elena"
+
+#: loginizer-security/main/settings/waf.php:1045
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: loginizer-security/main/settings/waf.php:1046
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard e Jan Mayen"
+
+#: loginizer-security/main/settings/waf.php:1047
+msgid "Slovakia"
+msgstr "Slovacchia"
+
+#: loginizer-security/main/settings/waf.php:1048
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: loginizer-security/main/settings/waf.php:1049
+msgid "San Marino"
+msgstr "San Marino"
+
+#: loginizer-security/main/settings/waf.php:1050
+msgid "Senegal"
+msgstr "Senegal"
+
+#: loginizer-security/main/settings/waf.php:1051
+msgid "Somalia"
+msgstr "Somalia"
+
+#: loginizer-security/main/settings/waf.php:1052
+msgid "Suriname"
+msgstr "Suriname"
+
+#: loginizer-security/main/settings/waf.php:1053
+msgid "South Sudan"
+msgstr "Sudan del Sud"
+
+#: loginizer-security/main/settings/waf.php:1054
+msgid "Sao Tome and Principe"
+msgstr "São Tomé e Príncipe"
+
+#: loginizer-security/main/settings/waf.php:1055
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: loginizer-security/main/settings/waf.php:1056
+msgid "Sint Maarten"
+msgstr "Sint Maarten"
+
+#: loginizer-security/main/settings/waf.php:1057
+msgid "Syria"
+msgstr "Siria"
+
+#: loginizer-security/main/settings/waf.php:1058
+msgid "Eswatini"
+msgstr "Eswatini"
+
+#: loginizer-security/main/settings/waf.php:1059
+msgid "Turks and Caicos Islands"
+msgstr "Isole Turks e Caicos"
+
+#: loginizer-security/main/settings/waf.php:1060
+msgid "Chad"
+msgstr "Ciad"
+
+#: loginizer-security/main/settings/waf.php:1061
+msgid "French Southern Territories"
+msgstr "Territori Francesi del Sud"
+
+#: loginizer-security/main/settings/waf.php:1062
+msgid "Togo"
+msgstr "Togo"
+
+#: loginizer-security/main/settings/waf.php:1063
+msgid "Thailand"
+msgstr "Thailandia"
+
+#: loginizer-security/main/settings/waf.php:1064
+msgid "Tajikistan"
+msgstr "Tagikistan"
+
+#: loginizer-security/main/settings/waf.php:1065
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: loginizer-security/main/settings/waf.php:1066
+msgid "Timor Leste"
+msgstr "Timor Est"
+
+#: loginizer-security/main/settings/waf.php:1067
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: loginizer-security/main/settings/waf.php:1068
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: loginizer-security/main/settings/waf.php:1069
+msgid "Tonga"
+msgstr "Tonga"
+
+#: loginizer-security/main/settings/waf.php:1070
+msgid "Turkey"
+msgstr "Turchia"
+
+#: loginizer-security/main/settings/waf.php:1071
+msgid "Trinidad and Tobago"
+msgstr "Trinidad e Tobago"
+
+#: loginizer-security/main/settings/waf.php:1072
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: loginizer-security/main/settings/waf.php:1073
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: loginizer-security/main/settings/waf.php:1074
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: loginizer-security/main/settings/waf.php:1075
+msgid "United Arab Emirates"
+msgstr "Emirati Arabi Uniti"
+
+#: loginizer-security/main/settings/waf.php:1076
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#: loginizer-security/main/settings/waf.php:1077
+msgid "Uganda"
+msgstr "Uganda"
+
+#: loginizer-security/main/settings/waf.php:1078
+msgid "United States Minor Outlying Islands"
+msgstr "Isole Minori Esterne degli Stati Uniti"
+
+#: loginizer-security/main/settings/waf.php:1079
+msgid "United States"
+msgstr "Stati Uniti"
+
+#: loginizer-security/main/settings/waf.php:1080
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: loginizer-security/main/settings/waf.php:1081
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: loginizer-security/main/settings/waf.php:1082
+msgid "Vatican City"
+msgstr "Città del Vaticano"
+
+#: loginizer-security/main/settings/waf.php:1083
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent e Grenadine"
+
+#: loginizer-security/main/settings/waf.php:1084
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: loginizer-security/main/settings/waf.php:1085
+msgid "British Virgin Islands"
+msgstr "Isole Vergini Britanniche"
+
+#: loginizer-security/main/settings/waf.php:1086
+msgid "U.S. Virgin Islands"
+msgstr "Isole Vergini Americane"
+
+#: loginizer-security/main/settings/waf.php:1087
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: loginizer-security/main/settings/waf.php:1088
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: loginizer-security/main/settings/waf.php:1089
+msgid "Wallis and Futuna"
+msgstr "Wallis e Futuna"
+
+#: loginizer-security/main/settings/waf.php:1090
+msgid "Samoa"
+msgstr "Samoa"
+
+#: loginizer-security/main/settings/waf.php:1091
+msgid "Kosovo"
+msgstr "Kosovo"
+
+#: loginizer-security/main/settings/waf.php:1092
+msgid "Yemen"
+msgstr "Yemen"
+
+#: loginizer-security/main/settings/waf.php:1093
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: loginizer-security/main/settings/waf.php:1094
+msgid "South Africa"
+msgstr "Sudafrica"
+
+#: loginizer-security/main/settings/waf.php:1095
+msgid "Zambia"
+msgstr "Zambia"
+
+#: loginizer-security/main/settings/waf.php:1096
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: loginizer-security/main/settings/waf.php:1104
+msgid "The license has expired"
+msgstr "La licenza è scaduta"
+
+#: loginizer-security/main/settings/waf.php:1122
+msgid "There is no country in the list, please go to Country block settings then select and save some countries"
+msgstr "Non ci sono paesi nell'elenco. Vai alle impostazioni di blocco dei paesi, seleziona e salva alcuni paesi"
+
+#: loginizer-security/main/settings/waf.php:1173
+msgid "There was an issue, request responsed with error code"
+msgstr "Si è verificato un problema. La richiesta ha risposto con un codice di errore"
+
+#: loginizer-security/main/social-api-login.php:46
+msgid "Your IP is blocked"
+msgstr "Il tuo IP è bloccato"
+
+#: loginizer-security/main/social-api-login.php:66
+#: loginizer/main/social-login.php:33
+msgid "Security check failed when trying to login"
+msgstr "Controllo di sicurezza fallito durante il tentativo di accesso"
+
+#: loginizer-security/main/social-api-login.php:84
+msgid "Social Provider is either empty or not enabled"
+msgstr "Il provider social è vuoto o non è abilitato"
+
+#: loginizer-security/main/social-api-login.php:116
+#: loginizer-security/main/social-api-login.php:131
+#: loginizer-security/main/social-api-login.php:273
+msgid "Auth token response came empty"
+msgstr "La risposta del token di autenticazione è arrivata vuota"
+
+#: loginizer-security/main/social-api-login.php:152
+msgid "Unexpected HTTP response "
+msgstr "Risposta HTTP imprevista "
+
+#: loginizer-security/main/social-api-login.php:158
+#: loginizer-security/main/social-api-login.php:301
+#: loginizer-security/main/social-api-login.php:520
+msgid "Empty response body received"
+msgstr "Ricevuto corpo della risposta vuoto"
+
+#: loginizer-security/main/social-api-login.php:164
+msgid "Response does not contain required key"
+msgstr "La risposta non contiene la chiave richiesta"
+
+#: loginizer-security/main/social-api-login.php:185
+msgid "Empty access_token was returned!"
+msgstr "È stato restituito un access_token vuoto!"
+
+#: loginizer-security/main/social-api-login.php:216
+msgid "Something went wrong: "
+msgstr "Qualcosa è andato storto: "
+
+#: loginizer-security/main/social-api-login.php:233
+msgid "Empty Provider."
+msgstr "Provider vuoto."
+
+#: loginizer-security/main/social-api-login.php:263
+msgid "Invalid Provider."
+msgstr "Provider non valido."
+
+#: loginizer-security/main/social-api-login.php:295
+#: loginizer-security/main/social-api-login.php:514
+msgid "Unexpected HTTP response from "
+msgstr "Risposta HTTP imprevista da "
+
+#: loginizer-security/main/social-api-login.php:304
+msgid "Verification Failed"
+msgstr "Verifica fallita"
+
+#: loginizer-security/main/social-api-login.php:310
+#: loginizer-security/main/social-api-login.php:324
+msgid "response missing required field: email."
+msgstr "risposta mancante del campo obbligatorio: email."
+
+#: loginizer-security/main/social-api-login.php:320
+msgid "No user info provided by the provider."
+msgstr "Nessuna informazione utente fornita dal provider."
+
+#: loginizer-security/main/social-api-login.php:328
+msgid "Email you are trying to login is not verified."
+msgstr "L'email con cui stai tentando di accedere non è verificata."
+
+#: loginizer-security/main/social-api-login.php:345
+msgid "No user found with this email."
+msgstr "Nessun utente trovato con questa email."
+
+#: loginizer-security/main/social-api-login.php:351
+msgid "No user found with this account."
+msgstr "Nessun utente trovato con questo account."
+
+#: loginizer-security/main/social-api-login.php:494
+msgid "GitHub user data response empty"
+msgstr "Risposta dati utente GitHub vuota"
+
+#: loginizer-security/main/social-api-login.php:523
+msgid "User data malformed"
+msgstr "Dati utente malformati"
+
+#: loginizer-security/main/upgrader.php:124
+msgid "You have not installed the free version of Loginizer. Loginizer Pro depends on the free version, so you must install it first in order to use Loginizer Pro."
+msgstr "Non hai installato la versione gratuita di Loginizer. Loginizer Pro dipende dalla versione gratuita, quindi devi installarla prima per poter utilizzare Loginizer Pro."
+
+#: loginizer-security/main/upgrader.php:127
+msgid "You are using an older version of the free version of Loginizer, please update Loginizer to work without any issues"
+msgstr "Stai utilizzando una versione precedente della versione gratuita di Loginizer, aggiorna Loginizer per farlo funzionare senza problemi"
+
+#: loginizer-security/updater/plugin-update-checker.php:780
+msgid "Check for updates"
+msgstr "Verifica aggiornamenti"
+
+#: loginizer-security/updater/plugin-update-checker.php:825
+msgid "This plugin is up to date."
+msgstr "Questo plugin è aggiornato."
+
+#: loginizer-security/updater/plugin-update-checker.php:827
+msgid "A new version of this plugin is available."
+msgstr "È disponibile una nuova versione di questo plugin."
+
+#: loginizer-security/updater/plugin-update-checker.php:829
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Stato sconosciuto del controllo aggiornamenti \"%s\""
+
+#: loginizer/functions.php:148
+msgid "Please fix the below error(s)"
+msgstr "Correggi gli errori qui sotto"
+
+#: loginizer/functions.php:175
+msgid "Please check the below notice(s)"
+msgstr "Controlla i seguenti avvisi"
+
+#: loginizer/functions.php:327 loginizer/functions.php:334
+msgid "You can not access this page"
+msgstr "Non puoi accedere a questa pagina"
+
+#: loginizer/functions.php:503
+msgid "Login With"
+msgstr "Accedi con"
+
+#: loginizer/functions.php:511
+msgid "No Auth Provider configured"
+msgstr "Nessun provider di autenticazione configurato"
+
+#: loginizer/init.php:396 loginizer/init.php:400
+msgid "You are restricted from logging in as your IP is not whitelisted."
+msgstr "Non puoi accedere perché il tuo IP non è nella lista bianca."
+
+#: loginizer/init.php:731
+msgid "There was a problem sending your email."
+msgstr "C'è stato un problema nell'invio della tua email."
+
+#: loginizer/init.php:862
+msgid "Login Successful at $sitename"
+msgstr "Accesso riuscito su $sitename"
+
+#: loginizer/init.php:863
+msgid ""
+"Hello $user_login,\n"
+"\n"
+"Your account was recently logged in from the IP : $ip\n"
+"Time : $date \n"
+"If it was not you who logged in then please report this to us immediately.\n"
+"\n"
+"Regards,\n"
+"$sitename"
+msgstr ""
+"Ciao $user_login,\n"
+"\n"
+"Il tuo account è stato recentemente utilizzato per un accesso dall'IP : $ip\n"
+"Ora : $date \n"
+"Se non sei stato tu ad accedere, segnalacelo immediatamente.\n"
+"\n"
+"Cordiali saluti,\n"
+"$sitename"
+
+#: loginizer/init.php:881
+msgid "Incorrect Username or Password"
+msgstr "Nome utente o password non corretti"
+
+#: loginizer/init.php:882
+msgid "Your IP has been blacklisted"
+msgstr "Il tuo IP è stato inserito nella lista nera"
+
+#: loginizer/init.php:883
+msgid "attempt(s) left"
+msgstr "tentativi rimasti"
+
+#: loginizer/init.php:884
+msgid "You have exceeded maximum login retries<br /> Please try after"
+msgstr "Hai superato il numero massimo di tentativi di accesso<br /> Riprova dopo"
+
+#: loginizer/init.php:885
+msgid "minute(s)"
+msgstr "minuti"
+
+#: loginizer/init.php:886
+msgid "hour(s)"
+msgstr "ore"
+
+#: loginizer/init.php:897
+msgid "Please enter the OTP as seen in your App"
+msgstr "Inserisci l'OTP come mostrato nella tua app"
+
+#: loginizer/init.php:898
+msgid "Please enter the OTP emailed to you"
+msgstr "Inserisci l'OTP che ti è stato inviato via email"
+
+#: loginizer/init.php:899
+msgid "One Time Password"
+msgstr "Password monouso"
+
+#: loginizer/init.php:900
+msgid "Please answer your security question"
+msgstr "Rispondi alla tua domanda di sicurezza"
+
+#: loginizer/init.php:901
+msgid "Your Answer"
+msgstr "La tua risposta"
+
+#: loginizer/main/admin.php:229
+msgid "Backups are the best form of security. Secure your WordPress site by creating backups with Backuply"
+msgstr "I backup sono la miglior forma di sicurezza. Proteggi il tuo sito WordPress creando backup con Backuply"
+
+#: loginizer/main/admin.php:231
+msgid "Backup to remote locations like FTP, FTPS, SFTP, WebDAV, Google Drive, OneDrive, Dropbox, Amazon S3"
+msgstr "Backup su posizioni remote come FTP, FTPS, SFTP, WebDAV, Google Drive, OneDrive, Dropbox, Amazon S3"
+
+#: loginizer/main/admin.php:232 loginizer/main/admin.php:399
+msgid "Auto Backups"
+msgstr "Backup automatici"
+
+#: loginizer/main/admin.php:233
+msgid "Easy One-Click restores"
+msgstr "Ripristini facili con un clic"
+
+#: loginizer/main/admin.php:234
+msgid "Stress Free Migrations"
+msgstr "Migrazioni senza stress"
+
+#: loginizer/main/admin.php:236
+msgid "Install Backuply"
+msgstr "Installa Backuply"
+
+#: loginizer/main/admin.php:236 loginizer/main/admin.php:408
+msgid "Visit Backuply"
+msgstr "Visita Backuply"
+
+#: loginizer/main/admin.php:306
+msgid "Done! Backuply is now installed and activated."
+msgstr "Fatto! Backuply è ora installato e attivato."
+
+#: loginizer/main/admin.php:345
+msgid "Premium Version"
+msgstr "Versione Premium"
+
+#: loginizer/main/admin.php:350
+msgid "Upgrade to the premium version and get the following features"
+msgstr "Passa alla versione Premium e ottieni le seguenti funzionalità"
+
+#: loginizer/main/admin.php:352
+msgid "PasswordLess Login"
+msgstr "Accesso senza password"
+
+#: loginizer/main/admin.php:353 loginizer/main/admin.php:380
+msgid "Two Factor Auth - Email"
+msgstr "Autenticazione a due fattori - Email"
+
+#: loginizer/main/admin.php:354 loginizer/main/admin.php:381
+msgid "Two Factor Auth - App"
+msgstr "Autenticazione a due fattori - App"
+
+#: loginizer/main/admin.php:355 loginizer/main/admin.php:378
+msgid "Login Challenge Question"
+msgstr "Domanda di verifica dell'accesso"
+
+#: loginizer/main/admin.php:356 loginizer/main/admin.php:379
+#: loginizer/main/admin.php:576
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+#: loginizer/main/admin.php:357 loginizer/main/admin.php:377
+#: loginizer/main/settings/security.php:321
+msgid "Rename Login Page"
+msgstr "Rinomina pagina di accesso"
+
+#: loginizer/main/admin.php:358 loginizer/main/settings/security.php:414
+msgid "Disable XML-RPC"
+msgstr "Disabilita XML-RPC"
+
+#: loginizer/main/admin.php:359 loginizer/main/admin.php:430
+msgid "And many more ..."
+msgstr "E molti altri ..."
+
+#: loginizer/main/admin.php:371
+msgid "Recommendations"
+msgstr "Raccomandazioni"
+
+#: loginizer/main/admin.php:375
+msgid "We recommed that you enable atleast one of the following security features"
+msgstr "Ti raccomandiamo di abilitare almeno una delle seguenti funzionalità di sicurezza"
+
+#: loginizer/main/admin.php:382
+msgid "Change 'admin' Username"
+msgstr "Cambia nome utente 'admin'"
+
+#: loginizer/main/admin.php:396
+msgid "Secure your WordPress site by creating backups with Backuply"
+msgstr "Proteggi il tuo sito WordPress creando backup con Backuply"
+
+#: loginizer/main/admin.php:398
+msgid "Remote Backup to 8 location"
+msgstr "Backup remoto a 8 posizioni"
+
+#: loginizer/main/admin.php:400
+msgid "Backup Rotation"
+msgstr "Rotazione backup"
+
+#: loginizer/main/admin.php:401
+msgid "One-Click Restore"
+msgstr "Ripristino con un clic"
+
+#: loginizer/main/admin.php:402
+msgid "Stress-free Migration"
+msgstr "Migrazione senza stress"
+
+#: loginizer/main/admin.php:403
+msgid "Backup to Google Drive"
+msgstr "Backup su Google Drive"
+
+#: loginizer/main/admin.php:404
+msgid "Backup to Amazon S3"
+msgstr "Backup su Amazon S3"
+
+#: loginizer/main/admin.php:405
+msgid "Backup to Dropbox"
+msgstr "Backup su Dropbox"
+
+#: loginizer/main/admin.php:406
+msgid "Backup to FTP,FTPS and many more ..."
+msgstr "Backup su FTP, FTPS e molti altri ..."
+
+#: loginizer/main/admin.php:420
+msgid "Easily manage and make professional pages and content with our Pagelayer builder"
+msgstr "Gestisci e crea facilmente pagine e contenuti professionali con il nostro builder Pagelayer"
+
+#: loginizer/main/admin.php:422
+msgid "30+ Free Widgets"
+msgstr "30+ widget gratuiti"
+
+#: loginizer/main/admin.php:423
+msgid "60+ Premium Widgets"
+msgstr "60+ widget premium"
+
+#: loginizer/main/admin.php:424
+msgid "400+ Premium Sections"
+msgstr "400+ sezioni premium"
+
+#: loginizer/main/admin.php:425
+msgid "Theme Builder"
+msgstr "Theme Builder"
+
+#: loginizer/main/admin.php:426
+msgid "WooCommerce Builder"
+msgstr "WooCommerce Builder"
+
+#: loginizer/main/admin.php:427
+msgid "Theme Creator and Exporter"
+msgstr "Theme Creator and Exporter"
+
+#: loginizer/main/admin.php:428
+msgid "Form Builder"
+msgstr "Form Builder"
+
+#: loginizer/main/admin.php:429
+msgid "Popup Builder"
+msgstr "Popup Builder"
+
+#: loginizer/main/admin.php:432
+msgid "Visit Pagelayer"
+msgstr "Visita Pagelayer"
+
+#: loginizer/main/admin.php:446
+msgid "Let your friends know that you have secured your website :"
+msgstr "Fai sapere ai tuoi amici che hai protetto il tuo sito web :"
+
+#: loginizer/main/admin.php:448
+msgid "I just secured my @WordPress site against #bruteforce using @loginizer"
+msgstr "Ho appena protetto il mio sito @WordPress contro #bruteforce usando @loginizer"
+
+#: loginizer/main/admin.php:463
+msgid "You can report any bugs "
+msgstr "Puoi segnalare eventuali bug "
+
+#: loginizer/main/admin.php:463
+msgid "here"
+msgstr "qui"
+
+#: loginizer/main/admin.php:503
+msgid "Refer and Earn"
+msgstr "Invita e guadagna"
+
+#: loginizer/main/admin.php:503
+msgid "Review Loginizer"
+msgstr "Recensisci Loginizer"
+
+#: loginizer/main/admin.php:521
+msgid "You have enabled CSRF protection but the .htaccess file has not been updated"
+msgstr "Hai attivato la protezione CSRF ma il file .htaccess non è stato aggiornato"
+
+#: loginizer/main/admin.php:538 loginizer/main/admin.php:541
+msgid "Loginizer Dashboard"
+msgstr "Bacheca Loginizer"
+
+#: loginizer/main/admin.php:538
+msgid "Loginizer Security"
+msgstr "Loginizer Security"
+
+#: loginizer/main/admin.php:541
+msgid "Dashboard"
+msgstr "Bacheca"
+
+#: loginizer/main/admin.php:546
+msgid "Security"
+msgstr "Sicurezza"
+
+#: loginizer/main/admin.php:549 loginizer/main/admin.php:588
+msgid "Security Settings"
+msgstr "Impostazioni di sicurezza"
+
+#: loginizer/main/admin.php:549
+msgid "Rename Login"
+msgstr "Rinomina accesso"
+
+#: loginizer/main/admin.php:554 loginizer/main/settings/brute-force.php:663
+msgid "Brute Force Settings"
+msgstr "Impostazioni brute force"
+
+#: loginizer/main/admin.php:554
+msgid "Brute Force"
+msgstr "Brute Force"
+
+#: loginizer/main/admin.php:559
+msgid "New"
+msgstr "Nuovo"
+
+#: loginizer/main/admin.php:565 loginizer/main/settings/passwordless.php:100
+msgid "PasswordLess Settings"
+msgstr "Impostazioni PasswordLess"
+
+#: loginizer/main/admin.php:565
+msgid "PasswordLess"
+msgstr "PasswordLess"
+
+#: loginizer/main/admin.php:571
+msgid " Two Factor Authentication"
+msgstr " Autenticazione a due fattori"
+
+#: loginizer/main/admin.php:571
+msgid "Two Factor Auth"
+msgstr "Autenticazione a due fattori"
+
+#: loginizer/main/admin.php:576 loginizer/main/settings/recaptcha.php:313
+msgid "reCAPTCHA Settings"
+msgstr "Impostazioni reCAPTCHA"
+
+#: loginizer/main/admin.php:579
+msgid "SSO"
+msgstr "SSO"
+
+#: loginizer/main/admin.php:579
+msgid "Single Sign On"
+msgstr "Accesso unico"
+
+#: loginizer/main/admin.php:582
+msgid "Social Login"
+msgstr "Accesso social"
+
+#: loginizer/main/admin.php:591
+msgid "Loginizer File Checksums"
+msgstr "Checksum dei file di Loginizer"
+
+#: loginizer/main/admin.php:591
+msgid "File Checksums"
+msgstr "Checksum dei file"
+
+#: loginizer/main/admin.php:598
+msgid "Loginizer Go Pro"
+msgstr "Loginizer Vai a Pro"
+
+#: loginizer/main/admin.php:598
+msgid "Go Pro"
+msgstr "Vai a Pro"
+
+#: loginizer/main/admin.php:710 loginizer/main/settings/2fa.php:17
+#: loginizer/main/settings/checksum.php:42
+#: loginizer/main/settings/passwordless.php:17
+#: loginizer/main/settings/recaptcha.php:21
+#: loginizer/main/settings/security.php:17
+#: loginizer/main/settings/social_login.php:100
+msgid "Upgrade to Pro"
+msgstr "Aggiorna a Pro"
+
+#: loginizer/main/admin.php:712
+msgid "Like Us on Facebook"
+msgstr "Metti Mi piace su Facebook"
+
+#: loginizer/main/admin.php:713
+msgid "Post on X about Loginizer"
+msgstr "Posta su X su Loginizer"
+
+#: loginizer/main/admin.php:828
+msgid "You changed login slug!"
+msgstr "Hai cambiato lo slug di accesso!"
+
+#: loginizer/main/admin.php:829
+msgid "You changed the login slug and have some social login apps enabled. These social login apps use the login URL as the redirect URI. This means that since the login URL has changed, the social login will now break."
+msgstr "Hai cambiato lo slug di accesso e hai alcune app di accesso social abilitate. Queste app di accesso social usano l'URL di accesso come URI di reindirizzamento. Ciò significa che, poiché l'URL di accesso è cambiato, l'accesso social ora si romperà."
+
+#: loginizer/main/admin.php:831
+msgid "How to fix:"
+msgstr "Come risolvere:"
+
+#: loginizer/main/admin.php:832
+msgid "When you created secret keys for the social apps, you also provided a Redirect URI. To fix this issue, you need to update that Redirect URI."
+msgstr "Quando hai creato le chiavi segrete per le app social, hai anche fornito un URI di reindirizzamento. Per risolvere questo problema, devi aggiornare quell'URI di reindirizzamento."
+
+#: loginizer/main/admin.php:834
+msgid "I have fixed this issue"
+msgstr "Ho risolto questo problema"
+
+#: loginizer/main/admin.php:879
+msgid "Dismiss Forever"
+msgstr "Ignora per sempre"
+
+#: loginizer/main/admin.php:881
+msgid "Hey, you might be eligible to access Premium plugins provided by Softaculous for Free ! Please refer to these documents for details on how to avail them."
+msgstr "Ehi, potresti avere diritto ad accedere ai plugin Premium forniti da Softaculous gratuitamente! Consulta questi documenti per i dettagli su come ottenerli."
+
+#: loginizer/main/admin.php:882
+msgid "Generate SoftWP License"
+msgstr "Genera licenza SoftWP"
+
+#: loginizer/main/admin.php:882
+msgid "How to Install the Pro plugins"
+msgstr "Come installare i plugin Pro"
+
+#: loginizer/main/admin.php:924 loginizer/main/admin.php:935
+msgid "Dismiss for 60 days"
+msgstr "Ignora per 60 giorni"
+
+#: loginizer/main/admin.php:926
+#, php-format
+msgid "Alert : Your Loginizer Premium license will expire in %s. Renew to keep getting updates!"
+msgstr "Avviso : La tua licenza Loginizer Premium scadrà tra %s. Rinnova per continuare a ricevere aggiornamenti!"
+
+#: loginizer/main/admin.php:927 loginizer/main/admin.php:938
+msgid "Click here to renew"
+msgstr "Clicca qui per rinnovare"
+
+#: loginizer/main/admin.php:937
+msgid "Alert: Your Loginizer Premium license has expired. Please renew immediately to keep getting updates "
+msgstr "Avviso: La tua licenza Loginizer Premium è scaduta. Rinnova immediatamente per continuare a ricevere aggiornamenti "
+
+#: loginizer/main/admin.php:976
+#, php-format
+msgid "New versions of %1$s %2$s available. Updating ensures better performance, security, and access to the latest features."
+msgstr "Nuove versioni di %1$s %2$s disponibili. L'aggiornamento garantisce migliori prestazioni, sicurezza e accesso alle ultime funzionalità."
+
+#: loginizer/main/ajax.php:94 loginizer/main/ajax.php:147
+msgid "No data to export"
+msgstr "Nessun dato da esportare"
+
+#: loginizer/main/settings/2fa.php:17 loginizer/main/settings/checksum.php:42
+#: loginizer/main/settings/passwordless.php:17
+#: loginizer/main/settings/recaptcha.php:21
+#: loginizer/main/settings/security.php:17
+msgid "This feature is not available in the Free version."
+msgstr "Questa funzionalità non è disponibile nella versione gratuita."
+
+#: loginizer/main/settings/2fa.php:90
+msgid "There is no such user with the email or username you submitted"
+msgstr "Non esiste un utente con l'email o il nome utente che hai inviato"
+
+#: loginizer/main/settings/2fa.php:104
+msgid "The user's 2FA settings have been reset"
+msgstr "Le impostazioni 2FA dell'utente sono state reimpostate"
+
+#: loginizer/main/settings/2fa.php:152
+msgid "Messages were saved successfully"
+msgstr "I messaggi sono stati salvati correttamente"
+
+#: loginizer/main/settings/2fa.php:167
+#: loginizer/main/settings/brute-force.php:193
+msgid "The Whitelist IP range has been deleted successfully"
+msgstr "L'intervallo IP nella lista bianca è stato eliminato correttamente"
+
+#: loginizer/main/settings/2fa.php:178
+#: loginizer/main/settings/brute-force.php:205
+msgid "The Whitelist IP range(s) have been cleared successfully"
+msgstr "L'intervallo o gli intervalli IP nella lista bianca sono stati cancellati correttamente"
+
+#: loginizer/main/settings/2fa.php:189
+#: loginizer/main/settings/brute-force.php:1229
+msgid "Please enter the Start IP"
+msgstr "Inserisci l'IP di inizio"
+
+#: loginizer/main/settings/2fa.php:199
+#: loginizer/main/settings/brute-force.php:1238
+msgid "Please provide a valid start IP"
+msgstr "Fornisci un IP di inizio valido"
+
+#: loginizer/main/settings/2fa.php:203
+#: loginizer/main/settings/brute-force.php:1242
+msgid "Please provide a valid end IP"
+msgstr "Fornisci un IP di fine valido"
+
+#: loginizer/main/settings/2fa.php:212
+#: loginizer/main/settings/brute-force.php:1251
+msgid "The End IP cannot be smaller than the Start IP"
+msgstr "L'IP di fine non può essere minore dell'IP di inizio"
+
+#: loginizer/main/settings/2fa.php:227
+#: loginizer/main/settings/brute-force.php:1273
+msgid "The Start IP or End IP submitted conflicts with an existing IP range !"
+msgstr "L'IP di inizio o di fine inviato è in conflitto con un intervallo IP esistente !"
+
+#: loginizer/main/settings/2fa.php:233
+#: loginizer/main/settings/brute-force.php:1279
+msgid "The Start IP is present in an existing range !"
+msgstr "L'IP di inizio è presente in un intervallo esistente !"
+
+#: loginizer/main/settings/2fa.php:239
+#: loginizer/main/settings/brute-force.php:1285
+msgid "The End IP is present in an existing range!"
+msgstr "L'IP di fine è presente in un intervallo esistente!"
+
+#: loginizer/main/settings/2fa.php:257
+msgid "Whitelist IP range for Two Factor Authentication added successfully"
+msgstr "Intervallo IP nella lista bianca per l'autenticazione a due fattori aggiunto correttamente"
+
+#: loginizer/main/settings/2fa.php:323
+msgid "Two Factor Authentication Settings"
+msgstr "Impostazioni autenticazione a due fattori"
+
+#: loginizer/main/settings/2fa.php:334
+msgid "Please choose from the following Two Factor Authentication methods. Each user can choose any one method from the ones enabled by you. You can enable all or anyone that you would like."
+msgstr "Scegli tra i seguenti metodi di autenticazione a due fattori. Ogni utente può scegliere un qualsiasi metodo tra quelli abilitati da te. Puoi abilitare tutti o uno qualsiasi di quelli che desideri."
+
+#: loginizer/main/settings/2fa.php:339
+msgid "OTP via App"
+msgstr "OTP tramite app"
+
+#: loginizer/main/settings/2fa.php:340
+msgid "After entering the correct login credentials, the user will be asked for the OTP. The OTP will be obtained from the users mobile app e.g. <b>Google Authenticator, Authy, etc.</b>"
+msgstr "Dopo aver inserito le credenziali di accesso corrette, all'utente verrà richiesto l'OTP. L'OTP sarà ottenuto dall'app mobile dell'utente, ad es. <b>Google Authenticator, Authy, ecc.</b>"
+
+#: loginizer/main/settings/2fa.php:348 loginizer/main/settings/2fa.php:555
+msgid "OTP via Email"
+msgstr "OTP tramite email"
+
+#: loginizer/main/settings/2fa.php:349
+msgid "After entering the correct login credentials, the user will be asked for the OTP. The OTP will be emailed to the user."
+msgstr "Dopo aver inserito le credenziali di accesso corrette, all'utente verrà richiesto l'OTP. L'OTP verrà inviato via email all'utente."
+
+#: loginizer/main/settings/2fa.php:357
+msgid "User Defined Question & Answer"
+msgstr "Domanda e risposta definite dall'utente"
+
+#: loginizer/main/settings/2fa.php:358
+msgid "In this method the user will be asked to set a secret personal question and answer. After entering the correct login credentials, the user will be asked to answer the question set by them, thus increasing the security"
+msgstr "In questo metodo, all'utente verrà chiesto di impostare una domanda e una risposta personali segrete. Dopo aver inserito le credenziali di accesso corrette, all'utente verrà chiesto di rispondere alla domanda impostata da loro, aumentando così la sicurezza"
+
+#: loginizer/main/settings/2fa.php:369
+msgid "Force OTP via Email"
+msgstr "Forza OTP tramite email"
+
+#: loginizer/main/settings/2fa.php:370
+msgid "If the user does not have any 2FA method selected, this will enforce the OTP via Email for the users."
+msgstr "Se l'utente non ha selezionato alcun metodo 2FA, questo imporrà l'OTP via email per gli utenti."
+
+#: loginizer/main/settings/2fa.php:378
+msgid "Apply 2FA to Roles"
+msgstr "Applica 2FA ai ruoli"
+
+#: loginizer/main/settings/2fa.php:379
+msgid "Select the Roles to which 2FA should be applied."
+msgstr "Seleziona i ruoli a cui applicare 2FA."
+
+#: loginizer/main/settings/2fa.php:382
+msgid "All"
+msgstr "Tutti"
+
+#: loginizer/main/settings/2fa.php:397
+msgid "Enforcement Type"
+msgstr "Tipo di imposizione"
+
+#: loginizer/main/settings/2fa.php:398
+msgid "1. Choose Strict Setup to require users to setup 2FA immediately. OR"
+msgstr "1. Scegli Configurazione rigorosa per richiedere agli utenti di impostare immediatamente 2FA. OPPURE"
+
+#: loginizer/main/settings/2fa.php:399
+msgid "2. Choose Grace Timed Setup to give users time to complete 2FA"
+msgstr "2. Scegli Configurazione con periodo di grazia per dare agli utenti il tempo di completare 2FA"
+
+#: loginizer/main/settings/2fa.php:404
+msgid "None"
+msgstr "Nessuno"
+
+#: loginizer/main/settings/2fa.php:407
+msgid "Strict (Requires 2FA setup immediately)"
+msgstr "Rigoroso (Richiede l'impostazione immediata di 2FA)"
+
+#: loginizer/main/settings/2fa.php:410
+msgid "Grace Period (Give some time to setup)"
+msgstr "Periodo di grazia (Concedi un po' di tempo per impostare)"
+
+#: loginizer/main/settings/2fa.php:420
+msgid "days"
+msgstr "giorni"
+
+#: loginizer/main/settings/2fa.php:422
+#: loginizer/main/settings/brute-force.php:511
+#: loginizer/main/settings/brute-force.php:699
+msgid "hours"
+msgstr "ore"
+
+#: loginizer/main/settings/2fa.php:428
+msgid "What action should be taken if user does not completes the 2FA setup within the grace time."
+msgstr "Quale azione dovrebbe essere intrapresa se l'utente non completa la configurazione 2FA entro il periodo di grazia."
+
+#: loginizer/main/settings/2fa.php:430
+msgid "Make the 2FA setup mandatory for the user."
+msgstr "Rendi obbligatoria la configurazione 2FA per l'utente."
+
+#: loginizer/main/settings/2fa.php:432
+msgid "Show a notice on login untill 2FA setup is completed."
+msgstr "Mostra un avviso all'accesso finché la configurazione 2FA non è completata."
+
+#: loginizer/main/settings/2fa.php:464
+msgid "OTP via Email Template"
+msgstr "Modello email OTP"
+
+#: loginizer/main/settings/2fa.php:475
+msgid "Customize the email template to be used when sending the OTP to login via Email for 2FA."
+msgstr "Personalizza il modello email da utilizzare quando si invia l'OTP per l'accesso via email per la 2FA."
+
+#: loginizer/main/settings/2fa.php:476
+msgid "If you do not make changes below the default email template will be used !"
+msgstr "Se non apporti modifiche di seguito, verrà utilizzato il modello email predefinito !"
+
+#: loginizer/main/settings/2fa.php:481
+#: loginizer/main/settings/brute-force.php:1153
+#: loginizer/main/settings/passwordless.php:123
+msgid "Email Subject"
+msgstr "Oggetto email"
+
+#: loginizer/main/settings/2fa.php:482
+#: loginizer/main/settings/brute-force.php:1154
+#: loginizer/main/settings/passwordless.php:124
+msgid "Set blank to reset to the default subject"
+msgstr "Imposta vuoto per ripristinare l'oggetto predefinito"
+
+#: loginizer/main/settings/2fa.php:491
+#: loginizer/main/settings/brute-force.php:1167
+#: loginizer/main/settings/passwordless.php:133
+msgid "Email Body"
+msgstr "Corpo email"
+
+#: loginizer/main/settings/2fa.php:492
+#: loginizer/main/settings/brute-force.php:1168
+#: loginizer/main/settings/passwordless.php:134
+msgid "Set blank to reset to the default message"
+msgstr "Imposta vuoto per ripristinare il messaggio predefinito"
+
+#: loginizer/main/settings/2fa.php:511
+#: loginizer/main/settings/brute-force.php:1144
+#: loginizer/main/settings/passwordless.php:148
+msgid "Send email as HTML"
+msgstr "Invia email come HTML"
+
+#: loginizer/main/settings/2fa.php:528
+msgid "Custom Messages for OTP"
+msgstr "Messaggi personalizzati per OTP"
+
+#: loginizer/main/settings/2fa.php:539
+msgid "Customize the title for OTP field displayed to the user on the login form."
+msgstr "Personalizza il titolo del campo OTP visualizzato all'utente nel modulo di accesso."
+
+#: loginizer/main/settings/2fa.php:540
+msgid "If you do not make changes below the default messages will be used !"
+msgstr "Se non apporti modifiche di seguito, verranno utilizzati i messaggi predefiniti !"
+
+#: loginizer/main/settings/2fa.php:545
+msgid "OTP via APP"
+msgstr "OTP tramite APP"
+
+#: loginizer/main/settings/2fa.php:546 loginizer/main/settings/2fa.php:556
+#: loginizer/main/settings/2fa.php:566 loginizer/main/settings/2fa.php:576
+#: loginizer/main/settings/2fa.php:586
+#: loginizer/main/settings/brute-force.php:1067
+#: loginizer/main/settings/brute-force.php:1074
+#: loginizer/main/settings/brute-force.php:1081
+#: loginizer/main/settings/brute-force.php:1088
+#: loginizer/main/settings/brute-force.php:1095
+#: loginizer/main/settings/brute-force.php:1102
+msgid "Default:"
+msgstr "Predefinito:"
+
+#: loginizer/main/settings/2fa.php:565
+msgid "Title for OTP field"
+msgstr "Titolo per il campo OTP"
+
+#: loginizer/main/settings/2fa.php:575
+msgid "Title for Security Question"
+msgstr "Titolo per la domanda di sicurezza"
+
+#: loginizer/main/settings/2fa.php:585
+msgid "Title for Security Answer"
+msgstr "Titolo per la risposta di sicurezza"
+
+#: loginizer/main/settings/2fa.php:594
+msgid "Save Messages"
+msgstr "Salva messaggi"
+
+#: loginizer/main/settings/2fa.php:604
+msgid "Disable Two Factor Authentication for a User"
+msgstr "Disabilita l'autenticazione a due fattori per un utente"
+
+#: loginizer/main/settings/2fa.php:615
+msgid "Here you can disable the Two Factor Authentication settings of a user. In the event a user has forgotten his secret answer or lost his Device App, he will not be able to login. You can reset such a users settings from here."
+msgstr "Qui puoi disabilitare le impostazioni di autenticazione a due fattori di un utente. Nel caso in cui un utente abbia dimenticato la risposta segreta o perso l'app del dispositivo, non potrà accedere. Da qui puoi reimpostare le impostazioni di tali utenti."
+
+#: loginizer/main/settings/2fa.php:620
+msgid "Username / Email"
+msgstr "Nome utente / Email"
+
+#: loginizer/main/settings/2fa.php:621
+msgid "The username or email of the user whose 2FA you would like to disable"
+msgstr "Il nome utente o l'email dell'utente di cui desideri disabilitare la 2FA"
+
+#: loginizer/main/settings/2fa.php:629
+msgid "Reset 2FA for User"
+msgstr "Reimposta 2FA per l'utente"
+
+#: loginizer/main/settings/2fa.php:701
+msgid "Disable Two Factor Authentication for IP"
+msgstr "Disabilita l'autenticazione a due fattori per IP"
+
+#: loginizer/main/settings/2fa.php:707
+msgid "Enter the IP you want to whitelist for two factor authentication"
+msgstr "Inserisci l'IP che desideri inserire nella lista bianca per l'autenticazione a due fattori"
+
+#: loginizer/main/settings/2fa.php:712 loginizer/main/settings/2fa.php:732
+#: loginizer/main/settings/brute-force.php:863
+#: loginizer/main/settings/brute-force.php:909
+#: loginizer/main/settings/brute-force.php:967
+#: loginizer/main/settings/brute-force.php:1012
+msgid "Start IP"
+msgstr "IP iniziale"
+
+#: loginizer/main/settings/2fa.php:714
+#: loginizer/main/settings/brute-force.php:865
+#: loginizer/main/settings/brute-force.php:969
+msgid "Start IP of the range"
+msgstr "IP iniziale dell'intervallo"
+
+#: loginizer/main/settings/2fa.php:718
+#: loginizer/main/settings/brute-force.php:869
+#: loginizer/main/settings/brute-force.php:973
+msgid "End IP (Optional)"
+msgstr "IP finale (opzionale)"
+
+#: loginizer/main/settings/2fa.php:720
+#: loginizer/main/settings/brute-force.php:975
+msgid "End IP of the range. <br />If you want to whitelist single IP leave this field blank."
+msgstr "IP finale dell'intervallo. <br />Se desideri inserire un singolo IP nella lista bianca, lascia vuoto questo campo."
+
+#: loginizer/main/settings/2fa.php:724
+#: loginizer/main/settings/brute-force.php:979
+msgid "Add Whitelist IP Range"
+msgstr "Aggiungi intervallo IP alla lista bianca"
+
+#: loginizer/main/settings/2fa.php:725
+msgid "Are you sure you want to delete all Whitelist IP Range(s) for 2FA ?"
+msgstr "Sei sicuro di voler eliminare tutti gli intervalli IP nella lista bianca per la 2FA ?"
+
+#: loginizer/main/settings/2fa.php:725
+msgid "Delete All Whitelist IP Range(s) for 2FA"
+msgstr "Elimina tutti gli intervalli IP nella lista bianca per la 2FA"
+
+#: loginizer/main/settings/2fa.php:733
+#: loginizer/main/settings/brute-force.php:910
+#: loginizer/main/settings/brute-force.php:1013
+msgid "End IP"
+msgstr "IP finale"
+
+#: loginizer/main/settings/2fa.php:734
+#: loginizer/main/settings/brute-force.php:911
+#: loginizer/main/settings/brute-force.php:1014
+msgid "Date (DD/MM/YYYY)"
+msgstr "Data (GG/MM/AAAA)"
+
+#: loginizer/main/settings/2fa.php:735
+#: loginizer/main/settings/brute-force.php:912
+#: loginizer/main/settings/brute-force.php:1015
+msgid "Options"
+msgstr "Opzioni"
+
+#: loginizer/main/settings/2fa.php:742
+msgid "No Whitelist IPs for Two Factor Authentication. You will see whitelisted IP ranges here."
+msgstr "Nessun IP nella lista bianca per l'autenticazione a due fattori. Qui vedrai gli intervalli IP nella lista bianca."
+
+#: loginizer/main/settings/2fa.php:780
+msgid "Custom Redirects based on roles"
+msgstr "Reindirizzamenti personalizzati in base ai ruoli"
+
+#: loginizer/main/settings/2fa.php:791
+msgid "Here you can set the URL, which you wish your user to get redirected to after login via 2FA."
+msgstr "Qui puoi impostare l'URL a cui desideri che il tuo utente venga reindirizzato dopo l'accesso tramite 2FA."
+
+#: loginizer/main/settings/2fa.php:811
+msgid "Save Custom URLs"
+msgstr "Salva URL personalizzati"
+
+#: loginizer/main/settings/brute-force.php:37
+msgid "The Brute Force Protection feature is now disabled"
+msgstr "La protezione brute force è ora disabilitata"
+
+#: loginizer/main/settings/brute-force.php:51
+msgid "The Brute Force Protection feature is now enabled"
+msgstr "La protezione brute force è ora abilitata"
+
+#: loginizer/main/settings/brute-force.php:86
+msgid "Email address is invalid"
+msgstr "L'indirizzo email non è valido"
+
+#: loginizer/main/settings/brute-force.php:90
+msgid "Add your IP to whitelist to enable Trusted IP's"
+msgstr "Aggiungi il tuo IP alla lista bianca per abilitare gli IP fidati"
+
+#: loginizer/main/settings/brute-force.php:94
+msgid "Max Retries value is invalid"
+msgstr "Il valore dei tentativi massimi non è valido"
+
+#: loginizer/main/settings/brute-force.php:98
+msgid "Lockout Time value is invalid"
+msgstr "Il valore del tempo di blocco non è valido"
+
+#: loginizer/main/settings/brute-force.php:102
+msgid "Max Lockouts value is invalid"
+msgstr "Il valore dei blocchi massimi non è valido"
+
+#: loginizer/main/settings/brute-force.php:106
+msgid "Extended Lockout value is invalid"
+msgstr "Il valore del blocco esteso non è valido"
+
+#: loginizer/main/settings/brute-force.php:110
+msgid "Reset Retries value is invalid"
+msgstr "Il valore del ripristino dei tentativi non è valido"
+
+#: loginizer/main/settings/brute-force.php:114
+msgid "Email Notification value is invalid"
+msgstr "Il valore della notifica email non è valido"
+
+#: loginizer/main/settings/brute-force.php:165
+msgid "The Blacklist IP range has been deleted successfully"
+msgstr "L'intervallo IP della lista nera è stato eliminato con successo"
+
+#: loginizer/main/settings/brute-force.php:177
+msgid "The Blacklist IP range(s) have been cleared successfully"
+msgstr "Gli intervalli IP della lista nera sono stati cancellati con successo"
+
+#: loginizer/main/settings/brute-force.php:216
+msgid "All the IP Logs have been cleared"
+msgstr "Tutti i log IP sono stati cancellati"
+
+#: loginizer/main/settings/brute-force.php:232
+#: loginizer/main/settings/brute-force.php:416
+msgid "There are no IPs submitted"
+msgstr "Non ci sono IP inviati"
+
+#: loginizer/main/settings/brute-force.php:245
+msgid "The selected IP Logs have been reset"
+msgstr "I log IP selezionati sono stati reimpostati"
+
+#: loginizer/main/settings/brute-force.php:285
+msgid "Blacklist IP range added successfully"
+msgstr "Intervallo IP della lista nera aggiunto con successo"
+
+#: loginizer/main/settings/brute-force.php:323
+msgid "Whitelist IP range added successfully"
+msgstr "Intervallo IP della lista bianca aggiunto con successo"
+
+#: loginizer/main/settings/brute-force.php:341
+msgid "Invalid import type"
+msgstr "Tipo di importazione non valido"
+
+#: loginizer/main/settings/brute-force.php:389
+#, php-format
+msgid "Imported %s IP range(s) successfully"
+msgstr "Importato %s intervallo/i IP con successo"
+
+#: loginizer/main/settings/brute-force.php:411
+#, php-format
+msgid "The IP - %s is invalid !"
+msgstr "L'IP - %s non è valido !"
+
+#: loginizer/main/settings/brute-force.php:444
+msgid "The selected IP(s) have been blacklisted"
+msgstr "Gli IP selezionati sono stati inseriti nella lista nera"
+
+#: loginizer/main/settings/brute-force.php:451
+msgid "No IP(s) selected"
+msgstr "Nessun IP selezionato"
+
+#: loginizer/main/settings/brute-force.php:473
+msgid "Error messages were saved successfully"
+msgstr "I messaggi di errore sono stati salvati correttamente"
+
+#: loginizer/main/settings/brute-force.php:511
+msgid "Failed Login Attempts Logs"
+msgstr "Registri dei tentativi di accesso falliti"
+
+#: loginizer/main/settings/brute-force.php:511
+msgid "Past"
+msgstr "Passato"
+
+#: loginizer/main/settings/brute-force.php:598
+msgid "Attempted Username"
+msgstr "Username tentato"
+
+#: loginizer/main/settings/brute-force.php:599
+msgid "Last Failed Attempt  (DD/MM/YYYY)"
+msgstr "Ultimo tentativo fallito  (GG/MM/AAAA)"
+
+#: loginizer/main/settings/brute-force.php:600
+msgid "Failed Attempts Count"
+msgstr "Numero di tentativi falliti"
+
+#: loginizer/main/settings/brute-force.php:601
+msgid "Lockouts Count"
+msgstr "Numero di blocchi"
+
+#: loginizer/main/settings/brute-force.php:602
+msgid "URL Attacked"
+msgstr "URL attaccato"
+
+#: loginizer/main/settings/brute-force.php:610
+msgid "No Logs. You will see logs about failed login attempts here."
+msgstr "Nessun registro. Qui vedrai i registri dei tentativi di accesso falliti."
+
+#: loginizer/main/settings/brute-force.php:647
+msgid "Remove From Logs"
+msgstr "Rimuovi dai registri"
+
+#: loginizer/main/settings/brute-force.php:649
+msgid "Clear All Logs"
+msgstr "Cancella tutti i registri"
+
+#: loginizer/main/settings/brute-force.php:651
+msgid "Blacklist Selected IPs"
+msgstr "Inserisci nella lista nera gli IP selezionati"
+
+#: loginizer/main/settings/brute-force.php:653
+#: loginizer/main/settings/brute-force.php:901
+#: loginizer/main/settings/brute-force.php:1005
+msgid "Export CSV"
+msgstr "Esporta CSV"
+
+#: loginizer/main/settings/brute-force.php:673
+msgid "Max Retries"
+msgstr "Tentativi massimi"
+
+#: loginizer/main/settings/brute-force.php:675
+msgid "Maximum failed attempts allowed before lockout"
+msgstr "Numero massimo di tentativi falliti consentiti prima del blocco"
+
+#: loginizer/main/settings/brute-force.php:679
+msgid "Lockout Time"
+msgstr "Tempo di blocco"
+
+#: loginizer/main/settings/brute-force.php:681
+msgid "minutes"
+msgstr "minuti"
+
+#: loginizer/main/settings/brute-force.php:685
+msgid "Max Lockouts"
+msgstr "Blocchi massimi"
+
+#: loginizer/main/settings/brute-force.php:691
+msgid "Extend Lockout"
+msgstr "Estendi blocco"
+
+#: loginizer/main/settings/brute-force.php:693
+msgid "hours. Extend Lockout time after Max Lockouts"
+msgstr "ore. Estendi il tempo di blocco dopo i blocchi massimi"
+
+#: loginizer/main/settings/brute-force.php:697
+msgid "Reset Retries"
+msgstr "Reimposta tentativi"
+
+#: loginizer/main/settings/brute-force.php:703
+msgid "Email Notification"
+msgstr "Notifica email"
+
+#: loginizer/main/settings/brute-force.php:705
+msgid "after "
+msgstr "dopo "
+
+#: loginizer/main/settings/brute-force.php:706
+msgid "lockouts <br />0 to disable email notifications"
+msgstr "blocchi <br />0 per disabilitare le notifiche email"
+
+#: loginizer/main/settings/brute-force.php:710
+msgid "Email Address"
+msgstr "Indirizzo email"
+
+#: loginizer/main/settings/brute-force.php:712
+msgid "failed login attempts notifications will be sent to this email"
+msgstr "le notifiche di tentativi di accesso falliti saranno inviate a questa email"
+
+#: loginizer/main/settings/brute-force.php:716
+msgid "Trusted IP's"
+msgstr "IP fidati"
+
+#: loginizer/main/settings/brute-force.php:723
+msgid "Blocked Screen"
+msgstr "Schermata di blocco"
+
+#: loginizer/main/settings/brute-force.php:735
+msgid "Disable Brute Force Protection"
+msgstr "Disabilita protezione brute force"
+
+#: loginizer/main/settings/brute-force.php:739
+msgid "Enable Brute Force Protection"
+msgstr "Abilita protezione brute force"
+
+#: loginizer/main/settings/brute-force.php:851
+msgid "Blacklist IP"
+msgstr "IP in lista nera"
+
+#: loginizer/main/settings/brute-force.php:857
+msgid "Enter the IP you want to blacklist from login"
+msgstr "Inserisci l'IP che vuoi mettere in lista nera per l'accesso"
+
+#: loginizer/main/settings/brute-force.php:871
+msgid "End IP of the range. <br />If you want to blacklist single IP leave this field blank."
+msgstr "IP finale dell'intervallo. <br />Se vuoi mettere in lista nera un singolo IP lascia questo campo vuoto."
+
+#: loginizer/main/settings/brute-force.php:875
+msgid "Add Blacklist IP Range"
+msgstr "Aggiungi intervallo IP in lista nera"
+
+#: loginizer/main/settings/brute-force.php:876
+msgid "Are you sure you want to delete all Blacklist IP Range(s) ?"
+msgstr "Sei sicuro di voler eliminare tutti gli intervalli IP in lista nera ?"
+
+#: loginizer/main/settings/brute-force.php:876
+msgid "Delete All Blacklist IP Range(s)"
+msgstr "Elimina tutti gli intervalli IP in lista nera"
+
+#: loginizer/main/settings/brute-force.php:887
+msgid "Import Blacklist IPs (CSV)"
+msgstr "Importa IP in lista nera (CSV)"
+
+#: loginizer/main/settings/brute-force.php:890
+#: loginizer/main/settings/brute-force.php:994
+msgid "Submit"
+msgstr "Invia"
+
+#: loginizer/main/settings/brute-force.php:900
+#: loginizer/main/settings/brute-force.php:1004
+msgid "Import CSV"
+msgstr "Importa CSV"
+
+#: loginizer/main/settings/brute-force.php:919
+msgid "No Blacklist IPs. You will see blacklisted IP ranges here."
+msgstr "Nessun IP in lista nera. Qui vedrai gli intervalli IP inseriti in lista nera."
+
+#: loginizer/main/settings/brute-force.php:962
+msgid "Enter the IP you want to whitelist for login"
+msgstr "Inserisci l'IP che vuoi inserire nella lista bianca per l'accesso"
+
+#: loginizer/main/settings/brute-force.php:980
+msgid "Are you sure you want to delete all Whitelist IP Range(s) ?"
+msgstr "Sei sicuro di voler eliminare tutti gli intervalli IP in lista bianca ?"
+
+#: loginizer/main/settings/brute-force.php:980
+msgid "Delete All Whitelist IP Range(s)"
+msgstr "Elimina tutti gli intervalli IP in lista bianca"
+
+#: loginizer/main/settings/brute-force.php:991
+msgid "Import Whitelist IPs (CSV)"
+msgstr "Importa IP in lista bianca (CSV)"
+
+#: loginizer/main/settings/brute-force.php:1022
+msgid "No Whitelist IPs. You will see whitelisted IP ranges here."
+msgstr "Nessun IP in lista bianca. Qui vedrai gli intervalli IP inseriti in lista bianca."
+
+#: loginizer/main/settings/brute-force.php:1054
+msgid "Error Messages"
+msgstr "Messaggi di errore"
+
+#: loginizer/main/settings/brute-force.php:1064
+msgid "Failed Login Attempt"
+msgstr "Tentativo di accesso fallito"
+
+#: loginizer/main/settings/brute-force.php:1071
+msgid "Blacklisted IP"
+msgstr "IP in lista nera"
+
+#: loginizer/main/settings/brute-force.php:1078
+msgid "Attempts Left"
+msgstr "Tentativi rimasti"
+
+#: loginizer/main/settings/brute-force.php:1085
+msgid "Lockout Error"
+msgstr "Errore di blocco"
+
+#: loginizer/main/settings/brute-force.php:1092
+msgid "Minutes"
+msgstr "Minuti"
+
+#: loginizer/main/settings/brute-force.php:1099
+msgid "Hours"
+msgstr "Ore"
+
+#: loginizer/main/settings/brute-force.php:1106
+msgid "Save Error Messages"
+msgstr "Salva messaggi di errore"
+
+#: loginizer/main/settings/brute-force.php:1114
+msgid "Login Notification"
+msgstr "Notifica di accesso"
+
+#: loginizer/main/settings/brute-force.php:1123
+msgid "Enable Notification"
+msgstr "Abilita notifica"
+
+#: loginizer/main/settings/brute-force.php:1124
+msgid "If enabled, user will get notified about successful login attempt."
+msgstr "Se abilitata, l'utente riceverà una notifica in caso di accesso riuscito."
+
+#: loginizer/main/settings/brute-force.php:1134
+msgid "Disable for whitelisted IPs"
+msgstr "Disabilita per IP in lista bianca"
+
+#: loginizer/main/settings/brute-force.php:1135
+msgid "If checked, don't notify whitelisted IPs."
+msgstr "Se selezionato, non notificare gli IP nella lista bianca."
+
+#: loginizer/main/settings/brute-force.php:1184
+msgid "Select Roles"
+msgstr "Seleziona ruoli"
+
+#: loginizer/main/settings/brute-force.php:1185
+msgid "Select the user roles for whom you want to send successful login notification."
+msgstr "Seleziona i ruoli utente per cui inviare la notifica di accesso riuscito."
+
+#: loginizer/main/settings/brute-force.php:1225
+msgid "Line no."
+msgstr "N. riga."
+
+#: loginizer/main/settings/checksum.php:58
+msgid "Once a Day"
+msgstr "Una volta al giorno"
+
+#: loginizer/main/settings/checksum.php:59
+msgid "Once a Week"
+msgstr "Una volta a settimana"
+
+#: loginizer/main/settings/checksum.php:60
+msgid "Once a Month"
+msgstr "Una volta al mese"
+
+#: loginizer/main/settings/checksum.php:147
+msgid "The Checksum process was executed successfully"
+msgstr "Il processo di Checksum è stato eseguito correttamente"
+
+#: loginizer/main/settings/checksum.php:185
+msgid "Checksum Settings"
+msgstr "Impostazioni Checksum"
+
+#: loginizer/main/settings/checksum.php:195
+msgid "Disable Checksum of WP Core"
+msgstr "Disabilita Checksum del core di WP"
+
+#: loginizer/main/settings/checksum.php:196
+#: loginizer/main/settings/checksum.php:249
+msgid "If disabled, Loginizer will not check your sites core files against the WordPress checksum list."
+msgstr "Se disabilitato, Loginizer non controllerà i file core dei tuoi siti rispetto alla lista di checksum di WordPress."
+
+#: loginizer/main/settings/checksum.php:204
+msgid "Disable Email of Checksum Results"
+msgstr "Disabilita email dei risultati del Checksum"
+
+#: loginizer/main/settings/checksum.php:205
+msgid "If checked, Loginizer will not email you the checksum results."
+msgstr "Se selezionato, Loginizer non ti invierà via email i risultati del checksum."
+
+#: loginizer/main/settings/checksum.php:213
+msgid "Checksum Frequency"
+msgstr "Frequenza del Checksum"
+
+#: loginizer/main/settings/checksum.php:214
+msgid "If Checksum is enabled, at what frequency should the checksums be performed."
+msgstr "Se Checksum è abilitato, con quale frequenza dovrebbero essere eseguiti i checksum."
+
+#: loginizer/main/settings/checksum.php:228
+msgid "Time of Day"
+msgstr "Ora del giorno"
+
+#: loginizer/main/settings/checksum.php:229
+msgid "If Checksum is enabled, what time of day should Loginizer do the check. Note : The check will be done on or after this time has elapsed as per the accesses being made."
+msgstr "Se Checksum è abilitato, a che ora del giorno Loginizer dovrebbe eseguire il controllo. Nota : il controllo verrà eseguito a partire da questa ora o dopo che questa ora è trascorsa, in base agli accessi effettuati."
+
+#: loginizer/main/settings/checksum.php:253
+msgid "Do a Checksum Now"
+msgstr "Esegui un Checksum ora"
+
+#: loginizer/main/settings/checksum.php:263
+msgid "Mismatching Files"
+msgstr "File non corrispondenti"
+
+#: loginizer/main/settings/checksum.php:287
+#: loginizer/main/settings/checksum.php:344
+#: loginizer/main/settings/dashboard.php:411
+msgid "Relative Path"
+msgstr "Percorso relativo"
+
+#: loginizer/main/settings/checksum.php:288
+#: loginizer/main/settings/checksum.php:345
+msgid "Found"
+msgstr "Trovato"
+
+#: loginizer/main/settings/checksum.php:289
+#: loginizer/main/settings/checksum.php:346
+msgid "Should be"
+msgstr "Dovrebbe essere"
+
+#: loginizer/main/settings/checksum.php:311
+msgid "This is great ! No file with any wrong checksum has been found."
+msgstr "Ottimo! Nessun file con checksum errato è stato trovato."
+
+#: loginizer/main/settings/checksum.php:318
+msgid "Add Selected to Ignore List"
+msgstr "Aggiungi selezionati alla lista di ignorati"
+
+#: loginizer/main/settings/checksum.php:329
+msgid "Ignore List"
+msgstr "Lista di ignorati"
+
+#: loginizer/main/settings/checksum.php:371
+msgid "No files have been added to the ignore list"
+msgstr "Nessun file è stato aggiunto alla lista di ignorati"
+
+#: loginizer/main/settings/checksum.php:378
+msgid "Remove Selected from Ignore List"
+msgstr "Rimuovi selezionati dalla lista di ignorati"
+
+#: loginizer/main/settings/dashboard.php:86
+msgid "Your Server IP Address seems to match the Client IP detected by Loginizer. You might want to change the IP detection method to HTTP_X_FORWARDED_FOR under System Information section."
+msgstr "Il tuo indirizzo IP del server sembra corrispondere all'IP client rilevato da Loginizer. Potresti voler cambiare il metodo di rilevamento IP in HTTP_X_FORWARDED_FOR nella sezione Informazioni di sistema."
+
+#: loginizer/main/settings/dashboard.php:100
+msgid "Thank you for choosing Loginizer! Many more features coming soon... &nbsp; Review Loginizer at WordPress &nbsp; &nbsp;"
+msgstr "Grazie per aver scelto Loginizer! Molte altre funzionalità in arrivo... &nbsp; Recensisci Loginizer su WordPress &nbsp; &nbsp;"
+
+#: loginizer/main/settings/dashboard.php:100
+msgid "Add Review"
+msgstr "Aggiungi recensione"
+
+#: loginizer/main/settings/dashboard.php:119
+msgid "Getting Started"
+msgstr "Per iniziare"
+
+#: loginizer/main/settings/dashboard.php:130
+msgid "Welcome to Loginizer Security. By default the <b>Brute Force Protection</b> is immediately enabled. You should start by going over the default settings and tweaking them as per your needs."
+msgstr "Benvenuto in Loginizer Security. Per impostazione predefinita, la <b>Protezione Brute Force</b> è immediatamente attiva. Dovresti iniziare esaminando le impostazioni predefinite e modificandole secondo le tue esigenze."
+
+#: loginizer/main/settings/dashboard.php:133
+msgid "In the Premium version of Loginizer you have many more features. We recommend you enable features like <b>reCAPTCHA, Two Factor Auth or Email based PasswordLess</b> login. These features will improve your websites security"
+msgstr "Nella versione Premium di Loginizer hai molte più funzionalità. Ti consigliamo di attivare funzionalità come <b>reCAPTCHA, Autenticazione a due fattori o PasswordLess basato su email</b>. Queste funzionalità miglioreranno la sicurezza del tuo sito web"
+
+#: loginizer/main/settings/dashboard.php:135
+msgid "Upgrade to Pro</a> for more features like <b>reCAPTCHA, Two Factor Auth, Rename wp-admin and wp-login.php pages, Email based PasswordLess</b> login and more. These features will improve your website's security."
+msgstr "Passa a Pro</a> per più funzionalità come <b>reCAPTCHA, Autenticazione a due fattori, Rinomina le pagine wp-admin e wp-login.php, PasswordLess basato su email</b> e altro. Queste funzionalità miglioreranno la sicurezza del tuo sito web."
+
+#: loginizer/main/settings/dashboard.php:188
+msgid "Your Website is safe"
+msgstr "Il tuo sito web è al sicuro"
+
+#: loginizer/main/settings/dashboard.php:192
+msgid "Risk from Brute-force attacks is low, attacks are under control"
+msgstr "Il rischio di attacchi brute-force è basso, gli attacchi sono sotto controllo"
+
+#: loginizer/main/settings/dashboard.php:195
+msgid "Brute-force attacks on your websites are on rise"
+msgstr "Gli attacchi brute-force sul tuo sito web sono in aumento"
+
+#: loginizer/main/settings/dashboard.php:198
+msgid "Your website is under heavy brute-force attacks.<br/> <a href=\"https://loginizer.com/pricing?utm_source=stats_block\" target=\"_blank\">Upgrade to a premium version</a> for added protection if this trend persists. Act fast to secure your site."
+msgstr "Il tuo sito web è sotto pesanti attacchi brute-force.<br/> <a href=\"https://loginizer.com/pricing?utm_source=stats_block\" target=\"_blank\">Passa a una versione premium</a> per una protezione aggiuntiva se questa tendenza persiste. Agisci rapidamente per proteggere il tuo sito."
+
+#: loginizer/main/settings/dashboard.php:203
+msgid "Your website is being protected by Loginizer Security."
+msgstr "Il tuo sito web è protetto da Loginizer Security."
+
+#: loginizer/main/settings/dashboard.php:212
+#: loginizer/main/settings/sso.php:232
+msgid "Login Attempts"
+msgstr "Tentativi di accesso"
+
+#: loginizer/main/settings/dashboard.php:235
+msgid "System Information"
+msgstr "Informazioni di sistema"
+
+#: loginizer/main/settings/dashboard.php:246
+msgid "Loginizer Version"
+msgstr "Versione Loginizer"
+
+#: loginizer/main/settings/dashboard.php:247
+msgid "Security PRO Version"
+msgstr "Versione Security PRO"
+
+#: loginizer/main/settings/dashboard.php:253
+msgid "URL"
+msgstr "URL"
+
+#: loginizer/main/settings/dashboard.php:257
+msgid "Path"
+msgstr "Percorso"
+
+#: loginizer/main/settings/dashboard.php:261
+msgid "Server's IP Address"
+msgstr "Indirizzo IP del server"
+
+#: loginizer/main/settings/dashboard.php:265
+msgid "Your IP Address"
+msgstr "Il tuo indirizzo IP"
+
+#: loginizer/main/settings/dashboard.php:281
+msgid "wp-config.php is writable"
+msgstr "wp-config.php è scrivibile"
+
+#: loginizer/main/settings/dashboard.php:288
+msgid ".htaccess is writable"
+msgstr ".htaccess è scrivibile"
+
+#: loginizer/main/settings/dashboard.php:296
+msgid "Failed"
+msgstr "Fallito"
+
+#: loginizer/main/settings/dashboard.php:398
+msgid "File Permissions"
+msgstr "Permessi dei file"
+
+#: loginizer/main/settings/dashboard.php:412
+msgid "Suggested"
+msgstr "Consigliato"
+
+#: loginizer/main/settings/dashboard.php:413
+msgid "Actual"
+msgstr "Effettivo"
+
+#: loginizer/main/settings/passwordless.php:110
+msgid "Enable PasswordLess Login"
+msgstr "Abilita accesso senza password"
+
+#: loginizer/main/settings/passwordless.php:117
+msgid "If enabled, the login screen will just ask for the username <b>OR</b> email address of the user. If such a user exists, an email with a <b>One Time Login </b> link will be sent to the email address of the user. The link will be valid for 10 minutes only."
+msgstr "Se abilitato, la schermata di accesso chiederà solo il nome utente <b>O</b> l'indirizzo email dell'utente. Se tale utente esiste, verrà inviata un'email con un link di <b>accesso monouso </b> all'indirizzo email dell'utente. Il link sarà valido solo per 10 minuti."
+
+#: loginizer/main/settings/passwordless.php:118
+msgid "If a wrong username/email is given, the brute force checker will prevent any brute force attempt !"
+msgstr "Se viene inserito un nome utente/email errato, il controllo brute force impedirà qualsiasi tentativo di brute force !"
+
+#: loginizer/main/settings/passwordless.php:155
+msgid "Custom redirect to"
+msgstr "Reindirizzamento personalizzato a"
+
+#: loginizer/main/settings/passwordless.php:156
+msgid "Redirects user to a page of your website other than the admin panel"
+msgstr "Reindirizza l'utente a una pagina del tuo sito diversa dal pannello di amministrazione"
+
+#: loginizer/main/settings/passwordless.php:165
+msgid "Custom redirect for"
+msgstr "Reindirizzamento personalizzato per"
+
+#: loginizer/main/settings/passwordless.php:166
+msgid "Select the user roles for whom this custom redirect will be used"
+msgstr "Seleziona i ruoli utente per i quali verrà utilizzato questo reindirizzamento personalizzato"
+
+#: loginizer/main/settings/passwordless.php:191
+msgid "Disable for"
+msgstr "Disabilita per"
+
+#: loginizer/main/settings/passwordless.php:192
+msgid "Which login form you want to disable passwordless login for"
+msgstr "Per quale modulo di accesso vuoi disabilitare l'accesso senza password"
+
+#: loginizer/main/settings/recaptcha.php:169
+msgid "The Captcha key was not submitted"
+msgstr "La chiave Captcha non è stata inviata"
+
+#: loginizer/main/settings/recaptcha.php:175
+msgid "The hCAPTCHA key is invalid"
+msgstr "La chiave hCAPTCHA non è valida"
+
+#: loginizer/main/settings/recaptcha.php:180
+msgid "The hCAPTCHA secret is invalid"
+msgstr "Il segreto hCAPTCHA non è valido"
+
+#: loginizer/main/settings/recaptcha.php:185
+msgid "The hCaptcha theme is invalid"
+msgstr "Il tema hCaptcha non è valido"
+
+#: loginizer/main/settings/recaptcha.php:190
+#: loginizer/main/settings/recaptcha.php:216
+msgid "The Turnstile size is invalid"
+msgstr "La dimensione Turnstile non è valida"
+
+#: loginizer/main/settings/recaptcha.php:195
+#: loginizer/main/settings/recaptcha.php:221
+msgid "The Turnstile language is invalid"
+msgstr "La lingua Turnstile non è valida"
+
+#: loginizer/main/settings/recaptcha.php:201
+msgid "The Turnstile Site key is invalid"
+msgstr "La chiave del sito Turnstile non è valida"
+
+#: loginizer/main/settings/recaptcha.php:206
+msgid "The Turnstile secret key is invalid"
+msgstr "La chiave segreta Turnstile non è valida"
+
+#: loginizer/main/settings/recaptcha.php:211
+msgid "The Turnstile theme is invalid"
+msgstr "Il tema Turnstile non è valido"
+
+#: loginizer/main/settings/recaptcha.php:228
+msgid "The reCAPTCHA key is invalid"
+msgstr "La chiave reCAPTCHA non è valida"
+
+#: loginizer/main/settings/recaptcha.php:233
+msgid "The reCAPTCHA secret is invalid"
+msgstr "Il segreto reCAPTCHA non è valido"
+
+#: loginizer/main/settings/recaptcha.php:238
+msgid "The reCAPTCHA theme is invalid"
+msgstr "Il tema reCAPTCHA non è valido"
+
+#: loginizer/main/settings/recaptcha.php:243
+msgid "The reCAPTCHA size is invalid"
+msgstr "La dimensione reCAPTCHA non è valida"
+
+#: loginizer/main/settings/recaptcha.php:248
+msgid "The reCAPTCHA language is invalid"
+msgstr "La lingua reCAPTCHA non è valida"
+
+#: loginizer/main/settings/recaptcha.php:252
+msgid "The reCAPTCHA domain is invalid"
+msgstr "Il dominio reCAPTCHA non è valido"
+
+#: loginizer/main/settings/recaptcha.php:293
+msgid "reCAPTCHA has been disabled !"
+msgstr "reCAPTCHA è stato disattivato !"
+
+#: loginizer/main/settings/recaptcha.php:323
+msgid "Captcha Status"
+msgstr "Stato Captcha"
+
+#: loginizer/main/settings/recaptcha.php:327
+msgid "Disabled"
+msgstr "Disattivato"
+
+#: loginizer/main/settings/recaptcha.php:328
+msgid "Google reCAPTCHA"
+msgstr "Google reCAPTCHA"
+
+#: loginizer/main/settings/recaptcha.php:330
+msgid "hCAPTCHA"
+msgstr "hCAPTCHA"
+
+#: loginizer/main/settings/recaptcha.php:331
+msgid "Cloudflare Turnstile"
+msgstr "Cloudflare Turnstile"
+
+#: loginizer/main/settings/recaptcha.php:338
+#: loginizer/main/settings/recaptcha.php:404
+#: loginizer/main/settings/recaptcha.php:482
+msgid "Site Key"
+msgstr "Chiave del sito"
+
+#: loginizer/main/settings/recaptcha.php:339
+#: loginizer/main/settings/recaptcha.php:405
+msgid "Make sure you enter the correct keys as per the reCAPTCHA type selected above"
+msgstr "Assicurati di inserire le chiavi corrette in base al tipo di reCAPTCHA selezionato sopra"
+
+#: loginizer/main/settings/recaptcha.php:343
+msgid "Get the Site Key and Secret Key from <a href=\"https://www.hcaptcha.com/\" target=\"_blank\">hcaptcha</a>"
+msgstr "Ottieni la Chiave del sito e la Chiave segreta da <a href=\"https://www.hcaptcha.com/\" target=\"_blank\">hcaptcha</a>"
+
+#: loginizer/main/settings/recaptcha.php:348
+#: loginizer/main/settings/recaptcha.php:413
+#: loginizer/main/settings/recaptcha.php:490
+msgid "Secret Key"
+msgstr "Chiave segreta"
+
+#: loginizer/main/settings/recaptcha.php:354
+#: loginizer/main/settings/recaptcha.php:419
+#: loginizer/main/settings/recaptcha.php:496
+msgid "Theme"
+msgstr "Tema"
+
+#: loginizer/main/settings/recaptcha.php:366
+#: loginizer/main/settings/recaptcha.php:431
+#: loginizer/main/settings/recaptcha.php:509
+msgid "Language"
+msgstr "Lingua"
+
+#: loginizer/main/settings/recaptcha.php:379
+#: loginizer/main/settings/recaptcha.php:443
+#: loginizer/main/settings/recaptcha.php:521
+msgid "Size"
+msgstr "Dimensione"
+
+#: loginizer/main/settings/recaptcha.php:393
+msgid "reCAPTCHA type"
+msgstr "Tipo di reCAPTCHA"
+
+#: loginizer/main/settings/recaptcha.php:394
+msgid "Choose the type of reCAPTCHA"
+msgstr "Scegli il tipo di reCAPTCHA"
+
+#: loginizer/main/settings/recaptcha.php:395
+msgid "See Site Types for more details"
+msgstr "Vedi Site Types per maggiori dettagli"
+
+#: loginizer/main/settings/recaptcha.php:398
+msgid "reCAPTCHA v3"
+msgstr "reCAPTCHA v3"
+
+#: loginizer/main/settings/recaptcha.php:399
+msgid "reCAPTCHA v2 - Checkbox"
+msgstr "reCAPTCHA v2 - Checkbox"
+
+#: loginizer/main/settings/recaptcha.php:400
+msgid "reCAPTCHA v2 - Invisible"
+msgstr "reCAPTCHA v2 - Invisibile"
+
+#: loginizer/main/settings/recaptcha.php:409
+#: loginizer/main/settings/recaptcha.php:486
+msgid "Get the Site Key and Secret Key from"
+msgstr "Ottieni la Chiave del sito e la Chiave segreta da"
+
+#: loginizer/main/settings/recaptcha.php:456
+msgid "reCAPTCHA Domain"
+msgstr "Dominio reCAPTCHA"
+
+#: loginizer/main/settings/recaptcha.php:457
+msgid "If Google is not accessible or blocked in your country select other one"
+msgstr "Se Google non è accessibile o è bloccato nel tuo paese, selezionane un altro"
+
+#: loginizer/main/settings/recaptcha.php:463
+msgid "(Default)"
+msgstr "(Predefinito)"
+
+#: loginizer/main/settings/recaptcha.php:472
+msgid "reCaptcha threshold"
+msgstr "Soglia reCaptcha"
+
+#: loginizer/main/settings/recaptcha.php:473
+msgid "Google returns a score between 0.0 and 1.0 — with 0.0 meaning it's likely a bot and 1.0 meaning it's likely a human. The default threshold is 0.5, but you can change it based on your needs."
+msgstr "Google restituisce un punteggio tra 0.0 e 1.0 — dove 0.0 indica che probabilmente è un bot e 1.0 che probabilmente è un umano. La soglia predefinita è 0.5, ma puoi cambiarla in base alle tue esigenze."
+
+#: loginizer/main/settings/recaptcha.php:535
+msgid "Captcha Text"
+msgstr "Testo del Captcha"
+
+#: loginizer/main/settings/recaptcha.php:536
+msgid "The text to be shown for the Captcha Field"
+msgstr "Il testo da mostrare per il campo Captcha"
+
+#: loginizer/main/settings/recaptcha.php:544
+msgid "Captcha Time"
+msgstr "Tempo del Captcha"
+
+#: loginizer/main/settings/recaptcha.php:545
+msgid "Enter the number of seconds, a user has to enter captcha value."
+msgstr "Inserisci il numero di secondi entro cui un utente deve inserire il valore del captcha."
+
+#: loginizer/main/settings/recaptcha.php:553
+msgid "Display Captcha in Words"
+msgstr "Mostra captcha in parole"
+
+#: loginizer/main/settings/recaptcha.php:554
+msgid "If selected the Captcha will be displayed in words rather than numbers"
+msgstr "Se selezionato, il Captcha verrà mostrato in parole anziché in numeri"
+
+#: loginizer/main/settings/recaptcha.php:562
+msgid "Mathematical operations"
+msgstr "Operazioni matematiche"
+
+#: loginizer/main/settings/recaptcha.php:563
+msgid "The Mathematical operations to use for Captcha"
+msgstr "Le operazioni matematiche da usare per il Captcha"
+
+#: loginizer/main/settings/recaptcha.php:569
+msgid "Addition (+)"
+msgstr "Addizione (+)"
+
+#: loginizer/main/settings/recaptcha.php:573
+msgid "Subtraction (-)"
+msgstr "Sottrazione (-)"
+
+#: loginizer/main/settings/recaptcha.php:577
+msgid "Multiplication (x)"
+msgstr "Moltiplicazione (x)"
+
+#: loginizer/main/settings/recaptcha.php:581
+msgid "Division (÷)"
+msgstr "Divisione (÷)"
+
+#: loginizer/main/settings/recaptcha.php:589
+msgid "Show Captcha On"
+msgstr "Mostra captcha su"
+
+#: loginizer/main/settings/recaptcha.php:594
+#: loginizer/main/settings/social_login.php:362
+#: loginizer/main/settings/social_login.php:460
+#: loginizer/main/settings/social_login.php:535
+msgid "Login Form"
+msgstr "Modulo di accesso"
+
+#: loginizer/main/settings/recaptcha.php:598
+msgid "Lost Password Form"
+msgstr "Modulo di password dimenticata"
+
+#: loginizer/main/settings/recaptcha.php:602
+msgid "Reset Password Form"
+msgstr "Modulo di reimpostazione password"
+
+#: loginizer/main/settings/recaptcha.php:606
+#: loginizer/main/settings/social_login.php:469
+#: loginizer/main/settings/social_login.php:477
+#: loginizer/main/settings/social_login.php:542
+msgid "Registration Form"
+msgstr "Modulo di registrazione"
+
+#: loginizer/main/settings/recaptcha.php:610
+msgid "Comment Form"
+msgstr "Modulo commenti"
+
+#: loginizer/main/settings/recaptcha.php:617
+msgid "WooCommerce Checkout"
+msgstr "Checkout WooCommerce"
+
+#: loginizer/main/settings/recaptcha.php:621
+msgid "WooCommerce Block based Checkout"
+msgstr "Checkout WooCommerce basato su blocchi"
+
+#: loginizer/main/settings/recaptcha.php:626
+msgid "WooCommerce Checkout Position"
+msgstr "Posizione del checkout WooCommerce"
+
+#: loginizer/main/settings/recaptcha.php:629
+msgid "Before Payment"
+msgstr "Prima del pagamento"
+
+#: loginizer/main/settings/recaptcha.php:630
+msgid "Before Order Button"
+msgstr "Prima del pulsante ordine"
+
+#: loginizer/main/settings/recaptcha.php:635
+msgid "WPForms"
+msgstr "WPForms"
+
+#: loginizer/main/settings/recaptcha.php:639
+msgid "ContactForm7"
+msgstr "ContactForm7"
+
+#: loginizer/main/settings/recaptcha.php:643
+msgid "To use the Loginizer reCAPTCHA on Contact Form 7 please enable the above checkbox add the shortcode: [loginizer_pro_recaptcha]"
+msgstr "Per utilizzare il reCAPTCHA di Loginizer su Contact Form 7, abilita la casella sopra e aggiungi lo shortcode: [loginizer_pro_recaptcha]"
+
+#: loginizer/main/settings/recaptcha.php:652
+msgid "Disable Login Button"
+msgstr "Disabilita pulsante di accesso"
+
+#: loginizer/main/settings/recaptcha.php:658
+msgid "Hide CAPTCHA for logged in Users"
+msgstr "Nascondi CAPTCHA per utenti connessi"
+
+#: loginizer/main/settings/security.php:39
+msgid "The Login slug length must be greater than <b>4</b> chars and upto <b>50</b> chars long"
+msgstr "La lunghezza dello slug di accesso deve essere maggiore di <b>4</b> caratteri e fino a <b>50</b> caratteri"
+
+#: loginizer/main/settings/security.php:46
+#: loginizer/main/settings/security.php:164
+msgid "The wp-login.php and wp-admin slugs cannot be the same. Choose unique names for login and admin slugs"
+msgstr "Gli slug wp-login.php e wp-admin non possono essere uguali. Scegli nomi univoci per gli slug di accesso e admin"
+
+#: loginizer/main/settings/security.php:53
+msgid "The XML-RPC slug length must be greater than <b>4</b> chars and upto <b>50</b> chars long"
+msgstr "La lunghezza dello slug XML-RPC deve essere maggiore di <b>4</b> caratteri e fino a <b>50</b> caratteri"
+
+#: loginizer/main/settings/security.php:78
+msgid "Current username is required"
+msgstr "Il nome utente corrente è obbligatorio"
+
+#: loginizer/main/settings/security.php:83
+msgid "New username is required"
+msgstr "Il nuovo nome utente è obbligatorio"
+
+#: loginizer/main/settings/security.php:89
+msgid "The username begins with <b>admin</b>. Please change it !"
+msgstr "Il nome utente inizia con <b>admin</b>. Per favore cambialo !"
+
+#: loginizer/main/settings/security.php:98
+msgid "The new username is already assigned to another user"
+msgstr "Il nuovo nome utente è già assegnato a un altro utente"
+
+#: loginizer/main/settings/security.php:105
+msgid "No user found with the current username provided"
+msgstr "Nessun utente trovato con il nome utente corrente fornito"
+
+#: loginizer/main/settings/security.php:110
+msgid "The user is not an administrator. Only administrator user's username can be changed."
+msgstr "L'utente non è un amministratore. Solo il nome utente dell'utente amministratore può essere cambiato."
+
+#: loginizer/main/settings/security.php:170
+msgid "You have not confirmed that you have read the guide and configured .htaccess. Please read the guide, configure .htaccess and then save these settings and check this checkbox"
+msgstr "Non hai confermato di aver letto la guida e configurato .htaccess. Per favore leggi la guida, configura .htaccess e poi salva queste impostazioni e spunta questa casella"
+
+#: loginizer/main/settings/security.php:176
+msgid "The new Admin slug length must be greater than <b>4</b> chars and upto <b>50</b> chars long"
+msgstr "La lunghezza del nuovo slug Admin deve essere maggiore di <b>4</b> caratteri e fino a <b>50</b> caratteri"
+
+#: loginizer/main/settings/security.php:182
+msgid "Special characters are not allowed"
+msgstr "I caratteri speciali non sono consentiti"
+
+#: loginizer/main/settings/security.php:331
+msgid "You can rename your Login page from"
+msgstr "Puoi rinominare la tua pagina di accesso da"
+
+#: loginizer/main/settings/security.php:331
+msgid " to anything of your choice e.g. mylogin. This would make it very difficult for automated attack bots to know where to login !"
+msgstr " a qualsiasi cosa tu scelga, ad es. mylogin. Ciò renderà molto difficile per i bot di attacco automatizzato sapere dove accedere !"
+
+#: loginizer/main/settings/security.php:336
+msgid "New Login Slug"
+msgstr "Nuovo slug di accesso"
+
+#: loginizer/main/settings/security.php:337
+msgid "Set blank to reset to the original login URL"
+msgstr "Imposta vuoto per ripristinare l'URL di accesso originale"
+
+#: loginizer/main/settings/security.php:351
+msgid "Access Secretly Only"
+msgstr "Solo accesso segreto"
+
+#: loginizer/main/settings/security.php:352
+#, php-format
+msgid "If set, then all Login URL's will still point to %s and users will have to access the New Login Slug by typing it in the browser."
+msgstr "Se impostato, tutti gli URL di accesso punteranno ancora a %s e gli utenti dovranno accedere al nuovo slug di accesso digitandolo nel browser."
+
+#: loginizer/main/settings/security.php:360
+msgid "Hide WP Admin"
+msgstr "Nascondi WP Admin"
+
+#: loginizer/main/settings/security.php:361
+msgid "If the user is not logged in they wont be able to access wp-admin url."
+msgstr "Se l'utente non ha effettuato l'accesso, non potrà accedere all'URL wp-admin."
+
+#: loginizer/main/settings/security.php:369
+msgid "Redirect URL"
+msgstr "URL di reindirizzamento"
+
+#: loginizer/main/settings/security.php:370
+msgid "Which page should be shown when someone tries to access wp-admin when it is hidden."
+msgstr "Quale pagina mostrare quando qualcuno tenta di accedere a wp-admin mentre è nascosto."
+
+#: loginizer/main/settings/security.php:371
+msgid "Default: HomePage."
+msgstr "Predefinito: HomePage."
+
+#: loginizer/main/settings/security.php:399
+msgid "XML-RPC Settings"
+msgstr "Impostazioni XML-RPC"
+
+#: loginizer/main/settings/security.php:409
+msgid "WordPress's XML-RPC feature allows external services to access and modify content on the site. Services like the Jetpack plugin, the WordPress mobile app, pingbacks, etc make use of the XML-RPC feature. If this site does not use a service that requires XML-RPC, please <b>disable</b> the XML-RPC feature as it prevents attackers from using the feature to attack the site. If your service can use a custom XML-RPC URL, you can also <b>rename</b> the XML-RPC page to a <b>custom slug</b>."
+msgstr "La funzionalità XML-RPC di WordPress consente ai servizi esterni di accedere e modificare i contenuti del sito. Servizi come il plugin Jetpack, l'app mobile di WordPress, i pingback, ecc. fanno uso della funzionalità XML-RPC. Se questo sito non utilizza un servizio che richiede XML-RPC, per favore <b>disabilita</b> la funzionalità XML-RPC poiché impedisce agli attaccanti di usare la funzionalità per attaccare il sito. Se il tuo servizio può usare un URL XML-RPC personalizzato, puoi anche <b>rinominare</b> la pagina XML-RPC in uno <b>slug personalizzato</b>."
+
+#: loginizer/main/settings/security.php:422
+msgid "Disable Pingbacks"
+msgstr "Disabilita pingback"
+
+#: loginizer/main/settings/security.php:430
+msgid "New XML-RPC Slug"
+msgstr "Nuovo slug XML-RPC"
+
+#: loginizer/main/settings/security.php:431
+msgid "Set blank to reset to the original XML-RPC URL"
+msgstr "Imposta vuoto per ripristinare l'URL XML-RPC originale"
+
+#: loginizer/main/settings/security.php:499
+msgid "Everything seems to be good. You can proceed to save the settings !"
+msgstr "Tutto sembra a posto. Puoi procedere a salvare le impostazioni !"
+
+#: loginizer/main/settings/security.php:504
+msgid "There was an error connecting to WordPress with the new Admin Slug. Did you configure everything properly ?"
+msgstr "Si è verificato un errore di connessione a WordPress con il nuovo slug Admin. Hai configurato tutto correttamente ?"
+
+#: loginizer/main/settings/security.php:517
+msgid "Rename wp-admin access"
+msgstr "Rinomina accesso wp-admin"
+
+#: loginizer/main/settings/security.php:531
+msgid "Rename wp-admin access feature is supported only on Apache and Litespeed"
+msgstr "La funzione di rinomina accesso wp-admin è supportata solo su Apache e Litespeed"
+
+#: loginizer/main/settings/security.php:538
+msgid "Note: Be careful while changing the Admin name as your CSRF Protection is on"
+msgstr "Nota: fai attenzione quando cambi il nome Admin poiché la protezione CSRF è attiva"
+
+#: loginizer/main/settings/security.php:544
+msgid "You can rename your WordPress Admin access URL <b>wp-admin</b> to anything of your choice e.g. my-admin. This will require you to change .htaccess, so please follow"
+msgstr "Puoi rinominare l'URL di accesso Admin di WordPress <b>wp-admin</b> in qualsiasi nome tu scelga, ad esempio my-admin. Questo richiede la modifica di .htaccess, quindi segui"
+
+#: loginizer/main/settings/security.php:544
+msgid "our guide"
+msgstr "la nostra guida"
+
+#: loginizer/main/settings/security.php:544
+msgid "on how to do so !"
+msgstr "su come procedere !"
+
+#: loginizer/main/settings/security.php:549
+msgid "New wp-admin Slug"
+msgstr "Nuovo slug wp-admin"
+
+#: loginizer/main/settings/security.php:550
+msgid "Set blank to reset to the original wp-admin URL"
+msgstr "Imposta vuoto per ripristinare l'URL wp-admin originale"
+
+#: loginizer/main/settings/security.php:558
+msgid "Disable wp-admin access"
+msgstr "Disabilita accesso wp-admin"
+
+#: loginizer/main/settings/security.php:559
+msgid "If set, then only the new admin slug will work and access to the Old Admin Slug i.e. wp-admin will be disabled. If anyone accesses wp-admin, a warning will be shown.<br><label>NOTE: Please use this option cautiously !</label>"
+msgstr "Se impostato, solo il nuovo slug admin funzionerà e l'accesso al vecchio slug Admin, cioè wp-admin, sarà disabilitato. Se qualcuno accede a wp-admin, verrà mostrato un avviso.<br><label>NOTA: usa questa opzione con cautela !</label>"
+
+#: loginizer/main/settings/security.php:567
+msgid "WP-Admin Error Message"
+msgstr "Messaggio di errore WP-Admin"
+
+#: loginizer/main/settings/security.php:568
+msgid "Error message to show if someone accesses wp-admin"
+msgstr "Messaggio di errore da mostrare se qualcuno accede a wp-admin"
+
+#: loginizer/main/settings/security.php:580
+msgid "I have setup .htaccess"
+msgstr "Ho configurato .htaccess"
+
+#: loginizer/main/settings/security.php:581
+#, php-format
+msgid "You need to confirm that you have configured .htaccess as per %sour guide%s so that we can safely enable this feature"
+msgstr "Devi confermare di aver configurato .htaccess secondo %sla nostra guida%s in modo da poter abilitare questa funzione in sicurezza"
+
+#: loginizer/main/settings/security.php:585
+msgid "Test New WP-Admin Slug"
+msgstr "Test nuovo slug WP-Admin"
+
+#: loginizer/main/settings/security.php:625
+msgid ".htaccess has been updated !"
+msgstr ".htaccess è stato aggiornato !"
+
+#: loginizer/main/settings/security.php:630
+msgid "Was unable to update the .htaccess file so please update it manually"
+msgstr "Impossibile aggiornare il file .htaccess, quindi aggiornalo manualmente"
+
+#: loginizer/main/settings/security.php:651
+msgid "CSRF Protection"
+msgstr "Protezione CSRF"
+
+#: loginizer/main/settings/security.php:661
+msgid "This prevents CSRF attacks by adding a session string to admin URLs, making them nearly impossible for attackers to predict."
+msgstr "Questo previene gli attacchi CSRF aggiungendo una stringa di sessione agli URL admin, rendendoli quasi impossibili da prevedere per gli aggressori."
+
+#: loginizer/main/settings/security.php:666
+msgid "Enable CSRF Protection"
+msgstr "Abilita protezione CSRF"
+
+#: loginizer/main/settings/security.php:667
+msgid "If enabled, it will update the URL of wp-admin with a random session string in the URL making it hard to predict the URL."
+msgstr "Se abilitata, aggiornerà l&#8217;URL di wp-admin con una stringa di sessione casuale nell&#8217;URL, rendendo difficile prevedere l&#8217;URL."
+
+#: loginizer/main/settings/security.php:706
+msgid "Change Admin Username"
+msgstr "Cambia nome utente amministratore"
+
+#: loginizer/main/settings/security.php:716
+msgid "You can change the Admin Username from here to anything of your choice e.g. iamtheboss. This would make it very difficult for automated attack bots to know what is the admin username !"
+msgstr "Puoi cambiare il nome utente amministratore da qui con qualsiasi nome a tua scelta, ad esempio iamtheboss. Questo renderà molto difficile per i bot di attacco automatizzato conoscere il nome utente amministratore!"
+
+#: loginizer/main/settings/security.php:721
+msgid "Current Username"
+msgstr "Nome utente attuale"
+
+#: loginizer/main/settings/security.php:722
+msgid "The current username you want to change"
+msgstr "Il nome utente attuale che vuoi cambiare"
+
+#: loginizer/main/settings/security.php:730
+msgid "New Username"
+msgstr "Nuovo nome utente"
+
+#: loginizer/main/settings/security.php:731
+msgid "The new username you want to set"
+msgstr "Il nuovo nome utente che vuoi impostare"
+
+#: loginizer/main/settings/security.php:738
+msgid "Note: Username can be changed only for administrator users."
+msgstr "Nota: il nome utente può essere cambiato solo per gli utenti amministratori."
+
+#: loginizer/main/settings/security.php:739
+msgid "Set the Username"
+msgstr "Imposta il nome utente"
+
+#: loginizer/main/settings/security.php:763
+msgid "Username Auto Blacklist"
+msgstr "Lista nera automatica dei nomi utente"
+
+#: loginizer/main/settings/security.php:773
+msgid "Attackers generally use common usernames like <b>admin, administrator, or variations of your domain name / business name</b>. You can specify such username here and Loginizer will auto-blacklist the IP Address(s) of clients who try to use such username(s)."
+msgstr "Gli aggressori usano generalmente nomi utente comuni come <b>admin, administrator o variazioni del nome del tuo dominio / nome aziendale</b>. Puoi specificare tali nomi utente qui e Loginizer inserirà automaticamente nella lista nera gli indirizzi IP dei client che tentano di usare tali nomi utente."
+
+#: loginizer/main/settings/security.php:778
+msgid "Username(s)"
+msgstr "Nomi utente"
+
+#: loginizer/main/settings/security.php:779
+#: loginizer/main/settings/security.php:844
+msgid "You can use - <b>*</b> (Star)- as a wild card as well. Blank fields will be ignored"
+msgstr "Puoi usare - <b>*</b> (asterisco) - come carattere jolly. I campi vuoti verranno ignorati"
+
+#: loginizer/main/settings/security.php:805
+msgid "Add New Username"
+msgstr "Aggiungi nuovo nome utente"
+
+#: loginizer/main/settings/security.php:809
+msgid "Save Username(s)"
+msgstr "Salva nomi utente"
+
+#: loginizer/main/settings/security.php:828
+msgid "New Registration Domain Blacklist"
+msgstr "Lista nera domini nuove registrazioni"
+
+#: loginizer/main/settings/security.php:843
+msgid "Domain(s)"
+msgstr "Domini"
+
+#: loginizer/main/settings/security.php:870
+msgid "Add New Domain"
+msgstr "Aggiungi nuovo dominio"
+
+#: loginizer/main/settings/security.php:874
+msgid "Save Domains(s)"
+msgstr "Salva domini"
+
+#: loginizer/main/settings/security.php:885
+msgid "Limit Concurrent Sessions"
+msgstr "Limita sessioni concorrenti"
+
+#: loginizer/main/settings/security.php:895
+msgid "This feature will help limit the number of devices your user can login to concurrently"
+msgstr "Questa funzione aiuterà a limitare il numero di dispositivi a cui il tuo utente può accedere contemporaneamente"
+
+#: loginizer/main/settings/security.php:900
+msgid "Enable"
+msgstr "Abilita"
+
+#: loginizer/main/settings/security.php:901
+msgid "Enabling it will start limiting number of devices the user can login on concurrently"
+msgstr "Abilitandolo si inizierà a limitare il numero di dispositivi su cui l'utente può accedere contemporaneamente"
+
+#: loginizer/main/settings/security.php:909
+msgid "Limit Type"
+msgstr "Tipo di limite"
+
+#: loginizer/main/settings/security.php:913
+msgid "Block"
+msgstr "Blocca"
+
+#: loginizer/main/settings/security.php:913
+msgid "Blocks all the login attempts if limit is reached"
+msgstr "Blocca tutti i tentativi di accesso se il limite viene raggiunto"
+
+#: loginizer/main/settings/security.php:915
+msgid "Destroy"
+msgstr "Distruggi"
+
+#: loginizer/main/settings/security.php:915
+msgid "Revokes all the sessions on successful login"
+msgstr "Revoca tutte le sessioni in caso di accesso riuscito"
+
+#: loginizer/main/settings/security.php:920
+msgid "Max Session Count"
+msgstr "Numero massimo di sessioni"
+
+#: loginizer/main/settings/security.php:921
+msgid "Set Maximum number of sessions can be created"
+msgstr "Imposta il numero massimo di sessioni che possono essere create"
+
+#: loginizer/main/settings/security.php:930
+msgid "Exclude Roles"
+msgstr "Escludi ruoli"
+
+#: loginizer/main/settings/security.php:931
+msgid "Excluded roles won't face session limit checks"
+msgstr "I ruoli esclusi non saranno soggetti ai controlli del limite di sessioni"
+
+#: loginizer/main/settings/security.php:1007
+msgid "Update .htaccess"
+msgstr "Aggiorna .htaccess"
+
+#: loginizer/main/settings/security.php:1008
+msgid "Rewrites rule for CSRF session URL"
+msgstr "Riscrive la regola per l'URL della sessione CSRF"
+
+#: loginizer/main/settings/security.php:1008
+msgid "Rewrites rule to change wp-admin and if you have a Multisite then check"
+msgstr "Riscrive la regola per modificare wp-admin e se hai un Multisite controlla"
+
+#: loginizer/main/settings/security.php:1020
+msgid "Manually Update .htaccess"
+msgstr "Aggiorna manualmente .htaccess"
+
+#: loginizer/main/settings/security.php:1021
+msgid "You can manually update your .htaccess by adding the given code at the top of your .htaccess file"
+msgstr "Puoi aggiornare manualmente il tuo .htaccess aggiungendo il codice fornito all'inizio del tuo file .htaccess"
+
+#: loginizer/main/settings/social_login.php:46
+msgid "Something went wrong can't load social App details"
+msgstr "Qualcosa è andato storto, impossibile caricare i dettagli dell'app social"
+
+#: loginizer/main/settings/social_login.php:93
+msgid "Get Started"
+msgstr "Inizia"
+
+#: loginizer/main/settings/social_login.php:95
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: loginizer/main/settings/social_login.php:120
+msgid "Saving Order"
+msgstr "Salvataggio ordine"
+
+#: loginizer/main/settings/social_login.php:156
+#: loginizer/main/settings/social_login.php:338
+msgid "Security Check failed"
+msgstr "Controllo di sicurezza fallito"
+
+#: loginizer/main/settings/social_login.php:246
+msgid "Go Back"
+msgstr "Torna indietro"
+
+#: loginizer/main/settings/social_login.php:250
+#, php-format
+msgid "Test %s to be able to use it"
+msgstr "Testa %s per poterlo utilizzare"
+
+#: loginizer/main/settings/social_login.php:251
+msgid "You have added/updated the keys of this provider so you will need to test it to be able to use it."
+msgstr "Hai aggiunto/aggiornato le chiavi di questo provider, quindi dovrai testarlo per poterlo utilizzare."
+
+#: loginizer/main/settings/social_login.php:252
+msgid "Please use the same email with which you have created this account."
+msgstr "Utilizza la stessa email con cui hai creato questo account."
+
+#: loginizer/main/settings/social_login.php:253
+msgid "Test Now"
+msgstr "Testa ora"
+
+#: loginizer/main/settings/social_login.php:305
+msgid "Account Type"
+msgstr "Tipo di account"
+
+#: loginizer/main/settings/social_login.php:306
+msgid "Which type of accounts you want to allow to be able to signin"
+msgstr "Quale tipo di account vuoi consentire per accedere"
+
+#: loginizer/main/settings/social_login.php:307
+msgid "Accounts in any Organizational directory"
+msgstr "Account in qualsiasi directory organizzativa"
+
+#: loginizer/main/settings/social_login.php:308
+msgid "Accounts in any Organizational directory and Personal Microsoft accounts"
+msgstr "Account in qualsiasi directory organizzativa e account Microsoft personali"
+
+#: loginizer/main/settings/social_login.php:309
+msgid "Personal Microsoft accounts only"
+msgstr "Solo account Microsoft personali"
+
+#: loginizer/main/settings/social_login.php:361
+msgid "General"
+msgstr "Generale"
+
+#: loginizer/main/settings/social_login.php:363
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: loginizer/main/settings/social_login.php:364
+msgid "Comment"
+msgstr "Commento"
+
+#: loginizer/main/settings/social_login.php:367
+msgid "Ultimate Member"
+msgstr "Ultimate Member"
+
+#: loginizer/main/settings/social_login.php:380
+msgid "Prefer Same window"
+msgstr "Preferisci stessa finestra"
+
+#: loginizer/main/settings/social_login.php:381
+msgid "Prefer Popup"
+msgstr "Preferisci popup"
+
+#: loginizer/main/settings/social_login.php:382
+msgid "Where you want the App Authentication to be visible in"
+msgstr "Dove vuoi che sia visibile l'autenticazione dell'app"
+
+#: loginizer/main/settings/social_login.php:391
+#: loginizer/main/settings/social_login.php:422
+msgid "On registration save and update user avatar, if possible"
+msgstr "Alla registrazione, salva e aggiorna l'avatar dell'utente, se possibile"
+
+#: loginizer/main/settings/social_login.php:398
+#: loginizer/main/settings/social_login.php:429
+msgid "If the user is not present then should loginizer create new user?"
+msgstr "Se l'utente non è presente, loginizer deve creare un nuovo utente?"
+
+#: loginizer/main/settings/social_login.php:407
+#: loginizer/main/settings/social_login.php:438
+msgid "What role you want to assign to the user created through social login?"
+msgstr "Quale ruolo vuoi assegnare all'utente creato tramite accesso social?"
+
+#: loginizer/main/settings/social_login.php:411
+#: loginizer/main/settings/social_login.php:442
+msgid "Hide Admin Bar"
+msgstr "Nascondi la barra di amministrazione"
+
+#: loginizer/main/settings/social_login.php:414
+#: loginizer/main/settings/social_login.php:445
+msgid "Do you want the new user to see the Admin Bar in the Front end? Checked means you want to hide it."
+msgstr "Vuoi che il nuovo utente veda la barra di amministrazione nel front-end? Se selezionato, significa che vuoi nasconderla."
+
+#: loginizer/main/settings/social_login.php:463
+msgid "Do you want to show social buttons on WordPress login form."
+msgstr "Vuoi mostrare i pulsanti social nel modulo di accesso di WordPress."
+
+#: loginizer/main/settings/social_login.php:472
+#: loginizer/main/settings/social_login.php:480
+msgid "Do you want to show social login on the WordPress registration form."
+msgstr "Vuoi mostrare l'accesso social nel modulo di registrazione di WordPress."
+
+#: loginizer/main/settings/social_login.php:538
+msgid "Do you want to show social buttons on WooCommerce login form."
+msgstr "Vuoi mostrare i pulsanti social nel modulo di accesso di WooCommerce."
+
+#: loginizer/main/settings/social_login.php:545
+msgid "Do you want to show social login on the WooCommerce registration form."
+msgstr "Vuoi mostrare l'accesso social nel modulo di registrazione di WooCommerce."
+
+#: loginizer/main/settings/social_login.php:601
+msgid "Do you want to show social buttons on Comments."
+msgstr "Vuoi mostrare i pulsanti social nei commenti."
+
+#: loginizer/main/settings/social_login.php:640
+msgid "Ultimate Member Settings"
+msgstr "Impostazioni Ultimate Member"
+
+#: loginizer/main/settings/social_login.php:663
+msgid "Create LinkedIn App"
+msgstr "Crea un'app LinkedIn"
+
+#: loginizer/main/settings/social_login.php:665
+msgid "To allow your users to be able to login through their LinkedIn Account, you first need to create a LinkedIn App. For that follow the Project creation steps below."
+msgstr "Per permettere ai tuoi utenti di accedere tramite il loro account LinkedIn, devi prima creare un'app LinkedIn. Per farlo, segui i passaggi di creazione del progetto qui sotto."
+
+#: loginizer/main/settings/social_login.php:667
+msgid "Go to LinkedIn Apps page for that"
+msgstr "Vai alla pagina delle app LinkedIn per farlo"
+
+#: loginizer/main/settings/social_login.php:668
+msgid "Once you open the Apps page, click on Create App button, which will take you to fill a form."
+msgstr "Una volta aperta la pagina delle app, clicca sul pulsante Crea App, che ti porterà a compilare un modulo."
+
+#: loginizer/main/settings/social_login.php:669
+msgid "On that form fill the App Name and LinkedIn page, if you dont have a linked in page then create once as its required to create a App."
+msgstr "In quel modulo, inserisci il nome dell'app e la pagina LinkedIn. Se non hai una pagina LinkedIn, creane una, poiché è necessaria per creare un'app."
+
+#: loginizer/main/settings/social_login.php:670
+msgid "After you have filled the LinkedIn page details, upload your logo and read terms and conditions and check the field which say I have read and agreed to these terms and then click on Create App"
+msgstr "Dopo aver inserito i dettagli della pagina LinkedIn, carica il tuo logo, leggi i termini e le condizioni e seleziona la casella che dice \"Ho letto e accettato questi termini\", quindi clicca su Crea App"
+
+#: loginizer/main/settings/social_login.php:671
+msgid "You will be redirect to your App page in Product Tab, there look for \"Sign In with LinkedIn using OpenID Connect\" and click on Request Access, now go to the Auth tab as we need to access Oauth 2.0"
+msgstr "Verrai reindirizzato alla pagina dell'app nella scheda Prodotto. Lì cerca \"Accedi con LinkedIn tramite OpenID Connect\" e clicca su Richiedi accesso. Ora vai alla scheda Auth, poiché dobbiamo accedere a OAuth 2.0"
+
+#: loginizer/main/settings/social_login.php:672
+msgid "On the Auth tab copy the Client ID and Client Secret and place those keys in Client ID and CLient Secret of the Loginizer LinkedIn Social provider respectively and enable it and save it"
+msgstr "Nella scheda Auth, copia l'ID client e il Client Secret e inserisci queste chiavi rispettivamente nell'ID client e nel Client Secret del provider social LinkedIn di Loginizer, quindi abilitalo e salvalo"
+
+#: loginizer/main/settings/social_login.php:673
+msgid "Now on LinkedIn Auth page you will need to add Redirect URL, for that add this URL there"
+msgstr "Ora, nella pagina Auth di LinkedIn, dovrai aggiungere l'URL di reindirizzamento. Per farlo, aggiungi questo URL lì"
+
+#: loginizer/main/settings/social_login.php:674
+msgid "After that you can test in the Loginizer dashboard to see if it is working without any issue"
+msgstr "Dopodiché puoi testare nella bacheca di Loginizer per vedere se funziona senza problemi"
+
+#: loginizer/main/settings/sso.php:20
+msgid "SSO is a Pro feature so it can not be used with the free version."
+msgstr "SSO è una funzionalità Pro, quindi non può essere utilizzata con la versione gratuita."
+
+#: loginizer/main/settings/sso.php:27
+msgid "Security Check Failed!"
+msgstr "Controllo di sicurezza fallito!"
+
+#: loginizer/main/settings/sso.php:38
+msgid "Please select a user for whom you want to generate the link"
+msgstr "Seleziona un utente per cui generare il link"
+
+#: loginizer/main/settings/sso.php:62
+msgid "The given user was not found !"
+msgstr "L'utente specificato non è stato trovato !"
+
+#: loginizer/main/settings/sso.php:76
+msgid "Please select SSO Links to delete!"
+msgstr "Seleziona i link SSO da eliminare!"
+
+#: loginizer/main/settings/sso.php:84
+msgid "SSO IDs were malformed"
+msgstr "Gli ID SSO erano malformati"
+
+#: loginizer/main/settings/sso.php:169
+msgid "Generate SSO"
+msgstr "Genera SSO"
+
+#: loginizer/main/settings/sso.php:190
+msgid "You can generate SSO link or send it to an email, to give them access to your site's admin panel"
+msgstr "Puoi generare un link SSO o inviarlo a un indirizzo email, per dare accesso al pannello di amministrazione del tuo sito"
+
+#: loginizer/main/settings/sso.php:195
+msgid "Email"
+msgstr "Email"
+
+#: loginizer/main/settings/sso.php:196
+msgid "Email of the person you want to send the SSO to"
+msgstr "Email della persona a cui vuoi inviare l'SSO"
+
+#: loginizer/main/settings/sso.php:200
+msgid "You can leave it empty if you just want to create a SSO link"
+msgstr "Puoi lasciarlo vuoto se vuoi solo creare un link SSO"
+
+#: loginizer/main/settings/sso.php:205
+msgid "User"
+msgstr "Utente"
+
+#: loginizer/main/settings/sso.php:206
+msgid "User for who's account you want to generate the SSO"
+msgstr "Utente per il cui account vuoi generare l'SSO"
+
+#: loginizer/main/settings/sso.php:214
+msgid "Time to Live"
+msgstr "Durata"
+
+#: loginizer/main/settings/sso.php:215
+msgid "Select the duration for which the SSO stays alive"
+msgstr "Seleziona la durata per cui l'SSO rimane attivo"
+
+#: loginizer/main/settings/sso.php:233
+msgid "Number of times you want your user to be able to login through same link by default it's 1 time and maximum is 15 times"
+msgstr "Numero di volte in cui vuoi che il tuo utente possa accedere tramite lo stesso link. Per impostazione predefinita è 1 volta e il massimo è 15 volte"
+
+#: loginizer/main/settings/sso.php:255
+msgid "User ID"
+msgstr "ID utente"
+
+#: loginizer/main/settings/sso.php:256
+msgid "Username"
+msgstr "Nome utente"
+
+#: loginizer/main/settings/sso.php:257
+msgid "SSO Link"
+msgstr "Link SSO"
+
+#: loginizer/main/settings/sso.php:258
+msgid "Attempts Remaining"
+msgstr "Tentativi rimanenti"
+
+#: loginizer/main/settings/sso.php:259
+msgid "Expiring in"
+msgstr "In scadenza tra"
+
+#: loginizer/main/settings/sso.php:265
+msgid "No SSO link has been created yet."
+msgstr "Nessun link SSO è stato ancora creato."
+
+#: loginizer/main/settings/sso.php:309
+msgid "Delete Selected Links"
+msgstr "Elimina i link selezionati"
+
+#: loginizer/main/social-base.php:86
+msgid "Something went wrong while creating the user"
+msgstr "Qualcosa è andato storto durante la creazione dell'utente"
+
+#: loginizer/main/social-base.php:91
+msgid "Unable to register your account, try again later!"
+msgstr "Impossibile registrare il tuo account, riprova più tardi!"
+
+#: loginizer/main/social-base.php:156
+msgid "Login Successful"
+msgstr "Accesso riuscito"
+
+#: loginizer/main/social-base.php:190
+msgid "The avatar has unsupported mime type."
+msgstr "L'avatar ha un tipo MIME non supportato."
+
+#: loginizer/main/social-base.php:198
+msgid "Unable to create Directory to save avatars"
+msgstr "Impossibile creare la directory per salvare gli avatar"
+
+#: loginizer/main/social-base.php:210
+msgid "Unable to copy the avatar from the tmp file"
+msgstr "Impossibile copiare l'avatar dal file temporaneo"
+
+#: loginizer/main/social-base.php:229
+msgid "Unable to create an attachment of the Avatar"
+msgstr "Impossibile creare un allegato dell'avatar"
+
+#: loginizer/main/social-base.php:247
+msgid "The URL provided to download avatar is empty"
+msgstr "L'URL fornito per scaricare l'avatar è vuoto"
+
+#: loginizer/main/social-base.php:254
+msgid "Unable to create a tmp file!"
+msgstr "Impossibile creare un file temporaneo!"
+
+#: loginizer/main/social-base.php:266
+msgid "Download of the avatar failed!"
+msgstr "Scaricamento dell'avatar fallito!"
+
+#: loginizer/main/social-base.php:274
+#, php-format
+msgid "Download of the avatar failed with error code %s!"
+msgstr "Scaricamento dell'avatar fallito con codice errore %s!"
+
+#: loginizer/main/social-login.php:41
+msgid "No Provider is configured, please contact the admin about this issue"
+msgstr "Nessun provider è configurato, contatta l'amministratore per questo problema"
+
+#: loginizer/main/social-login.php:80 loginizer/main/social-login.php:89
+msgid "The app you are trying to login through is not configured"
+msgstr "L'app tramite cui stai tentando di accedere non è configurata"
+
+#: loginizer/main/social-login.php:123
+msgid "The social account you are using does not have a verified email."
+msgstr "L'account social che stai utilizzando non ha una email verificata."
+
+#: loginizer/main/social-login.php:141
+msgid "No email details were returned !"
+msgstr "Nessun dettaglio email è stato restituito !"
+
+#: loginizer/main/social-login.php:156
+msgid "The email you are using for the test is not registered on this website. So register this email first."
+msgstr "L'email che stai usando per il test non è registrata su questo sito. Quindi registra prima questa email."
+
+#: loginizer/main/social-login.php:167
+msgid "You can not register through Social Login"
+msgstr "Non puoi registrarti tramite Social Login"
+
+#: loginizer/main/social-login.php:174
+msgid "User with this email does not exists."
+msgstr "Utente con questa email non esiste."
+
+#: loginizer/main/social-login.php:190
+msgid "Oops, we ran into an issue! "
+msgstr "Ops, abbiamo riscontrato un problema! "

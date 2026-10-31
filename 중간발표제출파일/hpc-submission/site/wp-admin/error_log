@@ -1,0 +1,35 @@
+[19-Oct-2026 10:22:39 UTC] WordPress database error Key column 'KEY' doesn't exist in table for query ALTER TABLE soft_hpc_lab_applications ADD PRIMARY KEY  (`id`,`KEY`) made by require_once('wp-admin/admin.php'), do_action('load-tools_page_hpc-deploy'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, hpc_host_process_setup, hpc_host_configure_storage, hpc_install, dbDelta
+[19-Oct-2026 10:22:39 UTC] WordPress database error Key column 'KEY' doesn't exist in table for query ALTER TABLE soft_hpc_lab_messages ADD PRIMARY KEY  (`id`,`KEY`) made by require_once('wp-admin/admin.php'), do_action('load-tools_page_hpc-deploy'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, hpc_host_process_setup, hpc_host_configure_storage, hpc_install, dbDelta
+[22-Oct-2026 05:26:40 UTC] PHP Fatal error:  Uncaught Error: Class "WP_HTML_Tag_Processor" not found in /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php:1713
+Stack trace:
+#0 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(1541): wp_kses_hair()
+#1 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(1491): wp_kses_attr()
+#2 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(1368): wp_kses_split2()
+#3 [internal function]: _wp_kses_split_callback()
+#4 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(1298): preg_replace_callback()
+#5 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(970): wp_kses_split()
+#6 /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php(2503): wp_kses()
+#7 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/admin-display.cls.php(573): wp_kses_post()
+#8 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/admin-display.cls.php(869): LiteSpeed\Admin_Display::build_notice()
+#9 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/file.cls.php(127): LiteSpeed\Admin_Display::dismiss_pin_by_content()
+#10 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/file.cls.php(324): LiteSpeed\File::ensure_static_protection()
+#11 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/cloud-request.trait.php(309): LiteSpeed\File::save()
+#12 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/cloud-request.trait.php(261): LiteSpeed\Cloud->_post()
+#13 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/cloud-misc.trait.php(133): LiteSpeed\Cloud::post()
+#14 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/conf.cls.php(135): LiteSpeed\Cloud::version_check()
+#15 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/conf.cls.php(49): LiteSpeed\Conf->_conf_db_init()
+#16 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/core.cls.php(69): LiteSpeed\Conf->init()
+#17 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/src/root.cls.php(232): LiteSpeed\Core->__construct()
+#18 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/litespeed-cache.php(237): LiteSpeed\Root::cls()
+#19 /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/litespeed-cache/litespeed-cache.php(240): run_litespeed_cache()
+#20 /home/rkdeqrepco/su-pa-fa-mu.com/wp-admin/includes/plugin.php(2388): include_once('/home/rkdeqrepc...')
+#21 /home/rkdeqrepco/su-pa-fa-mu.com/wp-admin/includes/plugin.php(679): plugin_sandbox_scrape()
+#22 /usr/local/lsws/add-ons/webcachemgr/src/WpWrapper/WpFuncs.php(210): activate_plugin()
+#23 /usr/local/lsws/add-ons/webcachemgr/src/WPCaller.php(1166): Lsc\Wp\WpWrapper\WpFuncs::activatePlugin()
+#24 /usr/local/lsws/add-ons/webcachemgr/src/WPCaller.php(783): Lsc\Wp\WPCaller->enable_lscwp()
+#25 /usr/local/lsws/add-ons/webcachemgr/src/WPCaller.php(811): Lsc\Wp\WPCaller->enable()
+#26 /usr/local/lsws/add-ons/webcachemgr/src/UserCommand.php(900): Lsc\Wp\WPCaller->massEnable()
+#27 /usr/local/lsws/add-ons/webcachemgr/src/UserCommand.php(1089): Lsc\Wp\UserCommand->runAsUser()
+#28 /usr/local/lsws/add-ons/webcachemgr/src/UserCommand.php(1101): Lsc\Wp\UserCommand::run()
+#29 {main}
+  thrown in /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php on line 1713

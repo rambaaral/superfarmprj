@@ -1,0 +1,10 @@
+{
+	"$id": "extendify/notification-template/pill",
+	"title": "Pill",
+	"type": "object",
+	"properties": {
+		"icon": { "type": "string" },
+		"cta-label": { "type": "string" }
+	},
+	"required": ["cta-label"]
+}

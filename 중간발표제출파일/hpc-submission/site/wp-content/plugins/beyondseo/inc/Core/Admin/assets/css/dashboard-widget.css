@@ -1,0 +1,220 @@
+.rankingcoach-dashboard-widget {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.rankingcoach-score-section {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.rankingcoach-score-section h3 {
+    margin-bottom: 20px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #1565c0 !important;
+    text-shadow: 0 1px 2px rgba(21, 101, 192, 0.1);
+}
+
+/* Mini Cards Styling */
+.rankingcoach-mini-cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.rankingcoach-mini-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+    min-width: 80px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.rankingcoach-mini-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.4);
+}
+.mini-card-label {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.mini-card-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Score Visualization */
+.rankingcoach-score-visualization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rankingcoach-score-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        var(--score-color) 0% var(--score-percentage),
+        #e3f2fd var(--score-percentage) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.2);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.rankingcoach-score-circle::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.score-circle-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rankingcoach-score-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--score-color);
+    margin: 2px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.rankingcoach-score-label {
+    font-size: 11px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.rankingcoach-score-percentage {
+    font-size: 12px;
+    color: #888;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* Upsell Section */
+.rankingcoach-connect-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f8fbff 100%);
+    border-left: 4px solid #1976d2;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+}
+.rankingcoach-connect-message {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #37474f;
+}
+.rankingcoach-connect-button {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+}
+.rankingcoach-connect-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+    color: white !important;
+}
+
+/* Scan Section */
+.rankingcoach-scan-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f8fbff 100%);
+    border-left: 4px solid #1976d2;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+    text-align: center;
+}
+.rankingcoach-scan-message {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #37474f;
+    font-weight: 500;
+}
+.rankingcoach-scan-button {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.rankingcoach-scan-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+    color: white !important;
+}
+.rankingcoach-scan-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .rankingcoach-mini-cards {
+        gap: 8px;
+    }
+    .rankingcoach-mini-card {
+        min-width: 70px;
+        padding: 10px 12px;
+    }
+    .rankingcoach-score-circle {
+        width: 120px;
+        height: 120px;
+    }
+    .rankingcoach-score-circle::before {
+        width: 100px;
+        height: 100px;
+    }
+}

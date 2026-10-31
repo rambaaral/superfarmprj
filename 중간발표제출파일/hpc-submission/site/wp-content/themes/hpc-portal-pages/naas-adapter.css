@@ -1,0 +1,256 @@
+/* Original archive CSS is loaded immediately before this adapter.
+   Only portal-specific content, accessible controls and responsive gaps are adapted here. */
+body.hpc-portal{font-family:"Pretendard GOV","Malgun Gothic",sans-serif;letter-spacing:0;background:#fff;line-height:1.5}
+.gov_top{background:var(--secondary5)}
+.gov_top p{font-size:15px}
+#header{position:relative}
+#header .brand{gap:14px;min-height:54px}
+#header .brand strong{font-size:30px;line-height:1.3;letter-spacing:-1px}
+#header .brand small{font-size:11px;letter-spacing:1.1px}
+#header .search-open{font-size:17px;gap:0}
+#header #gnb ul{padding-left:0;list-style:none}
+#header #gnb{display:block!important}
+#gnb>.primary-links{justify-content:flex-start;gap:0}
+#gnb>.primary-links>li{margin-right:16px}
+#gnb>.primary-links>li>a{white-space:nowrap;text-decoration:none;border:0}
+#gnb>.primary-links>li:first-child>a:after{display:none}
+#header #gnb>ul>li>.group-toggle{position:relative;display:flex;align-items:center;height:62px;font-size:22px;font-weight:700;padding:0 16px;gap:8px;background:none;color:var(--gray90);border:0;border-radius:0;line-height:1.5;white-space:nowrap}
+#gnb .group-toggle:after{content:"";width:20px;height:20px;background:url(naas/usr/_images/_common/icon_gnb_arrow.png) center no-repeat;transition:transform .2s}
+#header #gnb>ul>li.on>.group-toggle{color:var(--secondary50);box-shadow:inset 0 -4px var(--secondary50)}
+#gnb .on>.group-toggle:after{transform:rotate(180deg);background-image:url(naas/usr/_images/_common/icon_gnb_arrow_ov.png)}
+#gnb .depth2{min-height:160px}
+#gnb .depth2 ul a{font-size:17px;padding:0 24px;white-space:normal}
+#gnb .depth2 a:after{display:none}
+#gnb .nav-description{position:absolute;left:300px;top:28px;font-size:17px}
+#gnb .nav-description strong{font-size:25px;display:block;margin-bottom:16px}
+#gnb .depth2 a[aria-current=page]{color:var(--secondary50);background:var(--white)}
+#mContainer .visual{border-radius:0}
+#mContainer .v_txt{margin-bottom:0;letter-spacing:0}
+#mContainer .menu_list{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0}
+#mContainer .menu_list .slick-slide{float:none;height:auto;display:block}
+#mContainer .menu_list a:hover{text-decoration:none}
+#mContainer .menu_list a:focus-visible{outline:2px solid var(--secondary50);outline-offset:4px}
+#mContainer .sec2 .notice_list>li>.tit{background:none;border:0;border-radius:0;padding:0;color:var(--gray90);font-weight:700}
+#mContainer .sec2 .notice_list>li.active>.tit{color:var(--secondary50)}
+#mContainer .sec2 .notice_list>li>.notice_tab{height:298px}
+.home-empty{padding:55px 0;text-align:center;color:var(--gray70);line-height:1.9}
+.portal-banner{height:298px;border:1px solid var(--gray30);border-radius:12px;padding:24px 30px;background:var(--secondary5)}
+.portal-banner>span{font-size:13px;letter-spacing:2px;color:var(--secondary50)}
+.portal-banner h2{font-size:25px;line-height:1.3;margin:16px 0 12px;letter-spacing:-1px}
+.portal-banner p{margin-bottom:16px;color:var(--gray70);font-size:15px}
+.portal-banner>a{display:flex;justify-content:space-between;font-weight:700;border-top:1px solid var(--gray30);padding-top:16px}
+#mContainer .portal-calendar{margin:48px 0 60px}
+.calendar-panel p{margin-bottom:12px}
+.calendar-panel button{justify-content:center}
+.calendar-panel .section-heading h2{font-size:25px}
+.calendar-panel .eyebrow{font-size:13px}
+#container>.wrap.page-layout{display:flex;min-height:690px;max-width:1280px;width:calc(100% - 32px);gap:50px}
+#container .page-content{flex:1;min-width:0}
+#lnb.side-navigation h2{padding:0;font-weight:700;letter-spacing:0}
+#lnb.side-navigation nav{display:block}
+#lnb .depth01>li>a[aria-current=page]{background:white;color:var(--secondary50);border-color:var(--secondary50)}
+#lnb.side-navigation nav a{font-size:17px;letter-spacing:0}
+.pageInfo{position:relative;padding-right:48px}
+.pageInfo .print-page{position:absolute;right:0;top:0;width:36px;height:36px;border:1px solid var(--gray30);border-radius:4px;background:url(naas/usr/_images/_sub/ico_print_20.svg) center no-repeat}
+.pageInfo .print-page svg{visibility:hidden}
+.pageInfo .breadcrumb{margin-bottom:0;font-size:14px;min-height:36px}
+#contents .page-heading{border:0;padding:0;margin-bottom:40px}
+#contents .page-body{font-size:16px;line-height:1.65}
+#contents .page-body p{margin-bottom:18px}
+#contents .page-body h2{margin-top:32px}
+#contents .page-body h3{line-height:1.5}
+#contents .page-body .intro-panel h2{margin-top:0}
+#contents .page-body .learning-list{padding:0;counter-reset:lesson}
+#contents .page-body .learning-list p{margin-bottom:0}
+#contents .page-body .portal-service>h2{margin-top:0}
+.page-body .steps,.page-body .feature-grid{margin-bottom:28px}
+.page-body .portal-search{border:0;background:white;padding:0;justify-content:flex-end}
+.page-body table:not(.calendar-table){border-top:2px solid #555e78}
+.page-body table:not(.calendar-table) th{background:#f7f7f7;border-color:#d5d5d5;color:#333;font-weight:500}
+.page-body table:not(.calendar-table) td{border-color:#d5d5d5}
+.page-body .empty-state{border-radius:0;background:#fff}
+.page-body input:not([type=checkbox]):not([type=radio]):not([type=hidden]),.page-body select,.page-body textarea{border-radius:0;border-color:#ccc}
+.page-body .portal-search input{max-width:360px}
+#footer.site-footer{padding:0;font-size:17px}
+#footer .brand strong{font-size:28px}
+#footer p{font-size:17px;color:var(--gray90);margin-bottom:0}
+#footer .footer_quick button{background:none;border:0;border-radius:0;font-weight:400;color:var(--gray90);font-size:17px;gap:10px;line-height:1.5}
+#footer .quick_detail a{font-size:16px}
+.menu-search-dialog{margin:auto}
+.menu-search-dialog .section-heading{margin-bottom:20px}
+.menu-search-dialog li a{padding:10px 2px}
+body.hpc-portal.hpc-with-preview #header{max-width:none;margin:0}
+body.hpc-portal.hpc-with-preview main{margin:0}
+body.hpc-portal .hpc-preview h2{background:none!important;border:0!important;padding:0!important;margin:0 0 12px!important}
+@media(min-width:1200px) and (min-aspect-ratio:4/3){
+ body.portal-application #container>.wrap.page-layout{max-width:1680px;gap:32px}
+ body.portal-application #container #lnb{width:180px}
+ body.hpc-portal .hpc-compose-layout{grid-template-columns:minmax(300px,1fr) minmax(350px,1fr)}
+}
+@media(max-width:1100px){
+ #header #gnb>ul>li>.group-toggle,#gnb>.primary-links>li>a{font-size:18px;padding:0 10px!important}
+ #gnb>.primary-links>li{margin-right:8px}
+ #container>.wrap.page-layout{gap:32px}
+ #container #lnb{width:190px}
+ #container #lnb .tit{font-size:25px}
+ #mContainer .sec2 .wrap{gap:30px}
+ #mContainer .sec2 .notice_list{width:calc(100% - 360px)}
+ #mContainer .popupZone{width:330px}
+ .portal-banner{padding:24px}
+ .portal-banner h2{font-size:25px}
+}
+@media(max-width:1024px){
+ .gov_top{min-height:28px;padding:5px 0}
+ .gov_top p{font-size:11px;line-height:18px;margin:0}
+ #header>.wrap{padding:35px 0 20px;display:flex;align-items:center;gap:12px}
+ #header .brand{min-height:48px;gap:10px}
+ #header .brand strong{font-size:23px;letter-spacing:-1px}
+ #header .brand small{font-size:8px;letter-spacing:.8px}
+ #header #logo{z-index:1}
+ #topMenu{top:0;right:0;display:block}
+ #topMenu li a{font-size:12px;padding:4px 6px}
+ #header .search-open{position:static;height:38px;justify-content:center;margin:0 0 0 auto;padding:8px 0;font-size:0;flex-shrink:0}
+ #header .search-open:before{margin:0;width:22px;height:22px}
+ #header .mobile-menu-toggle{display:flex;font-size:0;padding:4px 0;gap:0;flex-shrink:0}
+ #header .mobile-menu-toggle span{font-size:26px}
+ #primary-navigation{display:none;border-top:1px solid var(--gray30)}
+ #primary-navigation.is-open{display:block}
+ #header #gnb{border:0}
+ #gnb>.primary-links{display:block;padding:8px 0 20px}
+ #gnb>.primary-links>li{display:block;margin:0;text-align:left;border-bottom:1px solid var(--gray20)}
+ #header #gnb>ul>li>.group-toggle,#gnb>.primary-links>li>a{height:48px;width:100%;font-size:18px;padding:0 12px!important;justify-content:space-between}
+ #gnb .depth2{display:none;position:static;transform:none;width:100%;max-width:none;min-height:0;opacity:1;visibility:visible;overflow:visible}
+ #gnb .on>.depth2{display:block}
+ #gnb .depth2:before,#gnb .depth2:after,#gnb .depth2>ul:before,#gnb .nav-description{display:none}
+ #gnb .depth2>ul{padding:0 0 8px;margin:0}
+ #gnb .depth2>ul>li>a{height:44px;width:100%;background:var(--secondary5);padding:0 24px;font-size:16px}
+ #mContainer .visual{height:300px;background-position:65% center}
+ #mContainer .visual .v_txt{font-size:30px;padding-top:38px;line-height:1.4}
+ #mContainer .sec1 .wrap{margin-top:-100px;padding-top:24px;min-height:100px}
+ #mContainer .sec1 .wrap:before{left:-8px;width:calc(100% + 16px)}
+ #mContainer .section h2.tit{font-size:23px;line-height:32px;margin-bottom:20px}
+ #mContainer .menu_list{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 4px}
+ #mContainer .menu_list .slick-slide a{font-size:15px;gap:10px}
+ #mContainer .menu_list .slick-slide i{height:76px;background-size:auto 42px;max-width:100px}
+ #mContainer .sec2{margin-top:40px!important}
+ #mContainer .sec2 .wrap{display:block}
+ #mContainer .popupZone{width:100%}
+ #mContainer .sec2 .notice_list{width:100%;height:350px}
+ #mContainer .sec2 .notice_list>li>.tit{font-size:23px}
+ #mContainer .sec2 .notice_list>li>.notice_tab{padding:24px 20px;top:60px;height:260px}
+ #mContainer .sec2 .notice_tab ul>li>a{font-size:16px;padding-right:75px;line-height:26px}
+ #mContainer .sec2 .notice_tab ul>li+li{margin-top:18px}
+ #mContainer .sec2 .notice_tab .date{font-size:13px}
+ .portal-banner{padding:28px;min-height:270px}
+ #container{padding-top:100px}
+ #container:after{height:100px}
+ #container>.wrap.page-layout{display:block;padding:28px 0 52px;min-height:0}
+ #container #lnb{display:block;width:100%;margin-bottom:28px}
+ #container #lnb .tit{font-size:22px;line-height:30px;text-align:left;margin-bottom:12px}
+ #lnb .depth01{display:flex;flex-wrap:wrap;gap:6px}
+ #lnb .depth01>li{margin:0}
+ #lnb.side-navigation nav a{height:44px;padding:0 14px;font-size:15px;gap:14px}
+ #contents .page-heading{margin-bottom:30px}
+ #container #contents h1#title{font-size:29px;line-height:1.3}
+ .pageInfo .breadcrumb{font-size:12px;gap:6px}
+ #footer .footer_quick .group{flex-basis:50%;border-bottom:1px solid var(--gray30)}
+ #footer .footer_quick .group>button{font-size:15px;padding:0 12px}
+ #footer .ftWrap{padding:30px 0}
+ #footer .ftLogo{margin-bottom:28px}
+ #footer .ftInfo{display:block;margin-bottom:28px}
+ #footer .ftInfo .addr{padding:0}
+ #footer .ftInfo .linkArea{width:100%;margin-top:16px}
+ #footer .linkList{flex-direction:row;flex-wrap:wrap;gap:8px}
+ #footer .linkList a{padding:8px 0}
+ #footer p,#footer address,#footer .linkList a{font-size:15px}
+ .page-body .portal-search input{max-width:none}
+}
+@media(max-width:360px){#header .brand strong{font-size:21px}#header .brand-mark{display:none}#mContainer .visual .v_txt{font-size:26px}#mContainer .menu_list .slick-slide a{font-size:13px}.gov_top p{font-size:10px}}
+@media print{.gov_top,#header,#footer,#lnb,.pageInfo{display:none!important}#container{padding:0}#container:after{display:none}#container>.wrap.page-layout{display:block;padding:0;width:100%}}
+
+/* Approved-member forum */
+.forum-entry{padding:24px 0;border-bottom:1px solid #dce3eb}.forum-entry h2{background:none!important;border:0!important;padding:0!important;font-size:20px!important}.forum-entry h2:before{display:none!important}.forum-meta{color:#526476;font-size:14px}.forum-body{white-space:normal;overflow-wrap:anywhere;margin:16px 0 24px;line-height:1.8}.forum-form{display:grid;gap:12px;margin:20px 0}.forum-form input,.forum-form textarea{box-sizing:border-box;width:100%;min-width:0}.forum-form button,.forum-moderation button{justify-self:start}.forum-entry details{margin:16px 0}.forum-entry summary{cursor:pointer;font-weight:600}.forum-list a{overflow-wrap:anywhere}.forum-service .notice-box{margin-bottom:24px}
+
+/* Portal visual refinement: keep existing navigation and layout. */
+body.hpc-portal .portal-service{color:#243b50}
+body.hpc-portal .portal-service form input:not([type=checkbox]):not([type=radio]):not([type=hidden]):not([type=file]),body.hpc-portal .portal-service form select,body.hpc-portal .portal-service form textarea{border-radius:8px;border-color:#bccbd7;background:#fcfdff;box-shadow:none;transition:border-color .15s}
+body.hpc-portal .portal-service form input:focus,body.hpc-portal .portal-service form select:focus,body.hpc-portal .portal-service form textarea:focus{outline:3px solid #087e8220;outline-offset:1px;border-color:#087e82}
+body.hpc-portal .portal-service fieldset{border:1px solid #dce5ed;border-radius:12px;background:#f8fafc;padding:22px;margin:28px 0}
+body.hpc-portal .portal-service legend{font-weight:700;color:#173b55;padding:0 8px}
+body.hpc-portal .portal-service input[type=radio],body.hpc-portal .portal-service input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:#087e82}
+body.hpc-portal .portal-service form>h3{border-top:1px solid #e0e8ef;padding-top:28px;margin-top:34px;font-size:20px;letter-spacing:-.5px;color:#143a53}
+body.hpc-portal .notice-box{border-radius:10px;border-color:#d9e6eb;background:#f2f8fa}
+body.hpc-portal .portal-banner{background:linear-gradient(125deg,#eff8f7,#f3f7fc);border-color:#d5e6e9;border-radius:16px}
+body.hpc-portal .calendar-panel{border-radius:16px;border-color:#dce5ed}
+body.hpc-portal .portal-service button[type=submit],body.hpc-portal .portal-service form>button:not([type]){background:#087e82;border-color:#087e82;border-radius:8px;min-height:46px}
+body.hpc-portal .portal-service button[type=submit]:hover,body.hpc-portal .portal-service form>button:not([type]):hover{background:#08676b}
+body.hpc-portal .portal-service .inline{line-height:1.7;align-items:center}
+@media(max-width:600px){body.hpc-portal .portal-service fieldset{padding:16px}.portal-service .inline{margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){body.hpc-portal .portal-service *{transition:none!important}}
+
+/* Application form: explicitly place section headings and composite fields. */
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save]){
+ grid-template-columns:minmax(110px,145px) minmax(0,1fr);column-gap:18px;align-items:start;min-width:0;text-align:left;
+}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>h3{
+ grid-column:1/-1;position:static;float:none;clear:both;width:auto;height:auto;margin:30px 0 14px;padding:18px 0 0!important;border:0;border-top:1px solid #dce5ed;border-radius:0;background:none!important;box-shadow:none;font-size:19px!important;line-height:1.6;text-indent:0;text-align:left;
+}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>h3:before,
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>h3:after{display:none!important;content:none!important}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>label:not(.inline){
+ display:flex;align-items:center;justify-content:flex-start;position:static;float:none;grid-column:1;min-width:0;min-height:66px;padding:12px;margin:0;line-height:1.6;text-align:left;word-break:keep-all;overflow-wrap:anywhere;
+}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>input:not([type=hidden]),
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>select,
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>textarea{
+ grid-column:2;box-sizing:border-box;min-width:0;max-width:100%;margin:10px 0;padding:11px 12px;line-height:1.5;text-align:left;
+}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>div[role=group]{
+ grid-column:2;align-self:center;box-sizing:border-box;width:100%;min-width:0;margin:10px 0;
+}
+body.portal-application #contents .portal-service div[role=group][aria-label="전화번호"] input{
+ box-sizing:border-box;width:0!important;min-width:0;flex:1 1 0!important;height:46px;margin:0;padding:10px 6px;text-align:center;line-height:1.5;
+}
+body.portal-application #contents .portal-service div[role=group][aria-label="전화번호"]>span{flex:0 0 auto;line-height:1;margin:0;padding:0}
+body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>fieldset{
+ grid-column:1/-1;box-sizing:border-box;min-width:0;max-width:100%;margin:22px 0;padding:18px 20px;text-align:left;
+}
+body.portal-application #contents .portal-service fieldset legend{
+ position:static!important;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;visibility:visible!important;font-size:16px;line-height:1.6;text-indent:0;padding:0 8px;margin:0;font-weight:700;
+}
+body.portal-application #contents .portal-service label.inline{
+ position:static;float:none;display:flex;align-items:flex-start;justify-content:flex-start;gap:10px;max-width:100%;margin:10px 0;padding:0;line-height:1.7;text-align:left;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;
+}
+body.portal-application #contents .portal-service fieldset label.inline:has(input[name="domains[]"]){display:inline-flex;margin:8px 22px 8px 0}
+body.portal-application #contents .portal-service label.inline input[type=radio],
+body.portal-application #contents .portal-service label.inline input[type=checkbox]{
+ position:static;float:none;flex:0 0 18px;box-sizing:border-box;width:18px!important;height:18px!important;margin:4px 0 0!important;padding:0;transform:none;
+}
+@media(max-width:600px){
+ body.portal-application #contents .portal-service form:has(>input[name=op][value=save]){display:block}
+ body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>label:not(.inline){min-height:0;margin:20px 0 6px;padding:0;background:none;border:0}
+ body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>h3{margin-top:28px}
+ body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>fieldset{padding:14px}
+}
+
+/* Keep the preview anchored to the viewport, not an overflow-hidden ancestor. */
+@media screen and (min-width:1200px) and (min-aspect-ratio:4/3){
+ body.hpc-portal.portal-application.hpc-with-preview{overflow:visible}
+ body.portal-application.hpc-with-preview #container,
+ body.portal-application.hpc-with-preview #container>.page-layout,
+ body.portal-application.hpc-with-preview main.page-content,
+ body.portal-application.hpc-with-preview #contents,
+ body.portal-application.hpc-with-preview .page-body,
+ body.portal-application.hpc-with-preview .portal-service,
+ body.portal-application.hpc-with-preview .hpc-compose-layout{overflow:visible}
+ body.portal-application.hpc-with-preview .hpc-compose-layout{align-items:start}
+ body.portal-application.hpc-with-preview .hpc-preview{
+  display:flex;flex-direction:column;position:sticky;top:16px;align-self:start;
+  box-sizing:border-box;min-height:0;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);min-width:0;
+ }
+ body.portal-application.hpc-with-preview .hpc-preview>h2,
+ body.portal-application.hpc-with-preview .hpc-preview>p{flex:0 0 auto}
+ body.portal-application.hpc-with-preview .hpc-preview-pages{
+  flex:1 1 auto;height:calc(100vh - 220px);height:calc(100dvh - 220px);min-height:0;overflow:auto;scrollbar-gutter:stable;
+ }
+}

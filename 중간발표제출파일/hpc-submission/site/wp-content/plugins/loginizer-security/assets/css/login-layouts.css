@@ -1,0 +1,58 @@
+/* Loginizer login page layouts. Small screens keep the default centered layout. */
+@media screen and (min-width: 783px) {
+
+	/* A column: #login grows to fill the screen, the language switcher follows it inside the panel */
+	body.lz-panel {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: auto; /* core fixes it at 100% */
+		min-height: 100vh;
+	}
+
+	body.lz-layout-right {
+		align-items: flex-end;
+	}
+
+	/* #login and the switcher together form the panel */
+	.lz-panel #login,
+	.lz-panel .language-switcher {
+		/* !important beats the captcha's own #login width override */
+		width: 420px !important;
+		max-width: 100%;
+		margin: 0;
+		box-sizing: border-box;
+		background: var(--lz-panel-bg, #fff);
+		color: var(--lz-panel-text, inherit);
+	}
+
+	.lz-panel #login {
+		flex: 1 0 auto;
+		padding: 10vh 48px 48px !important;
+	}
+
+	.lz-panel .language-switcher {
+		padding: 0 48px 24px;
+	}
+
+	/* With a custom panel width the fields stay a comfortable width in its middle */
+	.lz-panel #login > * {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.lz-panel #login form {
+		padding-left: 0;
+		padding-right: 0;
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+
+	.lz-panel #nav,
+	.lz-panel #backtoblog {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

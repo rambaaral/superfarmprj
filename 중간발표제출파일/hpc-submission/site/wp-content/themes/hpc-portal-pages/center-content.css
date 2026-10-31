@@ -1,0 +1,56 @@
+.hpcc-updates{margin:46px 0}.hpcc-update-grid{display:grid!important;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:38px}.hpcc-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+#mContainer .hpcc-heading h2{font-size:26px;font-weight:700;margin:0;padding:0;background:none}.hpcc-heading>a{font-size:14px;color:#466779}
+.hpcc-notice-list{list-style:none;padding:0;margin:0;border-top:2px solid #163b56}.hpcc-notice-list li{border-bottom:1px solid #e0e7ed}.hpcc-notice-list a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 4px;text-decoration:none}.hpcc-notice-list a:hover span{text-decoration:underline}.hpcc-notice-list span{min-width:0;overflow-wrap:anywhere}.hpcc-notice-list time{font-size:13px;color:#667d8e;white-space:nowrap}
+.hpcc-empty{padding:54px 20px;text-align:center;color:#647b8c;line-height:1.8;background:#f7fafc}.hpcc-banner-empty{min-height:250px;display:grid;place-items:center}
+.hpcc-carousel{border:1px solid #dce6ed;border-radius:12px;overflow:hidden;background:#f4f7fa}.hpcc-slide{display:block}.hpcc-slide[hidden]{display:none!important}.hpcc-slide img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#f4f7fa}.hpcc-carousel-controls{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px;background:#fff}.hpcc-carousel-controls button{background:#fff;color:#24475e;border:1px solid #c7d7e0;border-radius:6px;padding:6px 12px;min-height:36px;cursor:pointer}.hpcc-carousel-controls span{font-size:13px}
+.hpcc-calendar .calendar-table button.has-events{position:relative}.hpcc-calendar .calendar-table button.has-events:after{content:"";position:absolute;bottom:3px;left:calc(50% - 2px);width:5px;height:5px;background:#087e82;border-radius:50%}.hpcc-calendar .calendar-table button.has-events[aria-pressed=true]:after{background:#fff}
+.hpcc-calendar [data-event-list] article+article{border-top:1px solid #d3e0e8;padding-top:16px;margin-top:16px}.hpcc-calendar [data-event-list] h4{font-size:17px;margin:0 0 8px}.hpcc-calendar [data-event-list] p{font-size:14px;line-height:1.7;margin:0 0 8px}.hpcc-event-description{white-space:pre-wrap;overflow-wrap:anywhere}.hpcc-calendar .schedule-detail{max-height:480px;overflow:auto}
+#contents .hpcc-notice h2{background:none!important;border:0!important;padding:0!important;font-size:26px!important;line-height:1.5}#contents .hpcc-notice h2:before{display:none}.hpcc-date{color:#6a7b88;font-size:14px;border-bottom:1px solid #dce4eb;padding-bottom:18px}.hpcc-content{padding:18px 0 32px;overflow-wrap:anywhere}.hpcc-content img{max-width:100%;height:auto}
+@media(max-width:800px){.hpcc-update-grid{grid-template-columns:1fr;gap:32px}.hpcc-updates{margin:30px 0}.hpcc-notice-list a{gap:12px}.hpcc-notice-list time{font-size:12px}.hpcc-calendar .schedule-detail{max-height:none}}
+
+/* Calendar month view: normal document flow, with continuous all-day event lanes. */
+#mContainer .portal-calendar + .sec1 .wrap{margin-top:0!important;padding-top:0;min-height:0}
+#mContainer .portal-calendar + .sec1 .wrap:before{display:none}
+#mContainer .portal-calendar{height:auto;max-height:none;overflow:visible;margin-bottom:48px}
+.hpcc-calendar{height:auto;max-height:none;overflow:visible}
+.hpcc-calendar .calendar-layout{display:block}
+.hpcc-calendar [data-center-calendar]{min-width:0;width:100%}
+.hpcc-calendar .calendar-toolbar{padding:0 0 12px}
+.hpcc-weekdays{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-bottom:1px solid #dce5ed;text-align:center;padding:10px 0;color:#617080;font-size:14px}
+.hpcc-weekdays span:first-child{color:#c14750}.hpcc-weekdays span:last-child{color:#356aa8}
+.hpcc-week{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));min-height:102px;row-gap:3px;border-bottom:1px solid #e2e9ef;padding-bottom:5px;isolation:isolate}
+.hpcc-day-cell{border-right:1px solid #eef2f6;z-index:-1;pointer-events:none}
+.hpcc-day-cell:nth-child(1){border-left:1px solid #eef2f6}
+.hpcc-calendar button.hpcc-day{align-self:center;justify-self:center;width:30px;height:30px;min-height:0;padding:0!important;margin:0;border:0!important;border-radius:50%!important;background:transparent!important;color:#263747!important;font-size:14px!important;line-height:30px;font-weight:500!important;display:block!important}
+.hpcc-calendar button.hpcc-day.is-sunday{color:#c14750!important}.hpcc-calendar button.hpcc-day.is-saturday{color:#356aa8!important}
+.hpcc-calendar button.hpcc-day.is-today{background:#164e80!important;color:#fff!important;font-weight:700!important}
+.hpcc-calendar button.hpcc-day[aria-pressed=true]{box-shadow:0 0 0 2px #a2bcd4}
+.hpcc-calendar button.hpcc-event-bar{display:block!important;min-width:0;min-height:26px;margin:0 3px;padding:4px 8px!important;border:0!important;border-radius:5px!important;background:#deebfb!important;color:#184c81!important;font-size:13px!important;line-height:1.4;font-weight:600!important;text-align:left;white-space:normal;overflow-wrap:anywhere;align-self:stretch;z-index:1}
+.hpcc-calendar button.hpcc-event-bar[data-color="1"]{background:#dff1e9!important;color:#20654d!important}
+.hpcc-calendar button.hpcc-event-bar[data-color="2"]{background:#ede5fa!important;color:#604388!important}
+.hpcc-calendar button.hpcc-event-bar[data-color="3"]{background:#fff0d8!important;color:#82521a!important}
+.hpcc-calendar button.hpcc-event-bar.continues-before{margin-left:0;border-top-left-radius:0!important;border-bottom-left-radius:0!important}
+.hpcc-calendar button.hpcc-event-bar.continues-after{margin-right:0;border-top-right-radius:0!important;border-bottom-right-radius:0!important}
+.hpcc-calendar .schedule-detail{display:block;max-height:none;overflow:visible;margin-top:20px;padding:20px 24px}
+.hpcc-calendar [data-event-list]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.hpcc-calendar [data-event-list] article+article{border:0;padding:0;margin:0}
+.hpcc-calendar [data-event-list] h4{overflow-wrap:anywhere}
+.hpcc-calendar .calendar-help{font-size:13px;color:#627689;margin:10px 0 0}
+@media(max-width:600px){.hpcc-calendar.calendar-panel{padding:18px 8px}.hpcc-week{min-height:86px}.hpcc-calendar button.hpcc-event-bar{font-size:11px!important;padding:4px!important;margin-left:1px;margin-right:1px}.hpcc-calendar .schedule-detail{padding:16px}.hpcc-calendar .calendar-toolbar h3{font-size:20px}.hpcc-calendar .calendar-toolbar{gap:4px}.hpcc-calendar .calendar-toolbar button:not(.x){padding:4px 10px}}
+
+/* Persistent center introduction and compact in-image controls. */
+.hpcc-carousel{position:relative}
+.hpcc-center-art{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;width:100%;aspect-ratio:16/9;padding:28px 32px 58px;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 100% 0%,#237f9a 0,transparent 65%),linear-gradient(120deg,#0d2e52,#14456b)}
+.hpcc-center-kicker{font-size:10px;letter-spacing:2px;color:#bddde9;margin-bottom:13px}
+.hpcc-center-art strong{position:relative;z-index:1;font-size:clamp(20px,2.1vw,29px);font-weight:700;line-height:1.45;letter-spacing:-.6px}
+.hpcc-center-link{position:relative;z-index:1;font-size:13px;color:#d5edf5;margin-top:17px}
+.hpcc-center-orbit{position:absolute;z-index:-1;right:-65px;top:-65px;width:260px;height:260px;border:1px solid #ffffff25;border-radius:50%;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}
+.hpcc-carousel .hpcc-carousel-controls{position:absolute;z-index:3;left:12px;bottom:12px;display:flex;gap:4px;padding:0;background:transparent;justify-content:flex-start}
+.hpcc-carousel .hpcc-carousel-controls button{display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;padding:0!important;margin:0!important;border:1px solid #ffffff35!important;border-radius:50%!important;background:rgba(15,29,43,.55)!important;backdrop-filter:blur(6px);color:white!important;line-height:1!important;font-size:22px!important;font-weight:400!important;box-shadow:none}
+.hpcc-carousel .hpcc-carousel-controls button[data-slide-pause]{font-size:13px!important}
+.hpcc-carousel .hpcc-carousel-controls button span{font-size:inherit;line-height:1}
+.hpcc-carousel .hpcc-carousel-controls button:hover:not(:disabled){background:rgba(15,29,43,.8)!important}
+.hpcc-carousel .hpcc-carousel-controls button:disabled{opacity:.45;cursor:default}
+.hpcc-carousel .hpcc-carousel-controls button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.hpcc-slide-count{position:absolute;z-index:3;right:12px;bottom:12px;min-width:43px;height:30px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;border-radius:16px;padding:0 11px;background:rgba(15,29,43,.55);backdrop-filter:blur(6px);color:#fff;font-size:12px;font-variant-numeric:tabular-nums;pointer-events:none}
+@media(max-width:480px){.hpcc-center-art{padding:20px 22px 52px}.hpcc-center-kicker{margin-bottom:8px;font-size:9px}.hpcc-center-art strong{font-size:21px}.hpcc-center-link{margin-top:10px;font-size:12px}}

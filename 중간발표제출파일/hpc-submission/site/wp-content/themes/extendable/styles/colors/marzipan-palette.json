@@ -1,0 +1,150 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Marzipan",
+	"slug": "marzipan",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#1B3A8C",
+						"#2F52A6"
+					],
+					"slug": "primary-and-secondary",
+					"name": "Primary and secondary"
+				},
+				{
+					"colors": [
+						"#1B3A8C",
+						"#FBDCC4"
+					],
+					"slug": "primary-and-tertiary",
+					"name": "Primary and tertiary"
+				},
+				{
+					"colors": [
+						"#1B3A8C",
+						"#FDF1E7"
+					],
+					"slug": "primary-and-background",
+					"name": "Primary and background"
+				},
+				{
+					"colors": [
+						"#2F52A6",
+						"#1B3A8C"
+					],
+					"slug": "secondary-and-primary",
+					"name": "Secondary and primary"
+				},
+				{
+					"colors": [
+						"#1B3A8C",
+						"#FDF1E7"
+					],
+					"slug": "foreground-and-background",
+					"name": "Foreground and background"
+				},
+				{
+					"colors": [
+						"#1B3A8C",
+						"#1B3A8C"
+					],
+					"slug": "primary-foreground",
+					"name": "Primary and Foreground"
+				},
+				{
+					"colors": [
+						"#FDF1E7",
+						"#FBDCC4"
+					],
+					"slug": "background-tertiary",
+					"name": "Background and Background Alt"
+				}
+			],
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#FDF1E7",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#1B3A8C",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#1B3A8C",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#2F52A6",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#FBDCC4",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "foreground-alt",
+					"color": "#3558AC",
+					"name": "Foreground Alt"
+				}
+			]
+		},
+		"custom": {
+			"color": {
+				"text-strong": "#1B3A8C",
+				"background-base": "#FDF1E7",
+				"icon-surface": "#EEE6E2",
+				"background-sunken": "#E8EBF1",
+				"background-tint-1": "#F7D0B7",
+				"background-tint-2": "#FBCBD1",
+				"background-tint-3": "#C6DAFE",
+				"background-tint-1-ink": "#0D2879",
+				"background-tint-1-weak": "#0D2879",
+				"background-tint-2-ink": "#0D2879",
+				"background-tint-2-weak": "#0D2879",
+				"background-tint-3-ink": "#0D2879",
+				"background-tint-3-weak": "#0D2879",
+				"icon-ink": "#1B3A8C"
+			},
+			"elements": {
+				"button": {
+					"color": {
+						"background": "#1B3A8C",
+						"text": "#FDF1E7"
+					},
+					":hover": {
+						"color": {
+							"background": "#2F52A6",
+							"text": "#FDF1E7"
+						}
+					},
+					":focus": {
+						"color": {
+							"background": "#1B3A8C",
+							"text": "#FDF1E7"
+						}
+					}
+				}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--foreground)"
+		},
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+/**
+ * Gutenberg Integration Styles
+ *
+ * This file will contain custom CSS for the Gutenberg editor integration,
+ * such as styling for custom panels, tooltips, or SEO indicators.
+ */
+
+/* Placeholder for future styles */
+.rankingcoach-gutenberg-panel {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

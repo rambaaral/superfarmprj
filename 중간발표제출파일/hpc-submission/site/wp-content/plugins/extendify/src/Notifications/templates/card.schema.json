@@ -1,0 +1,8 @@
+{
+	"$id": "extendify/notification-template/card",
+	"title": "Card",
+	"type": "object",
+	"properties": {
+		"image": { "type": "string" }
+	}
+}

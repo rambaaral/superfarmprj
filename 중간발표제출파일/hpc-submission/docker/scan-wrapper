@@ -1,0 +1,8 @@
+#!/bin/bash
+# Host plugin uses a cPanel-only certificate option. Debian ClamAV manages its own trust.
+set -euo pipefail
+args=()
+for arg in "$@"; do
+  case "$arg" in --cvdcertsdir=*) ;; *) args+=("$arg");; esac
+done
+exec /usr/bin/clamscan "${args[@]}"

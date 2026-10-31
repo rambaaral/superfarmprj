@@ -1,0 +1,39 @@
+#wpadminbar .rc-assistant-toolbar .ab-label {
+    font-weight: 600;
+    padding-left: 2px;
+}
+#wpadminbar .rc-toolbar-icon img {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+#wpadminbar .rc-toolbar-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    margin-left: 6px !important;
+    padding: 0 6px !important;
+    border-radius: 999px !important;   /* 🔥 pastilă super rotunjită */
+    background-color: #666 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    margin-top: -4px;
+}
+#wpadminbar .rc-badge-update {
+    background-color: #31a903 !important;
+    cursor: pointer !important;
+}
+#wpadminbar .rc-badge-activation {
+    background-color: #d63638 !important;
+    width: 18px !important;
+    padding: 0 !important;
+    font-size: 11px !important;
+    border-radius: 50% !important;
+}

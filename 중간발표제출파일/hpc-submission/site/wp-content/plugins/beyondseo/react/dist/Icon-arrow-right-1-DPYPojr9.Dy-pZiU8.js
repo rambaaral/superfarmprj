@@ -1,0 +1,1 @@
+const t="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.1%202.09998L10.7%203.49998L18.175%2011H2V13H18.175L10.7%2020.475L12.1%2021.9L22%2012L12.1%202.09998Z'%20fill='%232A3546'/%3e%3c/svg%3e";export{t as default};

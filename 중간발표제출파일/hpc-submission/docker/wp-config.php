@@ -1,0 +1,21 @@
+<?php
+define('DB_NAME','wordpress');
+define('DB_USER','wordpress');
+define('DB_PASSWORD',getenv('DB_PASSWORD'));
+define('DB_HOST','db');
+define('DB_CHARSET','utf8mb4');
+define('DB_COLLATE','');
+$table_prefix='wp_';
+require '/var/hpc-private/salts.php';
+define('WP_HOME',getenv('SITE_URL') ?: 'http://localhost:8080');
+define('WP_SITEURL',WP_HOME);
+define('DISABLE_WP_CRON',true);
+define('AUTOMATIC_UPDATER_DISABLED',true);
+define('WP_AUTO_UPDATE_CORE',false);
+define('HPC_PRIVATE_DIR','/var/hpc-private');
+define('HPC_RHWP_BIN','/var/hpc-private/runtime/bin/rhwp');
+define('HPC_FONT_DIR','/var/hpc-private/runtime/fonts');
+define('HPC_SCAN_BIN','/opt/hpc/docker/scan-wrapper');
+define('WP_DEBUG',false);
+if(!defined('ABSPATH'))define('ABSPATH',__DIR__.'/');
+require_once ABSPATH.'wp-settings.php';

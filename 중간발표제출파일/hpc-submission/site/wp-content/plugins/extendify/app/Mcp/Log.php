@@ -1,0 +1,289 @@
+<?php
+
+/**
+ * The tool calls a connection has made on this site.
+ */
+
+namespace Extendify\Mcp;
+
+defined('ABSPATH') || die('No direct access.');
+
+/**
+ * Arguments are never stored: they carry post bodies, alt text, user filters and
+ * email addresses, while a tool name and its outcome answer what support asks.
+ * If the shape of a call is ever wanted, store argument keys, never values.
+ */
+class Log
+{
+    // phpcs:disable PSR12.Properties.ConstantVisibility.NotFound
+    const KEEP_ROWS = 5000;
+
+    const KEEP_DAYS = 90;
+
+    const ERROR_LENGTH = 500;
+
+    const REASON_NAME = 64;
+
+    const REASONS_SENT = 5;
+
+    /**
+     * Stored in place of a reason that could be text a user typed.
+     */
+    const UNLISTED = 'extendify_mcp_unlisted';
+
+    /**
+     * Insights drops a reason outside this pattern, so the two must match.
+     */
+    const REASON_PATTERN = '/^(option:|php:)?[A-Za-z0-9_*]{1,' . self::REASON_NAME . '}$/';
+
+    const SHOWN = 10;
+
+    const USAGE_DAYS = 2;
+    // phpcs:enable PSR12.Properties.ConstantVisibility.NotFound
+
+    /**
+     * @return string
+     */
+    public static function table()
+    {
+        return $GLOBALS['wpdb']->prefix . 'extendify_mcp_log';
+    }
+
+    /**
+     * @param array  $connection - The connection the call arrived on.
+     * @param string $tool       - The tool that was called.
+     * @param array  $details    - outcome, error, reason and duration in seconds.
+     * @return void
+     */
+    public static function write(array $connection, $tool, array $details)
+    {
+        self::install();
+        $wpdb = $GLOBALS['wpdb'];
+        $userId = (int) ($connection['userId'] ?? \get_current_user_id());
+        $wpdb->insert(self::table(), [
+            'created_at' => gmdate('Y-m-d H:i:s'),
+            'user_id' => $userId,
+            'connection' => (string) ($connection['id'] ?? ''),
+            'client' => substr((string) ($connection['data']['label'] ?? ''), 0, Connections::LABEL_LENGTH),
+            'tool' => substr((string) $tool, 0, Surface::MAX_NAME),
+            'outcome' => (string) $details['outcome'],
+            'error' => substr((string) ($details['error'] ?? ''), 0, self::ERROR_LENGTH),
+            'reason' => self::reason((string) ($details['reason'] ?? ''), $userId),
+            'duration_ms' => (int) round(((float) ($details['duration'] ?? 0)) * 1000),
+        ]);
+
+        self::prune();
+    }
+
+    /**
+     * @param integer $userId     - The user the connection belongs to.
+     * @param string  $connection - The connection's id.
+     * @param integer $limit      - How many of the newest calls to read.
+     * @return array
+     */
+    public static function recent($userId, $connection, $limit = self::SHOWN)
+    {
+        if (!self::exists()) {
+            return [];
+        }
+
+        self::install();
+        $wpdb = $GLOBALS['wpdb'];
+        $table = self::table();
+
+        return $wpdb->get_results($wpdb->prepare(
+            "SELECT created_at, tool, outcome, error, reason FROM {$table}"
+                . ' WHERE user_id = %d AND `connection` = %s ORDER BY id DESC LIMIT %d',
+            (int) $userId,
+            (string) $connection,
+            (int) $limit
+        ), ARRAY_A) ?: [];
+    }
+
+    /**
+     * Unknown names become `ability`: an unknown-tool call logs the client's free text.
+     *
+     * @return array
+     */
+    public static function usage()
+    {
+        if (!self::exists()) {
+            return [];
+        }
+
+        self::install();
+        $wpdb = $GLOBALS['wpdb'];
+        $table = self::table();
+        $tools = array_merge(array_keys(Tools::all()), Surface::abilityNames());
+        $in = implode(',', array_fill(0, count($tools), '%s'));
+        $since = gmdate('Y-m-d', time() - ((self::USAGE_DAYS - 1) * DAY_IN_SECONDS));
+
+        // Binary, or the collation lets `LIST_POSTS` or a trailing space pass as ours.
+        $rows = $wpdb->get_results($wpdb->prepare(
+            "SELECT DATE(created_at), IF(CAST(tool AS BINARY) IN ({$in}), tool, 'ability'), reason, COUNT(*),"
+                . " SUM(outcome = 'error'), SUM(outcome = 'refused') FROM {$table}"
+                . ' WHERE created_at >= %s GROUP BY 1, 2, 3 ORDER BY 1, 2',
+            array_merge($tools, [$since])
+        ), ARRAY_N) ?: [];
+
+        $usage = [];
+        foreach ($rows as list($day, $tool, $reason, $calls, $errors, $refused)) {
+            $key = $day . ' ' . $tool;
+            $usage[$key] = $usage[$key]
+                ?? ['day' => $day, 'tool' => $tool, 'calls' => 0, 'errors' => 0, 'refused' => 0];
+            $usage[$key]['calls'] += (int) $calls;
+            $usage[$key]['errors'] += (int) $errors;
+            $usage[$key]['refused'] += (int) $refused;
+            if ($reason !== '') {
+                $usage[$key]['reasons'][$reason] = ($usage[$key]['reasons'][$reason] ?? 0) + (int) $calls;
+            }
+        }
+
+        return array_values(array_map(function ($row) {
+            if (isset($row['reasons'])) {
+                $row['reasons'] = self::mostFrequent($row['reasons']);
+            }
+
+            return $row;
+        }, $usage));
+    }
+
+    /**
+     * Segments with a digit hold ids or hashes, and the caller's login names a person.
+     *
+     * @param string  $reason - A WP_Error code, php:<class> or option:<name>.
+     * @param integer $userId - The user the call ran as.
+     * @return string
+     */
+    private static function reason($reason, $userId)
+    {
+        if ($reason === '') {
+            return '';
+        }
+
+        preg_match('/^(option:|php:)?(.*)$/s', $reason, $parts);
+        $name = implode('_', array_map(function ($segment) {
+            return preg_match('/\d/', $segment) ? '*' : $segment;
+        }, explode('_', $parts[2])));
+
+        $user = \get_userdata($userId);
+        foreach ($user ? [$user->user_login, $user->user_nicename] : [] as $person) {
+            $person = trim(preg_replace('/[^a-z0-9]+/', '_', strtolower($person)), '_');
+            if ($person !== '' && strpos('_' . strtolower($name) . '_', '_' . $person . '_') !== false) {
+                return self::UNLISTED;
+            }
+        }
+
+        $reason = $parts[1] . substr($name, 0, self::REASON_NAME);
+
+        return preg_match(self::REASON_PATTERN, $reason) ? $reason : self::UNLISTED;
+    }
+
+    /**
+     * @param array $reasons - Each reason and how many calls failed with it.
+     * @return array
+     */
+    private static function mostFrequent(array $reasons)
+    {
+        uksort($reasons, function ($a, $b) use ($reasons) {
+            return [$reasons[$b], (string) $a] <=> [$reasons[$a], (string) $b];
+        });
+
+        return array_slice($reasons, 0, self::REASONS_SENT, true);
+    }
+
+    /**
+     * @param integer $userId - The user the connection belonged to.
+     * @param string  $id     - The connection's id.
+     * @return void
+     */
+    public static function forget($userId, $id)
+    {
+        if (!self::exists()) {
+            return;
+        }
+
+        $GLOBALS['wpdb']->delete(self::table(), [
+            'user_id' => (int) $userId,
+            'connection' => (string) $id,
+        ]);
+    }
+
+    /**
+     * @return void
+     */
+    private static function prune()
+    {
+        $wpdb = $GLOBALS['wpdb'];
+        $table = self::table();
+        $wpdb->query($wpdb->prepare(
+            "DELETE FROM {$table} WHERE created_at < %s",
+            gmdate('Y-m-d H:i:s', time() - (self::KEEP_DAYS * DAY_IN_SECONDS))
+        ));
+
+        $held = (int) $wpdb->get_var("SELECT COUNT(*) FROM {$table}");
+        if ($held <= self::KEEP_ROWS) {
+            return;
+        }
+
+        $wpdb->query($wpdb->prepare("DELETE FROM {$table} ORDER BY id LIMIT %d", $held - self::KEEP_ROWS));
+    }
+
+    /**
+     * @return void
+     */
+    public static function install()
+    {
+        $wpdb = $GLOBALS['wpdb'];
+        $table = self::table();
+        if (self::exists()) {
+            $held = array_column($wpdb->get_results("SHOW COLUMNS FROM {$table}", ARRAY_A), 'Field');
+            foreach (self::columns() as $name => $type) {
+                if (!in_array($name, $held, true)) {
+                    $wpdb->query("ALTER TABLE {$table} ADD COLUMN `{$name}` {$type}");
+                }
+            }
+
+            return;
+        }
+
+        $columns = [];
+        foreach (self::columns() as $name => $type) {
+            $columns[] = "`{$name}` {$type}";
+        }
+
+        $wpdb->query(
+            "CREATE TABLE {$table} (" . implode(',', $columns) . ', INDEX(user_id), INDEX(created_at)) '
+                . $wpdb->get_charset_collate() . ';'
+        );
+    }
+
+    /**
+     * @return boolean
+     */
+    private static function exists()
+    {
+        $wpdb = $GLOBALS['wpdb'];
+
+        return (bool) $wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', self::table()));
+    }
+
+    /**
+     * @return array
+     */
+    private static function columns()
+    {
+        return [
+            'id' => 'BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY',
+            'created_at' => 'DATETIME NOT NULL',
+            'user_id' => 'BIGINT UNSIGNED NOT NULL',
+            'connection' => 'VARCHAR(191) NOT NULL DEFAULT \'\'',
+            'client' => 'VARCHAR(' . Connections::LABEL_LENGTH . ') NOT NULL DEFAULT \'\'',
+            'tool' => 'VARCHAR(' . Surface::MAX_NAME . ') NOT NULL DEFAULT \'\'',
+            'outcome' => 'VARCHAR(16) NOT NULL DEFAULT \'\'',
+            'error' => 'VARCHAR(' . self::ERROR_LENGTH . ') NOT NULL DEFAULT \'\'',
+            'reason' => 'VARCHAR(80) NOT NULL DEFAULT \'\'',
+            'duration_ms' => 'INT UNSIGNED NOT NULL DEFAULT 0',
+        ];
+    }
+}
