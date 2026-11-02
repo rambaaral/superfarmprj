@@ -1,0 +1,1450 @@
+@charset "utf-8";
+/**
+ * KBoard Contact Form Skin - Modern 2026 Redesign
+ * Based on Default Skin Structure
+ */
+
+:root {
+	/* Palette */
+	--kboard-primary: #2563eb;
+	--kboard-primary-hover: #1d4ed8;
+	--kboard-text: #1e293b;
+	--kboard-text-muted: #64748b;
+	--kboard-bg: #ffffff;
+	--kboard-bg-alt: #f8fafc;
+	--kboard-border: #e2e8f0;
+	--kboard-danger: #ef4444;
+
+	/* Typography */
+	--kboard-font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", Roboto, "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+	--kboard-font-size: 15px;
+
+	/* Spacing & Radius */
+	--kboard-radius: 8px;
+	--kboard-spacing-sm: 8px;
+	--kboard-spacing-md: 16px;
+	--kboard-spacing-lg: 24px;
+
+	/* Shadows */
+	--kboard-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--kboard-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Global Reset within KBoard Container */
+#kboard-contact-form-list,
+#kboard-contact-form-document,
+#kboard-contact-form-editor,
+#kboard-contact-form-latest {
+	font-family: var(--kboard-font-family);
+	font-size: var(--kboard-font-size);
+	color: var(--kboard-text);
+	box-sizing: border-box;
+	line-height: 1.6;
+	margin: 20px 0;
+}
+
+#kboard-contact-form-list *,
+#kboard-contact-form-document *,
+#kboard-contact-form-editor *,
+#kboard-contact-form-latest *,
+#kboard-contact-form-list *::before,
+#kboard-contact-form-document *::before,
+#kboard-contact-form-editor *::before,
+#kboard-contact-form-latest *::before,
+#kboard-contact-form-list *::after,
+#kboard-contact-form-document *::after,
+#kboard-contact-form-editor *::after,
+#kboard-contact-form-latest *::after {
+	box-sizing: inherit;
+}
+
+#kboard-contact-form-list a,
+#kboard-contact-form-document a,
+#kboard-contact-form-editor a,
+#kboard-contact-form-latest a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.2s;
+}
+
+#kboard-contact-form-list img,
+#kboard-contact-form-document img,
+#kboard-contact-form-editor img,
+#kboard-contact-form-latest img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* Buttons */
+a.kboard-contact-form-button-small,
+input.kboard-contact-form-button-small,
+button.kboard-contact-form-button-small {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff !important;
+	background-color: var(--kboard-text) !important;
+	border: 1px solid transparent;
+	border-radius: var(--kboard-radius);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	line-height: 1;
+	box-shadow: var(--kboard-shadow-sm);
+	text-shadow: none;
+}
+
+a.kboard-contact-form-button-small:hover,
+button.kboard-contact-form-button-small:hover {
+	background-color: var(--kboard-primary) !important;
+	transform: translateY(-1px);
+	box-shadow: var(--kboard-shadow-md);
+	opacity: 1 !important;
+}
+
+/* Icons */
+.kboard-icon-lock {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 4px;
+	background-color: var(--kboard-text-muted);
+	-webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z'/%3E%3C/svg%3E") no-repeat center/contain;
+	mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z'/%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+.kboard-icon-reply {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 4px;
+	background-color: var(--kboard-text-muted);
+	-webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'/%3E%3C/svg%3E") no-repeat center/contain;
+	mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'/%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+/* Form Elements Reset & Style */
+#kboard-contact-form-list input[type=text],
+#kboard-contact-form-document input[type=text],
+#kboard-contact-form-editor input[type=text],
+#kboard-contact-form-latest input[type=text],
+#kboard-contact-form-list input[type=email],
+#kboard-contact-form-document input[type=email],
+#kboard-contact-form-editor input[type=email],
+#kboard-contact-form-latest input[type=email],
+#kboard-contact-form-list input[type=password],
+#kboard-contact-form-document input[type=password],
+#kboard-contact-form-editor input[type=password],
+#kboard-contact-form-latest input[type=password],
+#kboard-contact-form-list input[type=number],
+#kboard-contact-form-document input[type=number],
+#kboard-contact-form-editor input[type=number],
+#kboard-contact-form-latest input[type=number],
+#kboard-contact-form-list input[type=date],
+#kboard-contact-form-document input[type=date],
+#kboard-contact-form-editor input[type=date],
+#kboard-contact-form-latest input[type=date],
+#kboard-contact-form-list select,
+#kboard-contact-form-document select,
+#kboard-contact-form-editor select,
+#kboard-contact-form-latest select,
+#kboard-contact-form-list textarea,
+#kboard-contact-form-document textarea,
+#kboard-contact-form-editor textarea,
+#kboard-contact-form-latest textarea {
+	appearance: none;
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	padding: 8px 12px;
+	font-size: 14px;
+	color: var(--kboard-text);
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+	min-height: 40px;
+	box-shadow: none;
+	margin: 0;
+}
+
+#kboard-contact-form-list input:focus,
+#kboard-contact-form-document input:focus,
+#kboard-contact-form-editor input:focus,
+#kboard-contact-form-latest input:focus,
+#kboard-contact-form-list select:focus,
+#kboard-contact-form-document select:focus,
+#kboard-contact-form-editor select:focus,
+#kboard-contact-form-latest select:focus,
+#kboard-contact-form-list textarea:focus,
+#kboard-contact-form-document textarea:focus,
+#kboard-contact-form-editor textarea:focus,
+#kboard-contact-form-latest textarea:focus {
+	border-color: var(--kboard-primary);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+	border-bottom: 1px solid var(--kboard-primary) !important;
+}
+
+/* Select Custom Arrow */
+#kboard-contact-form-list select,
+#kboard-contact-form-document select,
+#kboard-contact-form-editor select,
+#kboard-contact-form-latest select {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 16px;
+	padding-right: 32px !important;
+	cursor: pointer;
+}
+
+/* --- List View --- */
+#kboard-contact-form-list {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#kboard-contact-form-list .kboard-list-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: var(--kboard-spacing-md);
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+#kboard-contact-form-list .kboard-total-count {
+	font-weight: 600;
+	color: var(--kboard-text-muted);
+}
+
+#kboard-contact-form-list .kboard-category .kboard-category-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0;
+	margin: 0 0 20px 0;
+	list-style: none;
+}
+
+#kboard-contact-form-list .kboard-category.category-pc .kboard-category-list:last-child {
+	margin-bottom: 0;
+}
+
+#kboard-contact-form-list .kboard-category .kboard-category-list li a {
+	display: block;
+	padding: 6px 14px;
+	border-radius: 20px;
+	background-color: var(--kboard-bg-alt);
+	color: var(--kboard-text-muted);
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-list .kboard-category .kboard-category-list li.kboard-category-selected a,
+#kboard-contact-form-list .kboard-category .kboard-category-list li a:hover {
+	background-color: var(--kboard-primary);
+	color: #fff;
+	border-color: var(--kboard-primary);
+}
+
+/* Table Listing */
+#kboard-contact-form-list .kboard-list {
+	background: #fff;
+	border-radius: var(--kboard-radius);
+	overflow: hidden;
+	border: 1px solid var(--kboard-border);
+	box-shadow: var(--kboard-shadow-sm);
+}
+
+#kboard-contact-form-list .kboard-list table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 0;
+}
+
+#kboard-contact-form-list .kboard-list thead {
+	background-color: var(--kboard-bg-alt);
+	border-bottom: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-list .kboard-list thead td {
+	padding: 12px 16px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--kboard-text-muted);
+	text-align: center;
+	border: 0;
+	border-bottom: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-list .kboard-list tbody tr {
+	background: #fff;
+	border-bottom: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-list .kboard-list tbody tr:hover {
+	background-color: var(--kboard-bg-alt);
+}
+
+#kboard-contact-form-list .kboard-list td {
+	padding: 16px;
+	vertical-align: middle;
+	text-align: center;
+	border: 0;
+	font-size: 15px;
+}
+
+#kboard-contact-form-list .kboard-list td.kboard-list-title {
+	text-align: left;
+	width: auto;
+}
+
+#kboard-contact-form-list .kboard-list tbody tr.kboard-list-notice {
+	background-color: #eff6ff;
+}
+
+#kboard-contact-form-list .kboard-list tbody tr.kboard-list-selected {
+	background-color: #f0f9ff;
+	border-left: 3px solid var(--kboard-primary);
+}
+
+#kboard-contact-form-list .kboard-list tbody tr.kboard-list-selected .kboard-list-title a {
+	font-weight: 700;
+	color: var(--kboard-primary);
+}
+
+.kboard-contact-form-new-notify {
+	background-color: var(--kboard-danger);
+	color: #fff;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-size: 10px;
+	font-weight: 700;
+	margin-right: 6px;
+}
+
+.kboard-contact-form-cut-strings {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 500;
+}
+
+.kboard-comments-count {
+	font-size: 12px;
+	color: var(--kboard-primary);
+	font-weight: 600;
+	margin-left: 4px;
+	background: rgba(37, 99, 235, 0.1);
+	padding: 2px 6px;
+	border-radius: 12px;
+}
+
+.kboard-comments-count:empty {
+	display: none;
+}
+
+#kboard-contact-form-list .kboard-mobile-contents {
+	display: none;
+	margin-top: 6px;
+	font-size: 13px;
+	color: var(--kboard-text-muted);
+}
+
+/* Column Widths & Pagination & Search (Desktop) */
+#kboard-contact-form-list .kboard-list-uid {
+	width: 90px;
+	color: var(--kboard-text-muted);
+	font-size: 13px;
+}
+
+#kboard-contact-form-list .kboard-list-notice .kboard-list-uid {
+	font-weight: 700;
+	font-size: 12px;
+	color: var(--kboard-primary);
+}
+
+#kboard-contact-form-list .kboard-list-user {
+	width: 120px;
+}
+
+#kboard-contact-form-list .kboard-list-date {
+	width: 110px;
+	color: var(--kboard-text-muted);
+	font-size: 13px;
+}
+
+#kboard-contact-form-list .kboard-list-vote,
+#kboard-contact-form-list .kboard-list-view {
+	width: 70px;
+	color: var(--kboard-text-muted);
+	font-size: 13px;
+}
+
+#kboard-contact-form-list .kboard-pagination {
+	padding: 30px 0;
+	text-align: center;
+}
+
+#kboard-contact-form-list .kboard-pagination ul {
+	display: inline-flex;
+	padding: 0;
+	list-style: none;
+	gap: 4px;
+}
+
+#kboard-contact-form-list .kboard-pagination li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 36px;
+	height: 36px;
+	padding: 0 8px;
+	border-radius: var(--kboard-radius);
+	background: #fff;
+	border: 1px solid var(--kboard-border);
+	font-size: 14px;
+	color: var(--kboard-text);
+}
+
+#kboard-contact-form-list .kboard-pagination li.active a,
+#kboard-contact-form-list .kboard-pagination li a:hover {
+	background: var(--kboard-primary);
+	color: #fff;
+	border-color: var(--kboard-primary);
+}
+
+#kboard-contact-form-list .kboard-search {
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 20px;
+	background: var(--kboard-bg-alt);
+	border-radius: var(--kboard-radius);
+}
+
+#kboard-contact-form-list .kboard-search form {
+	display: inline-flex;
+	gap: 8px;
+}
+
+#kboard-contact-form-list .kboard-search select {
+	width: 100px;
+	margin: 0;
+}
+
+#kboard-contact-form-list .kboard-search input {
+	width: 200px;
+	margin: 0;
+}
+
+#kboard-contact-form-list .kboard-control {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 0;
+}
+
+.kboard-contact-form-poweredby {
+	text-align: right;
+	font-size: 14px;
+	color: #ccc;
+	margin-top: 10px;
+	width: 100%;
+}
+
+/* --- Document View --- */
+#kboard-contact-form-document .kboard-document-wrap {
+	background: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	overflow: hidden;
+}
+
+#kboard-contact-form-document .kboard-title h1 {
+	margin: 0;
+	padding: 24px;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--kboard-text);
+	border-bottom: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-document .kboard-detail {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12px 24px;
+	background: var(--kboard-bg-alt);
+	font-size: 14px;
+	gap: 20px;
+	align-items: center;
+	border-bottom: 1px solid var(--kboard-border);
+}
+
+#kboard-contact-form-document .kboard-detail .detail-attr {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#kboard-contact-form-document .kboard-detail .detail-name {
+	font-weight: 600;
+	color: var(--kboard-text-muted);
+}
+
+#kboard-contact-form-document .kboard-content {
+	padding: 30px 24px;
+	min-height: 200px;
+}
+
+#kboard-contact-form-document .content-view {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #334155;
+}
+
+#kboard-contact-form-document .kboard-document-action {
+	padding: 10px 24px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.kboard-button-action {
+	border: 1px solid var(--kboard-border);
+	background: #fff;
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	cursor: pointer;
+	margin-right: 5px;
+	font-weight: 500;
+}
+
+.kboard-button-action:hover {
+	background: var(--kboard-bg-alt);
+}
+
+.kboard-button-like {
+	color: #ef4444;
+}
+
+.kboard-button-unlike {
+	color: var(--kboard-primary);
+}
+
+#kboard-contact-form-document .kboard-control {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	gap: 10px;
+}
+
+#kboard-contact-form-document .kboard-control .left,
+#kboard-contact-form-document .kboard-control .right {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 8px;
+}
+
+.kboard-attach {
+	border-top: 1px dashed var(--kboard-border);
+	padding: 15px 24px;
+	background: var(--kboard-bg-alt);
+}
+
+.kboard-comments-area {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.kboard-document-navi {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	padding: 0;
+}
+
+#kboard-contact-form-document .kboard-document-navi a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 16px;
+	border: 1px solid var(--kboard-border);
+	background: #fff;
+	border-radius: var(--kboard-radius);
+	margin-bottom: 0;
+	font-weight: 500;
+	height: 100%;
+}
+
+#kboard-contact-form-document .kboard-document-navi a:hover {
+	border-color: var(--kboard-primary);
+	color: var(--kboard-primary);
+	box-shadow: var(--kboard-shadow-sm);
+}
+
+#kboard-contact-form-document .kboard-document-navi .kboard-prev-document,
+#kboard-contact-form-document .kboard-document-navi .kboard-next-document {
+	width: 50%;
+}
+
+#kboard-contact-form-document .kboard-document-navi .kboard-prev-document a {
+	justify-content: flex-start;
+	text-align: left;
+}
+
+#kboard-contact-form-document .kboard-document-navi .kboard-next-document a {
+	justify-content: flex-end;
+	text-align: right;
+}
+
+#kboard-contact-form-document .kboard-document-navi .navi-arrow {
+	position: static;
+}
+
+/* --- Editor (Global Enterprise Design) --- */
+#kboard-contact-form-editor {
+	background: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: 16px;
+	/* Card Style */
+	padding: 40px;
+	box-shadow: var(--kboard-shadow-md);
+	max-width: 720px;
+	margin: 40px auto;
+}
+
+#kboard-contact-form-editor form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+#kboard-contact-form-editor .kboard-attr-row {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+#kboard-contact-form-editor .attr-name {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--kboard-text);
+	width: 100%;
+	margin-bottom: 4px;
+}
+
+#kboard-contact-form-editor .attr-name img {
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+#kboard-contact-form-editor .attr-value {
+	width: 100%;
+}
+
+#kboard-contact-form-editor input[type=text],
+#kboard-contact-form-editor input[type=email],
+#kboard-contact-form-editor input[type=password],
+#kboard-contact-form-editor input[type=number],
+#kboard-contact-form-editor input[type=date],
+#kboard-contact-form-editor select,
+#kboard-contact-form-editor textarea {
+	width: 100%;
+	padding: 0 16px;
+	height: 52px;
+	/* Large Touch Target */
+	background-color: #f8fafc;
+	/* Fix: visible arrow */
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	font-size: 16px;
+	color: var(--kboard-text);
+	transition: all 0.2s ease;
+	box-shadow: none;
+	margin: 0;
+}
+
+/* Tree Category Wrapper in Editor */
+#kboard-contact-form-editor .kboard-tree-category-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+}
+
+#kboard-contact-form-editor .kboard-tree-category-wrap select {
+	flex: 1;
+	min-width: 120px;
+	width: auto;
+}
+
+#kboard-contact-form-editor textarea {
+	height: 200px;
+	padding: 16px;
+	resize: vertical;
+	line-height: 1.6;
+}
+
+#kboard-contact-form-editor input:focus,
+#kboard-contact-form-editor select:focus,
+#kboard-contact-form-editor textarea:focus {
+	background: #fff;
+	border-color: var(--kboard-primary);
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+	outline: none;
+}
+
+/* File Input - Drag & Drop Feel */
+#kboard-contact-form-editor input[type=file] {
+	padding: 20px;
+	border: 2px dashed #e2e8f0;
+	background-color: #f8fafc;
+	border-radius: 12px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s;
+	color: var(--kboard-text-muted);
+	height: auto;
+	/* Override default input height */
+}
+
+#kboard-contact-form-editor input[type=file]:hover {
+	border-color: var(--kboard-primary);
+	background-color: #eff6ff;
+}
+
+/* Custom Checkbox & Radio */
+#kboard-contact-form-editor .attr-value .attr-value-option {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 20px;
+	cursor: pointer;
+	padding: 8px 0;
+}
+
+#kboard-contact-form-editor .attr-value .attr-value-option input[type=checkbox],
+#kboard-contact-form-editor .attr-value .attr-value-option input[type=radio] {
+	margin: 0 8px 0 0;
+	width: 20px;
+	height: 20px;
+	accent-color: var(--kboard-primary);
+	cursor: pointer;
+}
+
+#kboard-contact-form-editor .attr-value .attr-value-label {
+	font-size: 15px;
+	color: var(--kboard-text);
+}
+
+/* Control Buttons (Submit Area) */
+#kboard-contact-form-editor .kboard-control {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #f1f5f9;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 12px;
+}
+
+/* Primary Action Button (Submit) */
+#kboard-contact-form-editor .kboard-control button[type=submit],
+.kboard-contact-form-button-large {
+	width: 100%;
+	max-width: 100%;
+	height: 56px !important;
+	background: linear-gradient(135deg, var(--kboard-primary), var(--kboard-primary-hover)) !important;
+	color: #fff !important;
+	border: none;
+	border-radius: 12px !important;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#kboard-contact-form-editor .kboard-control button[type=submit]:hover,
+.kboard-contact-form-button-large:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+	filter: brightness(1.1);
+}
+
+/* Secondary Buttons & Containers */
+#kboard-contact-form-editor .kboard-control .left,
+#kboard-contact-form-editor .kboard-control .right {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+}
+
+#kboard-contact-form-editor .kboard-control a {
+	height: 48px;
+	padding: 0 24px;
+	color: var(--kboard-text-muted);
+	font-weight: 500;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border: 1px solid var(--kboard-border);
+	border-radius: 12px;
+}
+
+#kboard-contact-form-editor .kboard-control a:hover {
+	color: var(--kboard-text);
+	background: #f1f5f9;
+}
+
+/* --- Confirm Page (Integrated Style) --- */
+#kboard-contact-form-editor.confirm .kboard-attr-row {
+	border-bottom: 1px solid var(--kboard-border);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+#kboard-contact-form-editor.confirm .attr-name {
+	margin-bottom: 8px;
+	color: var(--kboard-text-muted);
+}
+
+#kboard-contact-form-editor.confirm .attr-value {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#kboard-contact-form-editor.confirm .kboard-control .left,
+#kboard-contact-form-editor.confirm .kboard-control .right {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+}
+
+/* --- Address Field --- */
+#kboard-contact-form-editor .kboard-row-postcode {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+#kboard-contact-form-editor .kboard-row-postcode input[type=text] {
+	flex: 1;
+}
+
+#kboard-contact-form-editor .kboard-row-postcode a,
+#kboard-contact-form-editor .kboard-row-postcode button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	height: 52px;
+	background: #fff;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	font-weight: 600;
+	color: var(--kboard-text);
+	cursor: pointer;
+	transition: all 0.2s;
+	font-size: 14px;
+}
+
+#kboard-contact-form-editor .kboard-row-postcode a:hover,
+#kboard-contact-form-editor .kboard-row-postcode button:hover {
+	background: #f8fafc;
+	border-color: var(--kboard-text-muted);
+}
+
+#kboard-contact-form-editor .kboard-row-address-1,
+#kboard-contact-form-editor .kboard-row-address-2 {
+	margin-bottom: 10px;
+}
+
+/* --- Latest (Widget) --- */
+#kboard-contact-form-latest {
+	width: 100%;
+	background: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#kboard-contact-form-latest table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 0;
+}
+
+#kboard-contact-form-latest thead th {
+	padding: 10px;
+	background: var(--kboard-bg-alt);
+	border-bottom: 1px solid var(--kboard-border);
+	font-size: 13px;
+	color: var(--kboard-text-muted);
+	font-weight: 600;
+	text-align: center;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+#kboard-contact-form-latest tbody tr {
+	border-bottom: 1px solid var(--kboard-border);
+	background: #fff;
+}
+
+#kboard-contact-form-latest tbody tr:last-child {
+	border-bottom: none;
+}
+
+#kboard-contact-form-latest tbody tr:hover {
+	background-color: var(--kboard-bg-alt);
+}
+
+#kboard-contact-form-latest td {
+	padding: 12px 16px;
+	vertical-align: middle;
+	font-size: 14px;
+	border: 0;
+}
+
+#kboard-contact-form-latest .kboard-latest-title {
+	text-align: left;
+}
+
+#kboard-contact-form-latest .kboard-latest-title a {
+	display: block;
+	color: var(--kboard-text);
+	text-decoration: none;
+}
+
+#kboard-contact-form-latest .kboard-latest-title a:hover {
+	color: var(--kboard-primary);
+}
+
+#kboard-contact-form-latest .kboard-contact-form-cut-strings {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#kboard-contact-form-latest .kboard-latest-date,
+#kboard-contact-form-latest .kboard-latest-author {
+	color: var(--kboard-text-muted);
+	font-size: 13px;
+	text-align: center;
+	width: 90px;
+}
+
+/* ============================================
+   Tree Category Search (Default Structure)
+   ============================================ */
+#kboard-contact-form-list .kboard-tree-category-search {
+	margin-bottom: 20px;
+	padding: 15px;
+	background: var(--kboard-bg-alt);
+	border-radius: var(--kboard-radius);
+	text-align: left;
+}
+
+#kboard-contact-form-list .kboard-tree-category-search .kboard-tree-category-wrap {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#kboard-contact-form-list .kboard-tree-category-search .kboard-search-option-wrap {
+	display: inline-block;
+}
+
+#kboard-contact-form-list .kboard-tree-category-search select {
+	height: 38px;
+	padding: 0 36px 0 16px;
+	border: 1px solid var(--kboard-border);
+	border-radius: 999px;
+	background-color: #fff;
+	font-size: 14px;
+	color: var(--kboard-text-muted);
+	font-weight: 500;
+	min-width: 120px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236b7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+	background-size: 10px;
+}
+
+/* Category Styles (PC vs Mobile) */
+#kboard-contact-form-list .kboard-category.category-mobile {
+	display: none;
+}
+
+#kboard-contact-form-list .kboard-category.category-pc {
+	display: block;
+	margin-bottom: 20px;
+	padding: 15px;
+	background: var(--kboard-bg-alt);
+	border-radius: var(--kboard-radius);
+}
+
+#kboard-contact-form-list .kboard-category.category-mobile select {
+	width: auto;
+	min-width: 120px;
+	height: 38px;
+	padding: 0 12px;
+	margin-right: 5px;
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	background-color: #fff;
+	font-size: 14px;
+	color: var(--kboard-text);
+}
+
+/* --- Responsive Media Query --- */
+@media screen and (max-width: 768px) {
+
+	/* Mobile: Use border instead of shadow (Iframe friendly) */
+	#kboard-contact-form-editor {
+		padding: 24px 20px;
+		margin: 20px 0;
+		border-radius: 12px;
+		box-shadow: none !important;
+		border: 1px solid var(--kboard-border) !important;
+	}
+
+	#kboard-contact-form-list .kboard-list thead {
+		display: none;
+	}
+
+	#kboard-contact-form-list .kboard-list tbody tr {
+		display: block;
+		padding: 16px;
+	}
+
+	#kboard-contact-form-list .kboard-list-uid,
+	#kboard-contact-form-list .kboard-list-date,
+	#kboard-contact-form-list .kboard-list-vote,
+	#kboard-contact-form-list .kboard-list-view,
+	#kboard-contact-form-list .kboard-list-user {
+		display: none;
+	}
+
+	#kboard-contact-form-list .kboard-list td.kboard-list-title {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: left;
+	}
+
+	#kboard-contact-form-list .kboard-list-title .kboard-contact-form-cut-strings {
+		white-space: normal;
+		font-size: 16px;
+		line-height: 1.4;
+		margin-bottom: 8px;
+	}
+
+	#kboard-contact-form-list .kboard-mobile-contents {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		align-items: center;
+		margin-top: 4px;
+	}
+
+	#kboard-contact-form-list .kboard-search form {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#kboard-contact-form-list .kboard-search select,
+	#kboard-contact-form-list .kboard-search input {
+		width: 100% !important;
+	}
+
+	#kboard-contact-form-list .kboard-category.category-pc {
+		display: none;
+	}
+
+	#kboard-contact-form-list .kboard-category.category-mobile {
+		display: block;
+		margin-bottom: 20px;
+		padding: 10px;
+		background: var(--kboard-bg-alt);
+		border-radius: var(--kboard-radius);
+	}
+
+	#kboard-contact-form-list .kboard-category.category-mobile form {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	#kboard-contact-form-list .kboard-category.category-mobile select {
+		flex: 1;
+		width: 100%;
+		min-width: 140px;
+	}
+
+	/* Document/Editor Control Stack */
+	#kboard-contact-form-document .kboard-control,
+	#kboard-contact-form-editor .kboard-control {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	#kboard-contact-form-document .kboard-control .left,
+	#kboard-contact-form-document .kboard-control .right,
+	#kboard-contact-form-editor .kboard-control .left,
+	#kboard-contact-form-editor .kboard-control .right {
+		width: 100%;
+		justify-content: center;
+	}
+
+	#kboard-contact-form-document .kboard-control a,
+	#kboard-contact-form-document .kboard-control button,
+	#kboard-contact-form-editor .kboard-control a,
+	#kboard-contact-form-editor .kboard-control button {
+		flex: 1;
+		text-align: center;
+	}
+
+	.kboard-document-navi {
+		flex-direction: column;
+	}
+
+	#kboard-contact-form-document .kboard-document-navi .kboard-prev-document,
+	#kboard-contact-form-document .kboard-document-navi .kboard-next-document {
+		width: 100%;
+	}
+
+	/* Latest Mobile */
+	#kboard-contact-form-latest thead,
+	#kboard-contact-form-latest .kboard-latest-author {
+		display: none;
+	}
+
+	#kboard-contact-form-latest tbody tr {
+		display: flex;
+		flex-direction: column;
+		padding: 8px 0;
+	}
+
+	#kboard-contact-form-latest td.kboard-latest-title {
+		display: block;
+		width: 100%;
+		padding-bottom: 4px;
+		border: none;
+	}
+
+	#kboard-contact-form-latest td.kboard-latest-date {
+		display: block;
+		width: 100%;
+		text-align: left;
+		font-size: 12px;
+		padding-top: 5px;
+		padding-bottom: 8px;
+		border: none;
+		color: var(--kboard-text-muted);
+	}
+}
+
+/* ============================================
+   Editor.js Visibility & Usability Patch
+   ============================================ */
+#kboard-editor-root,
+.kboard-editor-root-editorjs,
+.kboard-editor-scaffold {
+	--kboard-editorjs-left-gutter: 44px;
+	position: relative;
+	margin: 8px 0 0;
+	padding: 12px;
+	min-height: 280px;
+	background-color: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
+	overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+	#kboard-editor-root,
+	.kboard-editor-root-editorjs,
+	.kboard-editor-scaffold {
+		--kboard-editorjs-left-gutter: 36px;
+	}
+}
+
+#kboard-editor-root:focus-within,
+.kboard-editor-root-editorjs:focus-within,
+.kboard-editor-scaffold:focus-within {
+	border-color: var(--kboard-primary);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#kboard-editor-root .codex-editor,
+.kboard-editor-root-editorjs .codex-editor,
+.kboard-editor-scaffold .codex-editor {
+	position: relative;
+	z-index: 1;
+	overflow: visible;
+}
+
+#kboard-editor-root .codex-editor__redactor,
+.kboard-editor-root-editorjs .codex-editor__redactor,
+.kboard-editor-scaffold .codex-editor__redactor {
+	overflow: visible;
+}
+
+#kboard-editor-root .ce-block,
+.kboard-editor-root-editorjs .ce-block,
+.kboard-editor-scaffold .ce-block {
+	padding: 2px 0;
+	margin-bottom: 8px;
+}
+
+#kboard-editor-root .ce-block:last-child,
+.kboard-editor-root-editorjs .ce-block:last-child,
+.kboard-editor-scaffold .ce-block:last-child {
+	margin-bottom: 0;
+}
+
+#kboard-editor-root .ce-block__content,
+#kboard-editor-root .ce-toolbar__content,
+.kboard-editor-root-editorjs .ce-block__content,
+.kboard-editor-root-editorjs .ce-toolbar__content,
+.kboard-editor-scaffold .ce-block__content,
+.kboard-editor-scaffold .ce-toolbar__content {
+	max-width: calc(100% - var(--kboard-editorjs-left-gutter));
+	margin-left: var(--kboard-editorjs-left-gutter);
+	margin-right: 0;
+}
+
+#kboard-editor-root .ce-paragraph,
+#kboard-editor-root .ce-header,
+#kboard-editor-root .cdx-list,
+.kboard-editor-root-editorjs .ce-paragraph,
+.kboard-editor-root-editorjs .ce-header,
+.kboard-editor-root-editorjs .cdx-list,
+.kboard-editor-scaffold .ce-paragraph,
+.kboard-editor-scaffold .ce-header,
+.kboard-editor-scaffold .cdx-list {
+	color: var(--kboard-text);
+	line-height: 1.7;
+}
+
+#kboard-editor-root .ce-paragraph[data-placeholder]:empty::before,
+#kboard-editor-root .ce-header[data-placeholder]:empty::before,
+.kboard-editor-root-editorjs .ce-paragraph[data-placeholder]:empty::before,
+.kboard-editor-root-editorjs .ce-header[data-placeholder]:empty::before,
+.kboard-editor-scaffold .ce-paragraph[data-placeholder]:empty::before,
+.kboard-editor-scaffold .ce-header[data-placeholder]:empty::before {
+	color: var(--kboard-text-muted);
+	opacity: 0.7;
+}
+
+#kboard-editor-root .ce-toolbar,
+#kboard-editor-root .ce-inline-toolbar,
+#kboard-editor-root .ce-popover,
+#kboard-editor-root .ce-conversion-toolbar,
+#kboard-editor-root .ce-settings,
+.kboard-editor-root-editorjs .ce-toolbar,
+.kboard-editor-root-editorjs .ce-inline-toolbar,
+.kboard-editor-root-editorjs .ce-popover,
+.kboard-editor-root-editorjs .ce-conversion-toolbar,
+.kboard-editor-root-editorjs .ce-settings,
+.kboard-editor-scaffold .ce-toolbar,
+.kboard-editor-scaffold .ce-inline-toolbar,
+.kboard-editor-scaffold .ce-popover,
+.kboard-editor-scaffold .ce-conversion-toolbar,
+.kboard-editor-scaffold .ce-settings {
+	left: 0;
+	right: 0;
+	overflow: visible;
+	visibility: visible;
+	opacity: 1;
+	z-index: 1000;
+}
+
+#kboard-editor-root .ce-toolbar__plus,
+#kboard-editor-root .ce-toolbar__settings-btn,
+.kboard-editor-root-editorjs .ce-toolbar__plus,
+.kboard-editor-root-editorjs .ce-toolbar__settings-btn,
+.kboard-editor-scaffold .ce-toolbar__plus,
+.kboard-editor-scaffold .ce-toolbar__settings-btn {
+	visibility: visible;
+	opacity: 1;
+	color: var(--kboard-text);
+	background-color: #fff;
+	border: 1px solid var(--kboard-border);
+	border-radius: 999px;
+	box-shadow: var(--kboard-shadow-sm);
+}
+
+#kboard-editor-root .ce-toolbar__plus:hover,
+#kboard-editor-root .ce-toolbar__plus:focus,
+#kboard-editor-root .ce-toolbar__settings-btn:hover,
+#kboard-editor-root .ce-toolbar__settings-btn:focus,
+.kboard-editor-root-editorjs .ce-toolbar__plus:hover,
+.kboard-editor-root-editorjs .ce-toolbar__plus:focus,
+.kboard-editor-root-editorjs .ce-toolbar__settings-btn:hover,
+.kboard-editor-root-editorjs .ce-toolbar__settings-btn:focus,
+.kboard-editor-scaffold .ce-toolbar__plus:hover,
+.kboard-editor-scaffold .ce-toolbar__plus:focus,
+.kboard-editor-scaffold .ce-toolbar__settings-btn:hover,
+.kboard-editor-scaffold .ce-toolbar__settings-btn:focus {
+	color: var(--kboard-primary);
+	border-color: var(--kboard-primary);
+	background-color: var(--kboard-bg-alt);
+}
+
+#kboard-editor-root .ce-block:focus-within .ce-toolbar__plus,
+#kboard-editor-root .ce-block:focus-within .ce-toolbar__settings-btn,
+#kboard-editor-root .ce-block--focused .ce-toolbar__plus,
+#kboard-editor-root .ce-block--focused .ce-toolbar__settings-btn,
+#kboard-editor-root .ce-block--empty .ce-toolbar__plus,
+#kboard-editor-root .ce-block--empty .ce-toolbar__settings-btn,
+.kboard-editor-root-editorjs .ce-block:focus-within .ce-toolbar__plus,
+.kboard-editor-root-editorjs .ce-block:focus-within .ce-toolbar__settings-btn,
+.kboard-editor-root-editorjs .ce-block--focused .ce-toolbar__plus,
+.kboard-editor-root-editorjs .ce-block--focused .ce-toolbar__settings-btn,
+.kboard-editor-root-editorjs .ce-block--empty .ce-toolbar__plus,
+.kboard-editor-root-editorjs .ce-block--empty .ce-toolbar__settings-btn,
+.kboard-editor-scaffold .ce-block:focus-within .ce-toolbar__plus,
+.kboard-editor-scaffold .ce-block:focus-within .ce-toolbar__settings-btn,
+.kboard-editor-scaffold .ce-block--focused .ce-toolbar__plus,
+.kboard-editor-scaffold .ce-block--focused .ce-toolbar__settings-btn,
+.kboard-editor-scaffold .ce-block--empty .ce-toolbar__plus,
+.kboard-editor-scaffold .ce-block--empty .ce-toolbar__settings-btn {
+	visibility: visible;
+	opacity: 1;
+}
+
+#kboard-editor-root .ce-popover,
+#kboard-editor-root .ce-conversion-toolbar,
+.kboard-editor-root-editorjs .ce-popover,
+.kboard-editor-root-editorjs .ce-conversion-toolbar,
+.kboard-editor-scaffold .ce-popover,
+.kboard-editor-scaffold .ce-conversion-toolbar {
+	border: 1px solid var(--kboard-border);
+	box-shadow: var(--kboard-shadow-sm);
+}
+
+.kboard-content hr,
+.kboard-content .kboard-editorjs-delimiter,
+.kboard-content .kboard-editorjs-block-delimiter,
+.kboard-document-content hr,
+.kboard-document-content .kboard-editorjs-delimiter,
+.kboard-document-content .kboard-editorjs-block-delimiter {
+	margin: 18px 0;
+	border: 0;
+	height: 0;
+	border-top: 1px solid var(--kboard-border);
+}
+
+.kboard-content pre,
+.kboard-content .kboard-editorjs-code,
+.kboard-content .kboard-editorjs-block-code,
+.kboard-document-content pre,
+.kboard-document-content .kboard-editorjs-code,
+.kboard-document-content .kboard-editorjs-block-code {
+	margin: 16px 0;
+	padding: 12px;
+	overflow: auto;
+	background-color: var(--kboard-bg-alt);
+	border: 1px solid var(--kboard-border);
+	border-radius: var(--kboard-radius);
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.kboard-content table,
+.kboard-content .kboard-editorjs-table,
+.kboard-content .kboard-editorjs-block-table,
+.kboard-document-content table,
+.kboard-document-content .kboard-editorjs-table,
+.kboard-document-content .kboard-editorjs-block-table {
+	width: 100%;
+	margin: 16px 0;
+	border-collapse: collapse;
+	border: 1px solid var(--kboard-border);
+	font-size: 14px;
+}
+
+.kboard-content table th,
+.kboard-content table td,
+.kboard-content .kboard-editorjs-table th,
+.kboard-content .kboard-editorjs-table td,
+.kboard-content .kboard-editorjs-block-table th,
+.kboard-content .kboard-editorjs-block-table td,
+.kboard-document-content table th,
+.kboard-document-content table td,
+.kboard-document-content .kboard-editorjs-table th,
+.kboard-document-content .kboard-editorjs-table td,
+.kboard-document-content .kboard-editorjs-block-table th,
+.kboard-document-content .kboard-editorjs-block-table td {
+	padding: 10px;
+	border: 1px solid var(--kboard-border);
+	vertical-align: top;
+}
+
+.kboard-content .kboard-warning,
+.kboard-content .kboard-editorjs-warning,
+.kboard-content .kboard-editorjs-block-warning,
+.kboard-document-content .kboard-warning,
+.kboard-document-content .kboard-editorjs-warning,
+.kboard-document-content .kboard-editorjs-block-warning {
+	margin: 16px 0;
+	padding: 12px 14px;
+	background-color: var(--kboard-bg-alt);
+	border: 1px solid var(--kboard-border);
+	border-left: 3px solid var(--kboard-primary);
+	border-radius: var(--kboard-radius);
+	line-height: 1.7;
+}
+
+.kboard-content .kboard-editorjs-checklist,
+.kboard-content .kboard-editorjs-block-checklist,
+.kboard-document-content .kboard-editorjs-checklist,
+.kboard-document-content .kboard-editorjs-block-checklist {
+	margin: 16px 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.kboard-content .kboard-editorjs-checklist li,
+.kboard-content .kboard-editorjs-block-checklist li,
+.kboard-document-content .kboard-editorjs-checklist li,
+.kboard-document-content .kboard-editorjs-block-checklist li {
+	margin: 0 0 8px;
+	padding-left: 2px;
+}

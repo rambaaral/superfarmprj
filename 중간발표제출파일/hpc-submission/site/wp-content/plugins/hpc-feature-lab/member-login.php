@@ -32,16 +32,16 @@ function hpc_member_login_panel(){
     if(isset($_GET['redirect_to'])&&is_string($_GET['redirect_to']))$target=wp_validate_redirect(wp_unslash($_GET['redirect_to']),$target);
     ob_start(); ?>
     <section class="hpc-member-login" aria-labelledby="member-login-title">
-      <div class="hpc-member-welcome"><span class="eyebrow">MY PAGE</span><h2 id="member-login-title">로그인하고<br> 나의 이용 내역을 확인하세요.</h2><p>신청서 작성부터 진행 현황 확인까지,<br>마이페이지에서 이어갈 수 있습니다.</p><ul><li>이용신청 작성 및 수정</li><li>신청 진행 상황 확인</li><li>나의 문의와 답변 확인</li></ul><p class="hpc-member-trial">시험 운영 중입니다. 가상 정보로 이용해 주세요.</p></div>
-      <div class="hpc-member-fields"><h3>회원 로그인</h3><p>가입한 이메일 주소 또는 사용자명을 입력해 주세요.</p>
-      <?php if(isset($_GET['login_status'])&&$_GET['login_status']==='failed'): ?><p class="error" role="alert">로그인하지 못했습니다. 입력 내용을 확인해 주세요. 반복해서 실패하면 잠시 후 다시 시도하거나 비밀번호 찾기를 이용해 주세요.</p><?php endif; ?>
+      <div class="hpc-member-welcome"><span class="eyebrow">MY PAGE</span><h2 id="member-login-title"><?php echo esc_html(hpct_text('t9d97c7df471d37c6f7db')); ?><br><?php echo esc_html(hpct_text('te2cf12da3be45f840b4f')); ?></h2><p><?php echo esc_html(hpct_text('t84d1fb9abe7c1b9ee326')); ?><br><?php echo esc_html(hpct_text('t66c54b156abc4c52eb43')); ?></p><ul><li><?php echo esc_html(hpct_text('t24ad8b05ca7f809f8c22')); ?></li><li><?php echo esc_html(hpct_text('t92c1793ef24202bcde17')); ?></li><li><?php echo esc_html(hpct_text('t6825d0118c020c5a8f47')); ?></li></ul><p class="hpc-member-trial"><?php echo esc_html(hpct_text('tbe863d9e4f6da7db93f8')); ?></p></div>
+      <div class="hpc-member-fields"><h3><?php echo esc_html(hpct_text('t46867a3aa4bc75865fa6')); ?></h3><p><?php echo esc_html(hpct_text('tb142ca23d0118aa5ed81')); ?></p>
+      <?php if(isset($_GET['login_status'])&&$_GET['login_status']==='failed'): ?><p class="error" role="alert"><?php echo esc_html(hpct_text('tbd4e349dbfae7079e31e')); ?></p><?php endif; ?>
       <?php
       $extra=function($html,$args){return $html.wp_nonce_field('hpc_member_login','hpc_member_login_nonce',true,false);};
       add_filter('login_form_bottom',$extra,10,2);
-      echo wp_login_form(['echo'=>false,'redirect'=>$target,'form_id'=>'hpc-member-login-form','label_username'=>'이메일 또는 사용자명','label_password'=>'비밀번호','label_remember'=>'로그인 상태 유지','label_log_in'=>'로그인','remember'=>true]);
+      echo wp_login_form(['echo'=>false,'redirect'=>$target,'form_id'=>'hpc-member-login-form','label_username'=>hpct_text('t6987f469b69bd7d3c85e'),'label_password'=>hpct_text('t4fa210a06f9faa90aadc'),'label_remember'=>hpct_text('t0aa553ce491354f59e70'),'label_log_in'=>hpct_text('t6d253673db906e71d346'),'remember'=>true]);
       remove_filter('login_form_bottom',$extra,10);
       ?>
-      <div class="hpc-member-links"><a href="<?php echo esc_url(hpcm_url()); ?>">회원가입 · 이메일 인증</a><a href="<?php echo esc_url(wp_lostpassword_url()); ?>">비밀번호 찾기</a></div>
+      <div class="hpc-member-links"><a href="<?php echo esc_url(hpcm_url()); ?>"><?php echo esc_html(hpct_text('te71b5804966df3065763')); ?></a><a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php echo esc_html(hpct_text('t97e57997eea649a1f4eb')); ?></a></div>
       </div>
     </section>
     <?php return ob_get_clean();

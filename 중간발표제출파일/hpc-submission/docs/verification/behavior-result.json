@@ -1,0 +1,21 @@
+{
+    "create_public": true,
+    "create_private": true,
+    "create_forum": true,
+    "public_read_guest": true,
+    "private_denied_guest": true,
+    "forum_denied_guest": true,
+    "answer_in_search": true,
+    "private_not_in_search": true,
+    "forum_not_in_guest_search": true,
+    "visibility_rechecked": true,
+    "own_private_read": true,
+    "unapproved_forum_denied": true,
+    "approved_forum_read": true,
+    "approved_forum_search": true,
+    "local_account_erased": true,
+    "jpg_jpeg_removed": true,
+    "kboard_anonymized_public": true,
+    "kboard_anonymized_private": true,
+    "kboard_anonymized_forum": true
+}

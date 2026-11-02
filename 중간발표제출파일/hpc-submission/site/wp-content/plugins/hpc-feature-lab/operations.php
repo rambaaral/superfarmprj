@@ -42,9 +42,9 @@ function hpco_exec($args,$seconds=45){
 }
 function hpco_record($f){
     global $wpdb;
-    if(!preg_match('/^[a-f0-9]{40}$/D',$f['token']??'')||!in_array($f['ext']??'', ['pdf','hwp','hwpx','jpg','jpeg'],true)||!preg_match('/^[a-f0-9]{64}$/D',$f['sha256']??''))throw new RuntimeException('첨부파일 검사 정보가 올바르지 않습니다.');
+    if(!preg_match('/^[a-f0-9]{40}$/D',$f['token']??'')||!in_array($f['ext']??'', ['pdf','hwp','hwpx','jpg','jpeg'],true)||!preg_match('/^[a-f0-9]{64}$/D',$f['sha256']??''))throw new RuntimeException(hpct_text('t04e616e9e1047c205a5e'));
     $ok=$wpdb->query($wpdb->prepare('INSERT IGNORE INTO '.hpco_table().' (token,ext,sha,state,result,checked) VALUES (%s,%s,%s,%s,%s,0)',$f['token'],$f['ext'],$f['sha256'],'queued',''));
-    if($ok===false)throw new RuntimeException('파일 검사 대기 등록에 실패했습니다.');
+    if($ok===false)throw new RuntimeException(hpct_text('t35d10a6d090aa8baded8'));
     return $wpdb->get_row($wpdb->prepare('SELECT * FROM '.hpco_table().' WHERE token=%s',$f['token']));
 }
 function hpco_path($r){
@@ -96,33 +96,33 @@ function hpco_tick(){
 add_action('hpc_ops_tick','hpco_tick');
 function hpco_require_clean($f){
     $r=hpco_record($f);
-    if(!$r||$r->ext!==$f['ext']||!hash_equals($r->sha,$f['sha256']))throw new RuntimeException('첨부파일 검사 정보가 일치하지 않습니다.');
+    if(!$r||$r->ext!==$f['ext']||!hash_equals($r->sha,$f['sha256']))throw new RuntimeException(hpct_text('t5d788e4c72a62dcdf842'));
     $p=hpco_path($r);
-    if(!$p||!hash_equals($r->sha,hash_file('sha256',$p)))throw new RuntimeException('첨부파일 무결성을 확인할 수 없습니다.');
-    if($r->state!=='clean')throw new RuntimeException('첨부파일 안전성 검사 완료 전에는 다운로드할 수 없습니다. 검사 대기 또는 검사 오류 상태입니다. 잠시 후 다시 확인하거나 운영자에게 문의해 주세요.');
+    if(!$p||!hash_equals($r->sha,hash_file('sha256',$p)))throw new RuntimeException(hpct_text('td312070d589646a0841f'));
+    if($r->state!=='clean')throw new RuntimeException(hpct_text('tad57e791fc43a56ca80f'));
 }
 function hpco_label($f){
     global $wpdb;$state=$wpdb->get_var($wpdb->prepare('SELECT state FROM '.hpco_table().' WHERE token=%s',$f['token']));
-    return ['queued'=>'검사 대기','clean'=>'검사 통과','blocked'=>'다운로드 차단','error'=>'검사 오류 · 다운로드 차단'][$state]??'미검사 · 다운로드 시 검사 대기 등록';
+    return ['queued'=>hpct_text('t24013022e6f47f3781fa'),'clean'=>hpct_text('t559c087cac9411f2016a'),'blocked'=>hpct_text('t8879d3c868a68e686f02'),'error'=>hpct_text('tc477148d6e14725ee9f2')][$state]??hpct_text('te3bf8c16db476f7ed07f');
 }
-add_action('admin_menu',function(){add_management_page('HPC 운영 점검','HPC 운영 점검','manage_options','hpc-operations','hpco_page');});
+add_action('admin_menu',function(){add_management_page(hpct_text('t0c31a24ac7042f18e608'),hpct_text('t0c31a24ac7042f18e608'),'manage_options','hpc-operations','hpco_page');});
 function hpco_page(){
-    if(!current_user_can('manage_options'))wp_die('권한이 없습니다.','',403);
+    if(!current_user_can('manage_options'))wp_die(hpct_text('ta20ccb3e6b01e3245b66'),'',403);
     global $wpdb;$message='';
     if($_SERVER['REQUEST_METHOD']==='POST'){
         check_admin_referer('hpc_operations');
         if(($_POST['op']??'')==='probe'){
             update_option('hpco_probe_requested',time(),false);
-            $message='서버 정기 작업에 가상 파일 검사를 요청했습니다. 5분 후 새로고침해 결과를 확인하세요.';
+            $message=hpct_text('tc28eab10646394ce5758');
         }
     }
     $tick=get_option('hpco_last_tick',[]);$probe=get_option('hpco_probe',[]);
-    echo '<div class="wrap"><h1>HPC 운영 점검</h1><p>문서는 외부 서비스로 전송하지 않습니다. 검사되지 않았거나 검사 오류가 난 첨부는 다운로드가 차단됩니다. 검사 통과도 모든 문서 위협의 부재를 보증하지는 않습니다.</p>';
+    echo (''.'<div class="wrap">'.''.'<h1>'.esc_html(hpct_text('t0c31a24ac7042f18e608')).'</h1>'.''.'<p>'.esc_html(hpct_text('tf8d5d91ce70ba0791d75')).'</p>'.'');
     if($message)echo '<div class="notice notice-info"><p>'.esc_html($message).'</p></div>';
-    echo '<h2>정기 작업</h2><p>최근 실행(UTC): '.esc_html($tick['at']??'아직 없음').' / PHP '.esc_html($tick['php']??'').' / '.esc_html($tick['sapi']??'').'</p>';
-    echo '<p>다음 검사 예약(UTC): '.esc_html(($next=wp_next_scheduled('hpc_ops_tick'))?gmdate('c',$next):'예약 없음').'</p>';
-    echo '<h2>첨부 검사</h2><p>웹 환경에서 보이는 검사기: '.esc_html(hpco_scanner()?:'접근 제한 또는 검사기 없음 — 서버 정기 작업 결과를 확인하세요.').'</p><p>최근 기본 시험: '.esc_html(($probe['at']??'없음').' / '.($probe['state']??'미실행')).'</p>';
-    echo '<form method="post">';wp_nonce_field('hpc_operations');echo '<input type="hidden" name="op" value="probe">';submit_button('가상 텍스트로 검사기 실행 확인','secondary');echo '</form><ul>';
+    echo (''.'<h2>'.esc_html(hpct_text('td88393873630fbfc2b81')).'</h2>'.''.'<p>'.esc_html(hpct_text('t76805ac886effcd20a09'))).esc_html($tick['at']??hpct_text('tea254b18045fc7053aaf')).' / PHP '.esc_html($tick['php']??'').' / '.esc_html($tick['sapi']??'').'</p>';
+    echo (''.'<p>'.esc_html(hpct_text('t3917e58138e9957aaab8'))).esc_html(($next=wp_next_scheduled('hpc_ops_tick'))?gmdate('c',$next):hpct_text('tcc7430d524e4fcb03083')).'</p>';
+    echo (''.'<h2>'.esc_html(hpct_text('t3dab3a47f88d3ace89df')).'</h2>'.''.'<p>'.esc_html(hpct_text('t2c0455f71e03c6236232'))).esc_html(hpco_scanner()?:hpct_text('t70004a2fb921272dc304')).(''.'</p>'.''.'<p>'.esc_html(hpct_text('tdaad40c4ede16c4b4482'))).esc_html(($probe['at']??hpct_text('t72ea3d64ace5bc941449')).' / '.($probe['state']??hpct_text('t4edfdc9bd4cf6492042b'))).'</p>';
+    echo '<form method="post">';wp_nonce_field('hpc_operations');echo '<input type="hidden" name="op" value="probe">';submit_button(hpct_text('t4d1dd4726777f68520da'),'secondary');echo '</form><ul>';
     foreach($wpdb->get_results('SELECT state,COUNT(*) AS n FROM '.hpco_table().' GROUP BY state') as $r)echo '<li>'.esc_html($r->state).' : '.(int)$r->n.'</li>';
-    echo '</ul><p>새 첨부는 자동으로 검사 대기에 들어갑니다. 기존 첨부는 최초 다운로드 시 검사 대기에 등록됩니다. 최대 5분 간격으로 두 건씩 검사하고, 검사 오류는 한 시간 뒤 재시도합니다. 차단된 파일은 자동 삭제하지 않습니다.</p></div>';
+    echo (''.'</ul>'.''.'<p>'.esc_html(hpct_text('t0de97eda9e9dd9940720')).'</p>'.''.'</div>'.'');
 }

@@ -1,0 +1,47 @@
+{
+    "core": "7.1.4",
+    "php": "8.3.35",
+    "plugins_installed": 23,
+    "plugins_active": 18,
+    "mu_plugins": 2,
+    "screen_texts": 728,
+    "faq": 30,
+    "menu_locations": {
+        "primary": 2,
+        "footer_quick": 5,
+        "home_quick": 6,
+        "footer_links": 4,
+        "footer_bottom": 3
+    },
+    "boards": {
+        "qna": 1,
+        "forum": 2
+    },
+    "theme": "hpc-portal-pages",
+    "users": 1,
+    "applications": 0,
+    "templates": 1,
+    "mail": true,
+    "document_hwpx": {
+        "bytes": 22741,
+        "sha256": "6ca06ba44c1e154393b551d5e44530c60539acd95b9700d4073e873e481d219b"
+    },
+    "document_hwp": {
+        "bytes": 25088,
+        "sha256": "81f556cd3a667d6d31eb70caf97c595ef21e323bc55432ba8312b3ea4b2e9a9e"
+    },
+    "document_pdf": {
+        "bytes": 117242,
+        "sha256": "a60bd2ae1d65bd46402176afdb7e19810ef82bd6de655f1a32e54eec065794b5"
+    },
+    "scan_probe": {
+        "at": "2026-11-02T07:26:42+00:00",
+        "state": "clean",
+        "result": "scan_passed"
+    },
+    "cron_tick": {
+        "at": "2026-11-02T07:26:35+00:00",
+        "php": "8.3.35",
+        "sapi": "cli"
+    }
+}

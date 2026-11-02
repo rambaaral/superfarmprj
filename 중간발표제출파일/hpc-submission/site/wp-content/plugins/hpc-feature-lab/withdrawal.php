@@ -12,7 +12,7 @@ function hpcw_lock() {
     if (!empty($GLOBALS['hpcw_locked'])) return;
     $name='hpc-erase-'.substr(hash('sha256',DB_NAME.'|'.$wpdb->prefix),0,32);
     if ((string)$wpdb->get_var($wpdb->prepare('SELECT GET_LOCK(%s, 5)',$name))!=='1')
-        throw new RuntimeException('다른 신청 작업을 처리하고 있습니다. 잠시 후 다시 시도해 주세요.');
+        throw new RuntimeException(hpct_text('tcb5e689df655106e01fa'));
     $GLOBALS['hpcw_locked']=$name;
 }
 function hpcw_unlock() {
@@ -28,32 +28,32 @@ function hpcw_eligible($uid) {
     global $wpdb;
     $u=get_userdata($uid);
     if (!$u || is_multisite() || $u->roles!==['subscriber'] || user_can($u,'manage_options'))
-        throw new RuntimeException('일반 회원 계정만 직접 탈퇴할 수 있습니다. 운영 계정은 관리자에게 문의해 주세요.');
+        throw new RuntimeException(hpct_text('t0fc4ceb29578d1afc7ed'));
     $n=$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.hpc_table()." WHERE owner=%d AND state NOT IN ('draft','selected','rejected')",$uid));
-    if ($wpdb->last_error || $n===null) throw new RuntimeException('신청 상태를 확인할 수 없습니다.');
-    if ((int)$n>0) throw new RuntimeException('진행 중인 신청이 있어 탈퇴할 수 없습니다. 접수·심사·보완 처리가 끝난 뒤 다시 시도해 주세요.');
+    if ($wpdb->last_error || $n===null) throw new RuntimeException(hpct_text('t7cfef7e5d236e8c9b40e'));
+    if ((int)$n>0) throw new RuntimeException(hpct_text('tb1c019cd3c6e6338d96e'));
     // A former staff account may own shared site content. Never erase it implicitly.
-    $posts=$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->posts} WHERE post_author=%d",$uid));
+    $posts=$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->posts} WHERE post_author=%d AND post_type<>'kboard'",$uid));
     if ($wpdb->last_error || $posts===null || (int)$posts>0)
-        throw new RuntimeException('사이트 게시 콘텐츠가 연결된 계정입니다. 관리자에게 탈퇴 처리를 문의해 주세요.');
+        throw new RuntimeException(hpct_text('t9076c9670856e7be69ee'));
     return $u;
 }
 function hpcw_request($uid,$password,$confirmed,$nonce) {
     if (!$uid || $uid!==get_current_user_id() || !wp_verify_nonce($nonce,'hpc_withdrawal_'.$uid))
-        throw new RuntimeException('본인 확인 화면이 만료되었습니다. 다시 로그인해 주세요.');
-    if (!$confirmed) throw new RuntimeException('삭제 범위와 복구 불가 안내에 동의해 주세요.');
+        throw new RuntimeException(hpct_text('tec216f0c1f29f07510a4'));
+    if (!$confirmed) throw new RuntimeException(hpct_text('t22595e671101f9831778'));
     if (!hpcm_limit('withdrawal-password',(string)$uid,5,900))
-        throw new RuntimeException('확인 시도가 많습니다. 15분 뒤 다시 시도해 주세요.');
+        throw new RuntimeException(hpct_text('t9d235592b4c035d10a95'));
     hpcw_lock();
     $u=hpcw_eligible($uid);
-    if (!wp_check_password($password,$u->user_pass,$uid)) throw new RuntimeException('현재 비밀번호가 일치하지 않습니다.');
+    if (!wp_check_password($password,$u->user_pass,$uid)) throw new RuntimeException(hpct_text('tad731a6c46946998d01e'));
     if (!hpcw_pending($uid) && !add_option(hpcw_key($uid),['uid'=>$uid,'requested'=>time(),'attempts'=>0,'error'=>''],'','no'))
-        throw new RuntimeException('탈퇴 요청을 저장하지 못했습니다.');
+        throw new RuntimeException(hpct_text('te5bb10535a97ec351dd3'));
     WP_Session_Tokens::get_instance($uid)->destroy_all();
 }
 
 add_filter('wp_authenticate_user',function($u){
-    if ($u instanceof WP_User && hpcw_pending($u->ID)) return new WP_Error('hpc_withdrawing','탈퇴 처리 중인 계정입니다. 처리가 지연되면 운영자에게 문의해 주세요.');
+    if ($u instanceof WP_User && hpcw_pending($u->ID)) return new WP_Error('hpc_withdrawing',hpct_text('tb16866fd6c5bcad59873'));
     return $u;
 },100);
 add_action('init',function(){
@@ -69,8 +69,8 @@ add_action('template_redirect',function(){
     if (isset($_GET['hpc_withdrawal'])) { hpcw_page(); exit; }
 },-100);
 add_action('wp_ajax_hpc_live_preview',function(){
-    try { hpcw_lock(); if(hpcw_pending(get_current_user_id())) throw new RuntimeException('탈퇴 처리 중'); }
-    catch(Throwable $e) { wp_send_json_error(['message'=>'처리 중인 요청이 있습니다. 잠시 후 다시 로그인해 확인해 주세요.'],403); }
+    try { hpcw_lock(); if(hpcw_pending(get_current_user_id())) throw new RuntimeException(hpct_text('t46c61e7fbc3245293738')); }
+    catch(Throwable $e) { wp_send_json_error(['message'=>hpct_text('tc6d1ed9def53c566765a')],403); }
 },-100);
 
 // Refuse symlinks and paths outside the private root, including linked ancestors.
@@ -105,7 +105,7 @@ function hpcw_erase($uid) {
         $files=json_decode($a->files,true);
         if(!is_array($files)) throw new RuntimeException('invalid_manifest');
         foreach($files as $f) {
-            if(!preg_match('/^[a-f0-9]{40}$/D',$f['token']??'') || !in_array($f['ext']??'',['pdf','hwp','hwpx'],true)) throw new RuntimeException('invalid_manifest');
+            if(!preg_match('/^[a-f0-9]{40}$/D',$f['token']??'') || !in_array($f['ext']??'',['pdf','hwp','hwpx','jpg','jpeg'],true)) throw new RuntimeException('invalid_manifest');
             // Corrupt cross-account references must fail closed, not erase another member's file.
             $shared=$wpdb->get_var($wpdb->prepare('SELECT COUNT(*) FROM '.hpc_table().' WHERE owner<>%d AND files LIKE %s',$uid,'%'.$wpdb->esc_like($f['token']).'%'));
             if($wpdb->last_error || $shared===null || (int)$shared>0) throw new RuntimeException('shared_file');
@@ -128,7 +128,8 @@ function hpcw_erase($uid) {
         foreach([hpc_table(),hpc_table('messages')] as $table) if($wpdb->delete($table,['owner'=>$uid])===false) throw new RuntimeException('db_failed');
         if($wpdb->query($wpdb->prepare('DELETE FROM '.hpcm_table().' WHERE user_id=%d OR email_key=%s',$uid,hpcm_email_key($u->user_email)))===false) throw new RuntimeException('db_failed');
         foreach(get_comments(['user_id'=>$uid,'status'=>'all','number'=>0]) as $comment) if(!wp_delete_comment($comment->comment_ID,true)) throw new RuntimeException('comment_delete_failed');
-        if(function_exists('hpcf_table') && $wpdb->update(hpcf_table(),['owner'=>0,'title'=>'탈퇴한 회원의 글','body'=>'탈퇴한 회원의 글입니다.','hidden'=>1],['owner'=>$uid])===false) throw new RuntimeException('forum_erase_failed');
+        if(function_exists('hpcf_table') && $wpdb->update(hpcf_table(),['owner'=>0,'title'=>hpct_text('t1a065b86bdda8f5abeae'),'body'=>hpct_text('t1bee401829b760ec9d4e'),'hidden'=>1],['owner'=>$uid])===false) throw new RuntimeException('forum_erase_failed');
+        hpcw_kboard_erase($uid);
         if(!wp_delete_user($uid)) throw new RuntimeException('account_delete_failed');
         $remaining=$wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->users} WHERE ID=%d",$uid));
         if($wpdb->last_error || $remaining===null || (int)$remaining!==0) throw new RuntimeException('account_delete_failed');
@@ -144,7 +145,7 @@ function hpcw_worker() {
         $job=get_option($key);$uid=(int)($job['uid']??0);
         if(!$uid || $key!==hpcw_key($uid)) continue;
         try { hpcw_erase($uid); }
-        catch(Throwable $e) { $job['attempts']=(int)($job['attempts']??0)+1;$job['error']='처리 실패 · 관리자 점검 필요';$job['last_attempt']=time();update_option($key,$job,false); }
+        catch(Throwable $e) { $job['attempts']=(int)($job['attempts']??0)+1;$job['error']=hpct_text('t843d65103e2781fa84ab');$job['last_attempt']=time();update_option($key,$job,false); }
         finally { hpcw_unlock(); }
     }
 }
@@ -153,7 +154,7 @@ add_action('admin_notices',function(){
     if(!current_user_can('manage_options')) return;
     global $wpdb;$keys=$wpdb->get_col($wpdb->prepare("SELECT option_name FROM {$wpdb->options} WHERE option_name LIKE %s",$wpdb->esc_like('hpc_withdrawal_').'%'));
     $failed=0;foreach($keys as $key) { $job=get_option($key);if(!empty($job['error']))$failed++; }
-    if($keys) echo '<div class="notice notice-warning"><p>회원 탈퇴 처리 대기: '.count($keys).'건 / 점검 필요: '.$failed.'건. 서버 정기 작업이 삭제를 처리합니다. 오류가 지속되면 개발 담당자에게 문의해 주세요.</p></div>';
+    if($keys) echo (''.'<div class="notice notice-warning">'.''.'<p>'.esc_html(hpct_text('tec01e4911d664763cc59'))).count($keys).hpct_text('te31bccbe9a245260584f').$failed.(esc_html(hpct_text('tf48b328682ee6dd9be7e')).'</p>'.''.'</div>'.'');
 });
 function hpcw_page() {
     nocache_headers();header('X-Robots-Tag: noindex, nofollow');$error='';$done=false;
@@ -164,13 +165,39 @@ function hpcw_page() {
         catch(Throwable $e) { $error=$e->getMessage(); }
     }
     status_header($error?400:200);
-    echo '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>회원 탈퇴</title><style>body{font:17px/1.8 system-ui,sans-serif;background:#f4f6f8;color:#182b43;margin:0}main{max-width:680px;margin:40px auto;padding:28px;background:white;border-radius:12px}input[type=password]{display:block;width:95%;padding:12px;margin:10px 0}button{padding:12px 24px;background:#a21d2a;color:white;border:0;border-radius:6px;font:inherit}a{color:#155fa0}.error{color:#a21d2a}</style></head><body><main><h1>회원 탈퇴</h1>';
-    if($done) echo '<h2>탈퇴 요청이 접수되었습니다.</h2><p>모든 로그인 세션이 종료되었습니다. 계정과 자료는 서버 정기 작업에서 삭제됩니다. 보통 5분 이내에 처리를 시작하지만 대기량이나 오류에 따라 지연될 수 있습니다. 이 화면은 삭제 완료 확인이 아닙니다.</p>';
+    echo (''.'<!doctype html>'.''.'<html lang="ko">'.''.'<head>'.''.'<meta charset="utf-8">'.''.'<meta name="viewport" content="width=device-width,initial-scale=1">'.''.'<title>'.esc_html(hpct_text('t4406c379c287135fb450')).'</title>'.''.'<style>body{font:17px/1.8 system-ui,sans-serif;background:#f4f6f8;color:#182b43;margin:0}main{max-width:680px;margin:40px auto;padding:28px;background:white;border-radius:12px}input[type=password]{display:block;width:95%;padding:12px;margin:10px 0}button{padding:12px 24px;background:#a21d2a;color:white;border:0;border-radius:6px;font:inherit}a{color:#155fa0}.error{color:#a21d2a}</style>'.''.'</head>'.''.'<body>'.''.'<main>'.''.'<h1>'.esc_html(hpct_text('t4406c379c287135fb450')).'</h1>'.'');
+    if($done) echo (''.'<h2>'.esc_html(hpct_text('t9850e84002c80163f96d')).'</h2>'.''.'<p>'.esc_html(hpct_text('ta62d386e7a4f55e3543c')).'</p>'.'');
     else {
         if($error) echo '<p class="error" role="alert">'.esc_html($error).'</p>';
         try { hpcw_eligible($uid);$allowed=true; } catch(Throwable $e) { $allowed=false;echo '<p>'.esc_html($e->getMessage()).'</p>'; }
-        echo '<p>탈퇴하면 로그인 계정, 작성 중 및 선정·미선정 신청서, 서명 첨부파일, 생성 문서와 본인 문의·답변이 삭제됩니다. 본인이 작성한 포럼 글·댓글의 내용과 작성자 정보도 제거됩니다. 제출·접수·검토·심의·보완 중 신청이 있으면 탈퇴할 수 없습니다.</p><p>삭제 후 복구할 수 없습니다. 필요한 문서는 먼저 내려받으세요. 기존 백업 사본과 별도 보안·메일 로그는 이 기능으로 즉시 삭제되지 않습니다.</p>';
-        if($allowed) { echo '<form method="post" action="'.esc_url(hpcw_url()).'">';wp_nonce_field('hpc_withdrawal_'.$uid);echo '<label for="current-password">현재 비밀번호</label><input id="current-password" type="password" name="current_password" autocomplete="current-password" required><p><label><input type="checkbox" name="erase_confirm" value="yes" required> 위 삭제 범위와 복구 불가 안내를 확인했으며 회원 탈퇴에 동의합니다.</label></p><button type="submit">회원 탈퇴 및 자료 삭제 요청</button></form>'; }
+        echo (''.'<p>'.esc_html(hpct_text('t162bb3c3b0f333673f4f')).'</p>'.''.'<p>'.esc_html(hpct_text('t51321f0e4504be75cd00')).'</p>'.'');
+        if($allowed) { echo '<form method="post" action="'.esc_url(hpcw_url()).'">';wp_nonce_field('hpc_withdrawal_'.$uid);echo (''.'<label for="current-password">'.esc_html(hpct_text('tf8762fcc5a74726b4d84')).'</label>'.''.'<input id="current-password" type="password" name="current_password" autocomplete="current-password" required>'.''.'<p>'.''.'<label>'.''.'<input type="checkbox" name="erase_confirm" value="yes" required>'.esc_html(hpct_text('t05668ddfe261780080f7')).'</label>'.''.'</p>'.''.'<button type="submit">'.esc_html(hpct_text('t1143d5291f46fdcdb285')).'</button>'.''.'</form>'.''); }
     }
-    echo '<p><a href="'.esc_url(home_url('/')).'">메인으로 돌아가기</a></p></main></body></html>';
+    echo '<p><a href="'.esc_url(home_url('/')).(''.'">'.esc_html(hpct_text('t825e15866afce4af049f')).'</a>'.''.'</p>'.''.'</main>'.''.'</body>'.''.'</html>'.'');
+}
+
+// Preserve other members' replies while erasing the withdrawing author's data.
+function hpcw_kboard_erase($uid){
+ global $wpdb;
+ if(!get_option('hkb_boards'))return;
+ if(!class_exists('KBContent') || !class_exists('KBComment'))throw new RuntimeException('kboard_unavailable');
+ $rows=$wpdb->get_results($wpdb->prepare("SELECT * FROM {$wpdb->prefix}kboard_board_content WHERE member_uid=%d",$uid));
+ if($wpdb->last_error)throw new RuntimeException('kboard_read_failed');
+ foreach($rows as $r){
+  $c=new KBContent();$c->initWithRow($r);
+  foreach((array)$c->attach as $key=>$file)$c->removeAttached($key);
+  $c->removeThumbnail(false);
+  $media=new KBContentMedia();$media->deleteWithContentUID($r->uid);
+  $c->deletePost($c->getPostID());
+  if($wpdb->delete($wpdb->prefix.'kboard_board_option',['content_uid'=>$r->uid])===false)throw new RuntimeException('kboard_erase_failed');
+  if($wpdb->update($wpdb->prefix.'kboard_board_content',['member_uid'=>0,'member_display'=>hpct_text('t0754c94f95182fe6f7f6'),'title'=>hpct_text('t1a065b86bdda8f5abeae'),'content'=>hpct_text('t1bee401829b760ec9d4e'),'password'=>'','thumbnail_file'=>'','thumbnail_name'=>''],['uid'=>$r->uid])===false)throw new RuntimeException('kboard_erase_failed');
+ }
+ $rows=$wpdb->get_results($wpdb->prepare("SELECT * FROM {$wpdb->prefix}kboard_comments WHERE user_uid=%d",$uid));
+ if($wpdb->last_error)throw new RuntimeException('kboard_read_failed');
+ foreach($rows as $r){
+  $c=new KBComment();$c->initWithRow($r);$c->deleteAllAttached();
+  $media=new KBCommentMedia();$media->deleteWithCommentUID($r->uid);
+  if($wpdb->delete($wpdb->prefix.'kboard_comments_option',['comment_uid'=>$r->uid])===false)throw new RuntimeException('kboard_erase_failed');
+  if($wpdb->update($wpdb->prefix.'kboard_comments',['user_uid'=>0,'user_display'=>hpct_text('t0754c94f95182fe6f7f6'),'content'=>hpct_text('t08bd7b548693607fa89a'),'password'=>''],['uid'=>$r->uid])===false)throw new RuntimeException('kboard_erase_failed');
+ }
 }

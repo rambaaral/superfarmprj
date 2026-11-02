@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hpc/page-content",
+  "version": "1.0.1",
+  "title": "센터 안내 내용",
+  "category": "text",
+  "icon": "edit-page",
+  "description": "화면 디자인을 유지하면서 문구와 링크를 수정합니다.",
+  "attributes": { "html": { "type": "string", "source": "html", "default": "" } },
+  "supports": { "html": false, "customClassName": false, "inserter": false, "reusable": false }
+}

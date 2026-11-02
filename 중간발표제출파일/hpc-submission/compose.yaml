@@ -1,4 +1,4 @@
-name: hpc-submission
+name: hpc-submission-20261102
 services:
   db:
     image: mariadb:10.11@sha256:7db29378d4fdab73f8123bbc2b48905c90d1a4b00cf848b028f1e81e623257f2
@@ -32,6 +32,7 @@ services:
       ADMIN_USER: ${ADMIN_USER:?Run setup first}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Run setup first}
       ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@example.test}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
     ports:
       - '127.0.0.1:${WEB_PORT:-8080}:80'
     volumes:

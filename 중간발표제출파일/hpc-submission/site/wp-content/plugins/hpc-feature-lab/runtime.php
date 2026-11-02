@@ -6,7 +6,7 @@ function hpc_private_base(){
     return (string)get_option('hpc_host_private_dir',defined('HPC_LAB_ROOT')?'/var/hpc-private':'');
 }
 function hpc_private_dir($suffix=''){
-    $base=hpc_private_base();if($base==='')throw new RuntimeException('관리자의 HPC 설치 메뉴에서 비공개 저장 폴더를 먼저 설정해 주세요.');
+    $base=hpc_private_base();if($base==='')throw new RuntimeException(hpct_text('t04d464a0f2299d4eab20'));
     return rtrim($base,'/').($suffix!==''?'/'.ltrim($suffix,'/'):'');
 }
 function hpc_template_source(){return defined('HPC_TEMPLATE_SOURCE')?HPC_TEMPLATE_SOURCE:(defined('HPC_LAB_ROOT')?HPC_LAB_ROOT.'/template/application.hwpx':__DIR__.'/resources/application.hwpx');}

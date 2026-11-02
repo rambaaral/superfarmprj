@@ -208,10 +208,10 @@ body.portal-application #contents .portal-service form:has(>input[name=op][value
 body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>div[role=group]{
  grid-column:2;align-self:center;box-sizing:border-box;width:100%;min-width:0;margin:10px 0;
 }
-body.portal-application #contents .portal-service div[role=group][aria-label="전화번호"] input{
+body.portal-application #contents .portal-service div.hpc-phone-parts input{
  box-sizing:border-box;width:0!important;min-width:0;flex:1 1 0!important;height:46px;margin:0;padding:10px 6px;text-align:center;line-height:1.5;
 }
-body.portal-application #contents .portal-service div[role=group][aria-label="전화번호"]>span{flex:0 0 auto;line-height:1;margin:0;padding:0}
+body.portal-application #contents .portal-service div.hpc-phone-parts>span{flex:0 0 auto;line-height:1;margin:0;padding:0}
 body.portal-application #contents .portal-service form:has(>input[name=op][value=save])>fieldset{
  grid-column:1/-1;box-sizing:border-box;min-width:0;max-width:100%;margin:22px 0;padding:18px 20px;text-align:left;
 }

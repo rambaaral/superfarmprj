@@ -33,3 +33,4 @@ Stack trace:
 #28 /usr/local/lsws/add-ons/webcachemgr/src/UserCommand.php(1101): Lsc\Wp\UserCommand::run()
 #29 {main}
   thrown in /home/rkdeqrepco/su-pa-fa-mu.com/wp-includes/kses.php on line 1713
+[01-Nov-2026 05:37:04 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/rkdeqrepco/su-pa-fa-mu.com/wp-content/plugins/hpc-feature-lab/withdrawal.php on line 177

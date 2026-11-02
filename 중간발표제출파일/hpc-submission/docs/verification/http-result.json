@@ -1,0 +1,27 @@
+{
+  "home": {
+    "status": 200,
+    "html_bytes": 58300
+  },
+  "qna": {
+    "status": 200,
+    "html_bytes": 55284
+  },
+  "faq": {
+    "status": 200,
+    "html_bytes": 90961
+  },
+  "notice": {
+    "status": 200,
+    "html_bytes": 49401
+  },
+  "fresh_admin_login": true,
+  "screen_copy": true,
+  "menus": true,
+  "faq_admin": true,
+  "chat_without_key": {
+    "sources": 5,
+    "mode": "관련 자료"
+  },
+  "mailpit_messages": 2
+}
